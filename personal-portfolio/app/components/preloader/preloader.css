@@ -1,0 +1,61 @@
+.preLoader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #161616;
+    color: #3676FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.0em;
+    z-index: 101;
+}
+.preLoader .texts-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100px;
+    transition: 0.5s ease-out;
+}.fadeOut{
+    animation: fade-out 1.5s;
+}.fadeIn{
+    animation-delay: 10s;
+    animation: fade-in 2.5s;
+}
+
+#first-Letter{
+    animation: slide-up 2s;
+}#second-Letter{
+    animation: slide-down 2s;
+}
+
+@keyframes slide-up{
+    from{
+        transform: translateY(-100vh);
+    }
+    to {
+        transform: translateY(0vh);  
+    }
+}@keyframes slide-down{
+    from{
+        transform: translateY(100vh);
+    }
+    to {
+        transform: translateY(0vh);
+    }
+}@keyframes fade-out{
+    to{
+        background-color: #b9868600;
+        color: #3676ff00;
+    }
+}@keyframes fade-in{
+    from{
+        opacity: 0%;
+    }
+    to{
+       opacity: 100%;
+       transition: 10.5 ease-in;
+    }
+}
+
