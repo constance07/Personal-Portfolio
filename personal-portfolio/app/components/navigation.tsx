@@ -1,9 +1,8 @@
 'use client';
-
-/*Styling Imports */
-import '../globals.css';
 /*Functionality Imports */
 import {useState} from 'react';
+/*Styling Imports */
+import '../globals.css';
 import { Pixelify_Sans } from 'next/font/google';
 
 const pixelify_Sans = Pixelify_Sans({

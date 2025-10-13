@@ -21,7 +21,7 @@ body{
 /*Media Queries*/
   /*xs*/
   @media (min-width: 350px){
-    /*Hamburger Navigation Bar*/
+    /*HAMBURGER NAVIGATION BAR*/
       .hamburgerContainer{
         width:100%;
         height: 120px;
@@ -52,29 +52,31 @@ body{
           font-size: 155%;    
           width: 100%;
           height: 100%;
+          color: #FFFFFF;
           justify-content: center;
+      }
+      .hamburgerContainer li:active{
+        color: #dfdfdf;
+        transition: 0.25s;
       }
       
       .hamburgerContainer a{
           display: flex;
           background-color: #161616;
           text-decoration: none;
-          padding: 5%;
+          padding: 5%; 
       }
       
       .hamburgerContainer a:hover{
-          background-color: #3a3737;
-          color:#FBEED7;
+          background-color: #3676FF;
           cursor: pointer;
       }
       
       .hamburgerContainer a.active-link{
-          color: #FBEED7;
           transition: background-color 0.25s;
       }
       
       .hamburgerContainer a.active-link:active{
-          color: #cec2ae;
           transition: color 0.25s;
       }
       
@@ -125,10 +127,10 @@ body{
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          width: 2.25rem;
+          width: 2.0rem;
           height: 30px;
-          padding-top: 50px;
-          margin-right: 35px;
+          padding-top: 57px;
+          margin-right: 55px;
           z-index: 5;
      }
      
@@ -141,18 +143,88 @@ body{
       .hamburgerIcon:hover{
           cursor: pointer; 
       }
-  }#devLogo{
-    display: flex;
-    left: 0;
-    justify-content: flex-start;
-    width: 50%;
-    height: 10%;
-    
-    position: absolute;
-    z-index: 5;
-    color: #3676FF;
-    padding: 25px;
-    font-size: 40px;
-    align-items: center;
-   
+      
+      #devLogo{
+        display: flex;
+        left: 0;
+        justify-content: flex-start;
+        width: 50px;
+        height: 10px;
+        position: absolute;
+        z-index: 5;
+        color: #3676FF;
+        padding: 25px;
+        margin-top: 42px;
+        padding-left: 45px;
+        font-size: 40px;
+        align-items: center;
   }
+    /* HERO SECTION */
+    .straightHeadshot{
+      width: 250px;
+      transition: 0.5s ease-in;
+    }.headshotContainer{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }.straightHeadshot:hover{
+      transform: scale(1.02);
+      transition: 0.5s ease-in;
+      filter: brightness(1.15)
+    }.title{
+      width: 100%;
+      color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 10px;
+    }#firstPartTitle{
+      font-size: 1.25em;
+      margin-bottom: 0px;
+      margin-top: 40px;
+    }#secondPartTitle{
+      font-size: 1.8em;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }#thirdPartTitleA{
+      font-size: 1.8em;
+      margin-top: 0px;
+      color: #3F3F3F;
+      margin-bottom: 0px;
+    }#thirdPartTitleB{
+      display: inline;
+      margin-top: 0px;
+      font-size: 1.1em;
+      color: #3676FF;
+    }#personalDisc{
+      color: #FFFFFF;
+      text-align: center;
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-top: 15px;
+      margin-bottom: 100px;
+      padding-bottom: 10px;
+    }#pTags{
+      color: #3676FF;
+      display: inline;
+    }
+    /* FOOTER SECTION */
+    .footerContainer{
+      width: 100%;
+      height: 100px;
+      background-color: #E6E6E6;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }#smallDevLogo{
+      color: #3676FF;
+      font-size: 25px;
+    }
+  /* TEMP USAGE */
+  .navContainer{
+    display: none;
+  }
+}

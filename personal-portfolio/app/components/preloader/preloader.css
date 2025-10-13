@@ -9,8 +9,7 @@
     align-items: center;
     font-size: 5.0em;
     z-index: 101;
-}
-.preLoader .texts-container{
+}.preLoader .texts-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,18 +17,17 @@
     width: 100px;
     transition: 0.5s ease-out;
 }.fadeOut{
-    animation: fade-out 1.5s;
+    animation: fade-out 1.0s;
 }.fadeIn{
     animation-delay: 10s;
     animation: fade-in 2.5s;
-}
-
-#first-Letter{
+}#first-Letter{
     animation: slide-up 2s;
 }#second-Letter{
     animation: slide-down 2s;
 }
 
+/*Animations*/
 @keyframes slide-up{
     from{
         transform: translateY(-100vh);
