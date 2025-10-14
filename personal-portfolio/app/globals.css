@@ -3,7 +3,9 @@
 body{
   background-color: #161616;
   margin: auto;
-  height: 0%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  /* height: 0%; */
 }
   /*Scroll-Bar*/
       /*Disables*/
@@ -15,12 +17,13 @@ body{
       .overflowShow{
           overflow: auto;
           height: 100vh;
+          overflow-x: hidden;
     }
 
 
 /*Media Queries*/
   /*xs*/
-  @media (min-width: 350px){
+  @media (min-width: 0px){
     /*HAMBURGER NAVIGATION BAR*/
       .hamburgerContainer{
         width:100%;
@@ -28,77 +31,92 @@ body{
         padding-top: 0;
         margin-bottom: 0vh;
         display: flex;
-        overflow-y: hidden;
         flex-direction: column;
+        overflow: hidden;
         align-items: flex-end;
       }
-      
       .hamburgerContainer ul{
           flex-direction: column;
           list-style: none;
-          width: 100%;
+          width: 70%;
+          padding: 0px;
           height: 100%;
           margin-top: 0px;
-          position: absolute;
+          position: fixed;
           background-color: #161616;
           z-index: 90;
           transition: all .55s ease-in-out;
-          transform: translateY(-200vh);
+          transform: translateX(200vw);
+          overflow: hidden;
           visibility: hidden;
+        
       }
-      
       .hamburgerContainer li{
           display: flex;
-          font-size: 155%;    
-          width: 100%;
+          font-size: 1.8em;    
+          padding: 10px;
           height: 100%;
           color: #FFFFFF;
+          transition: 0.15s;
           justify-content: center;
+      }.hamburgerContainer li:hover{
+        color: #3676FF;
+        transition: 0.15s;
+        cursor: pointer;
+      }.hamburgerContainer li:active{
+        color: #1f4cae;
+        transition: 0.15s;
       }
-      .hamburgerContainer li:active{
-        color: #dfdfdf;
-        transition: 0.25s;
-      }
-      
       .hamburgerContainer a{
           display: flex;
           background-color: #161616;
           text-decoration: none;
-          padding: 5%; 
-      }
+          padding: 5%;
+          cursor: default;
+          display: flex;
+          justify-content: center;
+      } 
       
-      .hamburgerContainer a:hover{
-          background-color: #3676FF;
-          cursor: pointer;
-      }
-      
-      .hamburgerContainer a.active-link{
+      /* .hamburgerContainer a.active-link{
           transition: background-color 0.25s;
+          
       }
       
       .hamburgerContainer a.active-link:active{
           transition: color 0.25s;
-      }
+          
+      } */
       
       ul.open{
         visibility:visible;
         position: fixed;
-        transform: translateY(0vh);
+        transform: translateX(0vw);
+      }.overlayFadeIn{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.188);
+        z-index: 6;
+        animation: fade-in 0.25s;
+      }.overlayFadeOut{
+        
+        z-index: 6;
+        animation: fade-out 0.25s;
       }
       
       /*Close Navigation Menu*/
       #close-Button{
         display: flex;
         flex-direction: column;
-        padding-top: 20%;
         align-items: end;
         padding-right: 12%;
-        padding-bottom: 10%;
+        margin-bottom: 50px;
       }
       
       #close-Button span:nth-child(1){
+          margin-top: 100px;
           height: 0.3rem;
-          width: 8%;
+          width: 14%;
           z-index: 5;
           background-color: #3676FF;
           transform: translateY(-13px) rotate(45deg);
@@ -107,7 +125,7 @@ body{
       
       #close-Button span:nth-child(2){
           height: 0.3rem;
-          width: 8%;
+          width: 14%;
           z-index: 5;
           background-color: #3676FF;
           transform: translateY(-18px) rotate(-45deg);
@@ -169,7 +187,7 @@ body{
       justify-content: center;
       margin-top: 50px;
     }.straightHeadshot:hover{
-      transform: scale(1.02);
+      transform: scale(1.04);
       transition: 0.5s ease-in;
       filter: brightness(1.15)
     }.title{
@@ -203,8 +221,6 @@ body{
       padding-left: 60px;
       padding-right: 60px;
       padding-top: 15px;
-      margin-bottom: 100px;
-      padding-bottom: 10px;
     }#pTags{
       color: #3676FF;
       display: inline;
@@ -212,19 +228,57 @@ body{
     /* FOOTER SECTION */
     .footerContainer{
       width: 100%;
-      height: 100px;
+      height: 140px;
       background-color: #E6E6E6;
-      position: fixed;
+      position: absolute;
+      top: 850px;
       left: 0;
       bottom: 0;
+      right: 0;
+      left: 0;
       width: 100%;
       text-align: center;
     }#smallDevLogo{
       color: #3676FF;
       font-size: 25px;
+      margin-bottom: 0px;
+    }.icons{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 30px;
+    }#linkedIn, #github, #goodreads{
+      width: 20px;
+      height: 20px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }#ownershipTag{
+      font-size: 0.8em;
     }
   /* TEMP USAGE */
   .navContainer{
     display: none;
   }
+}
+
+
+@keyframes fade-out{
+  from{
+    opacity: 100%;
+  }
+    to{
+       opacity: 0%;
+        transition: 5.5 ease-in;
+    }
+  }
+@keyframes fade-in{
+    from{
+        opacity: 0%;
+    }
+    to{
+       opacity: 100%;
+       transition: 5.5 ease-in;
+    }
 }

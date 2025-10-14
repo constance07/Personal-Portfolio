@@ -25,10 +25,26 @@ export default function Navigation(){
         parent.document.body.classList.remove("overflowHidden");
         parent.document.body.classList.add("overflowShow");
    }
-
+   {/* Enable Overlay */}
+   const enableOverlay = () => {
+        const overlay = parent.document.querySelector(".blank")
+        overlay.classList.add("overlayFadeIn")
+   }
+   {/* Disable Overlay */}
+   const disableOverlay = () => {
+       const overlay = parent.document.querySelector(".blank")
+        overlay.classList.add("overlayFadeOut")
+        setTimeout(() => {
+                /* Fade Out */
+                overlay.classList.remove("overlayFadeOut")
+                overlay.classList.remove("overlayFadeIn")
+            }, 200)
+        
+   }
     return(
         <div className={pixelify_Sans.className}>
         {/*ON MOBILE*/}    
+        <div className='blank'></div>
         {/*Hamburger Menu*/}
             <nav id = "navOpen" className="hamburgerContainer" >
                 <span id = "devLogo" className={pixelify_Sans.className}>SB</span>
@@ -37,6 +53,7 @@ export default function Navigation(){
                     <div className = "hamburgerIcon" onClick={() => {
                         setMenuOpen(!menuOpen);
                         disableScroll();
+                        enableOverlay();
                     }}>
                         <span></span>
                         <span></span>
@@ -50,13 +67,16 @@ export default function Navigation(){
                             <span id = "1x" onClick={() => {
                                 setMenuOpen(!menuOpen);
                                 enableScroll();
+                                disableOverlay();
                                 }}></span>
                             <span id = "2x" onClick={() => {
                                 setMenuOpen(!menuOpen);
                                 enableScroll();
+                                disableOverlay();
                                 }}></span>
                         </div>
                     {/*Pages*/}
+                        <a className = "active-link" href ='/'><li>.HOME( )</li></a>
                         <a className = "active-link" href ='/'><li>.ABOUT ( )</li></a>
                         <a className = "active-link" href ='/cards'><li>.WORK ( )</li></a>
                         <a className = "active-link" href ="/about"><li>.BLOG ( )</li></a>
@@ -70,6 +90,7 @@ export default function Navigation(){
         <nav className ='navContainer'>
             <ul>
                 {/*Pages*/}
+                <a className = "active-link" href ='/'><li>.HOME( )</li></a>
                     <a className = "active-link" href ='/'><li>.ABOUT ( )</li></a>
                     <a className = "active-link" href ='/cards'><li>.WORK ( )</li></a>
                     <a className = "active-link" href ="/about"><li>.BLOG ( )</li></a>
