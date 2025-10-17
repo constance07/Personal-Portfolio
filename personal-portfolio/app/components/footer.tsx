@@ -3,7 +3,7 @@
 import {useState} from 'react';
 import Image from 'next/image';
 /*Styling Imports */
-import '../globals.css';
+// import '../globals.css';
 import github from '@/app/images/github.jpg';
 import goodreads from '@/app/images/goodreads.jpg';
 import linkedIn from '@/app/images/linkedIn.jpg';

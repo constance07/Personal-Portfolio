@@ -16,7 +16,7 @@ import { Be_Vietnam_Pro} from 'next/font/google';
 
 export default function Hero(){
     return(
-        <div>
+        <div className='heroContainer'>
             {/*My Headshot*/}
             <div className='headshotContainer'>
                 <Image

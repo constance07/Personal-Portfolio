@@ -4,13 +4,14 @@ body{
   background-color: #161616;
   margin: auto;
   overflow-y: hidden;
+  
   overflow-x: hidden;
   /* height: 0%; */
 }
   /*Scroll-Bar*/
       /*Disables*/
       .overflowHidden{
-          height: 100%;
+          height: 100vh;
           overflow-y: hidden;
       }
       /*Enables*/
@@ -53,8 +54,8 @@ body{
       }
       .hamburgerContainer li{
           display: flex;
-          font-size: 1.8em;    
-          padding: 10px;
+          font-size: 1.5em;    
+          padding: 5px;
           height: 100%;
           color: #FFFFFF;
           transition: 0.15s;
@@ -75,19 +76,7 @@ body{
           cursor: default;
           display: flex;
           justify-content: center;
-      } 
-      
-      /* .hamburgerContainer a.active-link{
-          transition: background-color 0.25s;
-          
-      }
-      
-      .hamburgerContainer a.active-link:active{
-          transition: color 0.25s;
-          
-      } */
-      
-      ul.open{
+      } ul.open{
         visibility:visible;
         position: fixed;
         transform: translateX(0vw);
@@ -103,7 +92,6 @@ body{
         z-index: 6;
         animation: fade-out 0.25s;
       }
-      
       /*Close Navigation Menu*/
       #close-Button{
         display: flex;
@@ -111,58 +99,47 @@ body{
         align-items: end;
         padding-right: 12%;
         margin-bottom: 50px;
-      }
-      
+      } 
       #close-Button span:nth-child(1){
           margin-top: 100px;
-          height: 0.3rem;
-          width: 14%;
+          height: 5px;
+          width: 44px;
           z-index: 5;
           background-color: #3676FF;
           transform: translateY(-13px) rotate(45deg);
           cursor: pointer;
-      }
-      
-      #close-Button span:nth-child(2){
-          height: 0.3rem;
-          width: 14%;
+      } #close-Button span:nth-child(2){
+          height: 5px;
+          width: 44px;
           z-index: 5;
           background-color: #3676FF;
           transform: translateY(-18px) rotate(-45deg);
           cursor: pointer;
-      }
-      
-      .hamburgerIconBackground{
-          width: 50%;
+      }.hamburgerIconBackground{
+          width: 300px;
           height: 75px;
+          margin-left: 50px;
           display: flex;
           margin:0;
           justify-content: end;
           padding-bottom: 10%;
-      }
-      
-      .hamburgerIcon{
+      } .hamburgerIcon{
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          width: 2.0rem;
+          position: static;
+          width: 35px;
           height: 30px;
           padding-top: 57px;
           margin-right: 55px;
           z-index: 5;
-     }
-     
-     .hamburgerIcon span {
+     }.hamburgerIcon span {
           height: 0.25rem;
           width: 115%;
           background-color: #3676FF;
-      } 
-      
-      .hamburgerIcon:hover{
+      }.hamburgerIcon:hover{
           cursor: pointer; 
-      }
-      
-      #devLogo{
+      }#devLogo{
         display: flex;
         left: 0;
         justify-content: flex-start;
@@ -178,6 +155,14 @@ body{
         align-items: center;
   }
     /* HERO SECTION */
+    .heroContainer{
+      width: 100vw;
+      margin-top: 50%;
+      margin-bottom: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
     .straightHeadshot{
       width: 250px;
       transition: 0.5s ease-in;
@@ -221,6 +206,7 @@ body{
       padding-left: 60px;
       padding-right: 60px;
       padding-top: 15px;
+      margin-bottom: 100px;
     }#pTags{
       color: #3676FF;
       display: inline;
@@ -230,14 +216,17 @@ body{
       width: 100%;
       height: 140px;
       background-color: #E6E6E6;
-      position: absolute;
-      top: 850px;
+      position: relative;
+      top: 200px;
       left: 0;
       bottom: 0;
       right: 0;
       left: 0;
       width: 100%;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }#smallDevLogo{
       color: #3676FF;
       font-size: 25px;
@@ -252,9 +241,13 @@ body{
     }#linkedIn, #github, #goodreads{
       width: 20px;
       height: 20px;
-      padding-left: 5px;
-      padding-right: 5px;
-    }#ownershipTag{
+      display: flex;
+      justify-content: space-between;
+    }.icons a{
+      cursor: pointer;
+      margin: 8px;
+    }
+    #ownershipTag{
       font-size: 0.8em;
     }
   /* TEMP USAGE */
@@ -263,6 +256,34 @@ body{
   }
 }
 
+/* Primary Function --> Ensures Footer sticks to bottom */
+/* @media(min-width: 500px){
+  .footerContainer{
+    position: fixed;
+  }
+} */
+
+@media(min-width: 640px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Animations */
 
 @keyframes fade-out{
   from{
