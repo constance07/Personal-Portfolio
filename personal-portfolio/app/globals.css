@@ -1,10 +1,9 @@
 
-/*XXS*/
+/*Base Layout*/
 body{
   background-color: #161616;
-  margin: auto;
   overflow-y: hidden;
-  
+  margin: 0px;
   overflow-x: hidden;
   /* height: 0%; */
 }
@@ -21,10 +20,9 @@ body{
           overflow-x: hidden;
     }
 
-
-/*Media Queries*/
+/*Media Queries* --> Iphone and Tablets
   /*xs*/
-  @media (min-width: 0px){
+@media (min-width: 0px){
     /*HAMBURGER NAVIGATION BAR*/
       .hamburgerContainer{
         width:100%;
@@ -88,7 +86,6 @@ body{
         z-index: 6;
         animation: fade-in 0.25s;
       }.overlayFadeOut{
-        
         z-index: 6;
         animation: fade-out 0.25s;
       }
@@ -108,12 +105,14 @@ body{
           background-color: #3676FF;
           transform: translateY(-13px) rotate(45deg);
           cursor: pointer;
+          transition: 0.5s ease-out;
       } #close-Button span:nth-child(2){
           height: 5px;
           width: 44px;
           z-index: 5;
           background-color: #3676FF;
           transform: translateY(-18px) rotate(-45deg);
+           transition: 0.5s ease-out;
           cursor: pointer;
       }.hamburgerIconBackground{
           width: 300px;
@@ -133,6 +132,7 @@ body{
           padding-top: 57px;
           margin-right: 55px;
           z-index: 5;
+           transition: 0.5s ease-out;
      }.hamburgerIcon span {
           height: 0.25rem;
           width: 115%;
@@ -153,12 +153,13 @@ body{
         padding-left: 45px;
         font-size: 40px;
         align-items: center;
+        transition: 0.5s ease-out;
   }
     /* HERO SECTION */
     .heroContainer{
       width: 100vw;
-      margin-top: 50%;
-      margin-bottom: 50%;
+      margin-top: 10%;
+      margin-bottom: 0%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -182,6 +183,7 @@ body{
       flex-direction: column;
       text-align: center;
       margin-top: 10px;
+       transition: 0.5s ease-out;
     }#firstPartTitle{
       font-size: 1.25em;
       margin-bottom: 0px;
@@ -248,22 +250,134 @@ body{
       margin: 8px;
     }
     #ownershipTag{
-      font-size: 0.8em;
+      margin-top: 5px;
+      font-size: 0.7em;
     }
   /* TEMP USAGE */
   .navContainer{
     display: none;
   }
 }
-
-/* Primary Function --> Ensures Footer sticks to bottom */
-/* @media(min-width: 500px){
-  .footerContainer{
-    position: fixed;
-  }
-} */
-
+/*small*/
 @media(min-width: 640px){
+    /* NAVIGATION */
+      .hamburgerContainer li{
+          font-size: 1.7em;    
+          padding: 9px;
+      }#close-Button span:nth-child(1){
+          width: 48px;
+          transition: 0.5s ease-in;
+      } #close-Button span:nth-child(2){
+          width: 48px;
+          transition: 0.5s ease-in;
+      }.hamburgerIcon{
+          width: 42px;
+          height: 34px;
+          margin-right: 90px;
+          transition: 0.5s ease-in;
+      }#devLogo{
+        font-size: 50px;
+        margin-left: 25px;
+        transition: 0.5s ease-in;
+  }/* HERO */
+  .heroContainer{
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }.straightHeadshot{
+      width: 350px;
+      height: 350px;
+      margin-bottom: 50px;
+    }.title{
+      font-size: 1.6em;
+      margin-top: 5%;
+      transition: 0.5s ease-in;
+    }#firstPartTitle{
+      font-size: 1.1em;
+    }#secondPartTitle{
+      font-size: 1.5em;
+    }#thirdPartTitleA{
+      font-size: 1.5em;
+    }#personalDisc{
+      font-size: 1.3em;
+      margin-left: 18px;
+      margin-right: 18px;
+    }/* FOOTER */
+  .footerContainer{
+      top: 150px;
+      height: 155px;
+    }#smallDevLogo{
+      font-size: 28px;
+    }.icons{
+      height: 35px;
+    }#linkedIn, #github, #goodreads{
+      width: 22px;
+      height: 22px;
+    }.icons a{
+      margin: 10px;
+    }#ownershipTag{
+      font-size: 0.8em;
+    }
+}
+/*medium*/
+@media(min-width: 768px){
+  /* NAVIGATION */
+      .hamburgerContainer li{
+          font-size: 2.0em;    
+          padding: 10px;
+      }#close-Button span:nth-child(1){
+          width: 55px;
+      } #close-Button span:nth-child(2){
+          width: 55px;
+      }.hamburgerIcon{
+          width: 45px;
+          height: 36px;
+          margin-right: 90px;
+          transition: 0.5s ease-in;
+      }#devLogo{
+        font-size: 55px;
+        margin-left: 30px;
+  }/* HERO */
+  .heroContainer{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }.straightHeadshot{
+      width: 400px;
+      height: 400px;
+      margin-bottom: 50px;
+    }.title{
+      font-size: 2.0em;
+      margin-top: 5%;
+       transition: 0.5s ease-in;
+    }#firstPartTitle{
+      font-size: 1.1em;
+    }#secondPartTitle{
+      font-size: 1.5em;
+    }#thirdPartTitleA{
+      font-size: 1.5em;
+    }#personalDisc{
+      font-size: 1.5em;
+      margin-left: 50px;
+      margin-right: 50px;
+    }/* FOOTER */
+  .footerContainer{
+      top: 150px;
+      height: 160px;
+    }#smallDevLogo{
+      font-size: 30px;
+    }.icons{
+      height: 40px;
+    }#linkedIn, #github, #goodreads{
+      width: 25px;
+      height: 25px;
+    }.icons a{
+      margin: 10px;
+    }#ownershipTag{
+      font-size: 0.8em;
+    }
+}
+/*Media Query* --> Computer
+/*large(to inginity, and beyoooooooond)*/
+@media(min-width: 1024px){
 
 }
 
