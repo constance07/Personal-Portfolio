@@ -29,15 +29,17 @@ export default function Hero(){
             </Image>
             </div>
             {/* Introduction*/}
+            <div className='titleContainer'>
             <div className = 'title'>
                 <h3 id ='firstPartTitle' className= {be_Vietnam_Pro.className}>Hello, my name is</h3>
                 <h3 id ='secondPartTitle'className= {be_Vietnam_Pro.className}>Serenity Buckner.</h3>
                 <h3 id='thirdPartTitleA' className= {be_Vietnam_Pro.className}>I code with <div id='thirdPartTitleB' className={pixelify_Sans.className}> principle.</div></h3>
             </div>
             {/* Disc*/}
-            <p id = "personalDisc" className={be_Vietnam_Pro_VLight.className}> <span id = 'pTags' className={pixelify_Sans.className}>&lt;p&gt;</span> Etiam aliquam libero pretium magna vehicula, eu porta risus sollicitudin. 
+            <p id = "personalDisc" className={be_Vietnam_Pro_Light.className}> <span id = 'pTags' className={pixelify_Sans.className}>&lt;p&gt;</span> Etiam aliquam libero pretium magna vehicula, eu porta risus sollicitudin. 
                 Vivamus eleifend augue at massa dictum, nec maximus  . 
             Curabitur scelerisque euismod efficitur. <span id = 'pTags' className={pixelify_Sans.className}>&lt;/p&gt;</span></p>
+            </div>
         </div>
     )
 }

@@ -5,9 +5,13 @@ import {useState} from 'react';
 import '../globals.css';
 import { Pixelify_Sans } from 'next/font/google';
 
-const pixelify_Sans = Pixelify_Sans({
+const pixelify_SansBold = Pixelify_Sans({
     subsets: ["latin"],
-    weight: "400",
+    weight: "700",
+});
+const pixelify_SansSemiBold = Pixelify_Sans({
+    subsets: ["latin"],
+    weight: "500",
 });
 
 export default function Navigation(){
@@ -42,12 +46,12 @@ export default function Navigation(){
         
    }
     return(
-        <div className={pixelify_Sans.className}>
+        <div className={pixelify_SansBold.className}>
         {/*ON MOBILE*/}    
         <div className='blank'></div>
         {/*Hamburger Menu*/}
             <nav id = "navOpen" className="hamburgerContainer" >
-                <span id = "devLogo" className={pixelify_Sans.className}>SB</span>
+                <a className = "active-link" href ='/'><span id = "devLogoMobile" className={pixelify_SansBold.className}>SB</span></a>
                 {/*Collapsed*/}
                 <div className='hamburgerIconBackground'>
                     <div className = "hamburgerIcon" onClick={() => {
@@ -74,13 +78,12 @@ export default function Navigation(){
                                 enableScroll();
                                 disableOverlay();
                                 }}></span>
-                        </div>
+                        </div>personal-portfolio\app\about\page.tsx
                     {/*Pages*/}
-                        <a className = "active-link" href ='/'><li>.HOME( )</li></a>
-                        <a className = "active-link" href ='/'><li>.ABOUT ( )</li></a>
-                        <a className = "active-link" href ='/cards'><li>.WORK ( )</li></a>
-                        <a className = "active-link" href ="/about"><li>.BLOG ( )</li></a>
-                        <a className = "active-link" href ="/contact"><li>.CONTACT( )</li></a>
+                        <a className = "active-link" href ='../about/page.tsx'><li>.ABOUT ( )</li></a>
+                        <a className = "active-link" href ='../work/page.tsx'><li>.WORK ( )</li></a>
+                        <a className = "active-link" href ="../blog/page.tsx"><li>.BLOG ( )</li></a>
+                        <a className = "active-link" href ="../contact/page.tsx"><li>.CONTACT( )</li></a>
                     </ul>    
             </nav>
 
@@ -88,13 +91,13 @@ export default function Navigation(){
     {/*ON DESKTOP*/}   
         {/*Navigation Bar*/} 
         <nav className ='navContainer'>
+            <a className = "active-link" href ='/'><span id = "devLogo" className={pixelify_SansBold.className}>SB</span></a>
             <ul>
                 {/*Pages*/}
-                <a className = "active-link" href ='/'><li>.HOME( )</li></a>
-                    <a className = "active-link" href ='/'><li>.ABOUT ( )</li></a>
-                    <a className = "active-link" href ='/cards'><li>.WORK ( )</li></a>
-                    <a className = "active-link" href ="/about"><li>.BLOG ( )</li></a>
-                    <a className = "active-link" href ="/contact"><li>.CONTACT( )</li></a>
+                    <a className = "active-link" href ='../about/page.tsx'><li>.ABOUT ( )</li></a>
+                    <a className = "active-link" href ='../work/page.tsx'><li>.WORK ( )</li></a>
+                    <a className = "active-link" href ="../blog/page.tsx"><li>.BLOG ( )</li></a>
+                    <a className = "active-link" href ="../contact/page.tsx"><li>.CONTACT( )</li></a>
             </ul>
         </nav>  
         </div>
