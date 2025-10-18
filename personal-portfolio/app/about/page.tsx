@@ -6,7 +6,7 @@ import Footer from "../components/footer";
 
 import {Pixelify_Sans} from 'next/font/google';
 
-export default function Home() {
+export default function AboutPage() {
 
   return (
   <>

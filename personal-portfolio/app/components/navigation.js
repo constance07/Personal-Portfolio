@@ -45,6 +45,11 @@ export default function Navigation(){
             }, 200)
         
    }
+   {/* Active Link */}
+   const enableActiveAboutLink= () => {
+        const aboutActive = parent.document.querySelector("li.activeAbout");
+        aboutActive.style.color = 'blue';
+   }
     return(
         <div className={pixelify_SansBold.className}>
         {/*ON MOBILE*/}    
@@ -78,12 +83,12 @@ export default function Navigation(){
                                 enableScroll();
                                 disableOverlay();
                                 }}></span>
-                        </div>personal-portfolio\app\about\page.tsx
+                        </div>
                     {/*Pages*/}
-                        <a className = "active-link" href ='../about/page.tsx'><li>.ABOUT ( )</li></a>
-                        <a className = "active-link" href ='../work/page.tsx'><li>.WORK ( )</li></a>
-                        <a className = "active-link" href ="../blog/page.tsx"><li>.BLOG ( )</li></a>
-                        <a className = "active-link" href ="../contact/page.tsx"><li>.CONTACT( )</li></a>
+                        <a className = "active-link" href ='../about'><li>.ABOUT ( )</li></a>
+                        <a className = "active-link" href ='../work'><li>.WORK ( )</li></a>
+                        <a className = "active-link" href ="../blog/"><li>.BLOG ( )</li></a>
+                        <a className = "active-link" href ="../contact/"><li>.CONTACT( )</li></a>
                     </ul>    
             </nav>
 
@@ -91,13 +96,13 @@ export default function Navigation(){
     {/*ON DESKTOP*/}   
         {/*Navigation Bar*/} 
         <nav className ='navContainer'>
-            <a className = "active-link" href ='/'><span id = "devLogo" className={pixelify_SansBold.className}>SB</span></a>
+            <a href ='/'><span id = "devLogo" className={pixelify_SansBold.className}>SB</span></a>
             <ul>
                 {/*Pages*/}
-                    <a className = "active-link" href ='../about/page.tsx'><li>.ABOUT ( )</li></a>
-                    <a className = "active-link" href ='../work/page.tsx'><li>.WORK ( )</li></a>
-                    <a className = "active-link" href ="../blog/page.tsx"><li>.BLOG ( )</li></a>
-                    <a className = "active-link" href ="../contact/page.tsx"><li>.CONTACT( )</li></a>
+                    <a href ='../about'><li className = "activeAbout" >.ABOUT ( )</li></a>
+                    <a href ='../work'><li id = "activeWork">.WORK ( )</li></a>
+                    <a href ="../blog"><li id = "activeWork">.BLOG ( )</li></a>
+                    <a href ="../contact"><li id = "activeContact">.CONTACT( )</li></a>
             </ul>
         </nav>  
         </div>

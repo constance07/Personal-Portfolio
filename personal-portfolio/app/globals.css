@@ -63,7 +63,7 @@ body{
         transition: 0.15s;
         cursor: pointer;
       }.hamburgerContainer li:active{
-        color: #1f4cae;
+        color: #2558c7;
         transition: 0.15s;
       }
       .hamburgerContainer a{
@@ -129,7 +129,7 @@ body{
           justify-content: space-between;
           position: absolute;
           width: 35px;
-          height: 30px;
+          height: 31px;
           padding-top: 15px;
           margin-right: 55px;
           top: 65px;
@@ -273,7 +273,7 @@ body{
           transition: 0.5s ease-in;
       }.hamburgerIcon{
 top: 68px;
-          height: 32px;
+          height: 34px;
           margin-right: 75px;
           transition: 0.5s ease-in;
 
@@ -335,7 +335,7 @@ top: 68px;
           width: 55px;
       }.hamburgerIcon{
           width: 45px;
-          height: 36px;
+          height: 35px;
           top: 75px;
           margin-right: 55px;
           transition: 0.5s ease-in;
@@ -446,9 +446,10 @@ top: 68px;
         flex-direction: row;
       }
     .navContainer li:active{
-        color:#cec2ae;
+        color: #2558c7;
         transition: color 0.25s;
-      }.hamburgerIcon{
+    }
+    .hamburgerIcon{
         display: none;
       }
     /* HERO SECTION */
@@ -622,9 +623,8 @@ top: 68px;
         flex-direction: row;
       }
     .navContainer li:active{
-        color:#cec2ae;
         transition: color 0.25s;
-      }.hamburgerIcon{
+    } .hamburgerIcon{
         display: none;
       }
     /* HERO SECTION */
