@@ -85,10 +85,11 @@ export default function Navigation(){
                                 }}></span>
                         </div>
                     {/*Pages*/}
-                        <a className = "active-link" href ='../about'><li>.ABOUT ( )</li></a>
-                        <a className = "active-link" href ='../work'><li>.WORK ( )</li></a>
-                        <a className = "active-link" href ="../blog/"><li>.BLOG ( )</li></a>
-                        <a className = "active-link" href ="../contact/"><li>.CONTACT( )</li></a>
+                        <a href ='../home'><li>.Home ( )</li></a>
+                        <a href ='../about'><li>.About ( )</li></a>
+                        <a href ='../work'><li>.Work ( )</li></a>
+                        <a href ="../blog/"><li>.Blog ( )</li></a>
+                        <a href ="../contact/"><li>.Contact( )</li></a>
                     </ul>    
             </nav>
 
@@ -99,10 +100,11 @@ export default function Navigation(){
             <a href ='/'><span id = "devLogo" className={pixelify_SansBold.className}>SB</span></a>
             <ul>
                 {/*Pages*/}
-                    <a href ='../about'><li className = "activeAbout" >.ABOUT ( )</li></a>
-                    <a href ='../work'><li id = "activeWork">.WORK ( )</li></a>
-                    <a href ="../blog"><li id = "activeWork">.BLOG ( )</li></a>
-                    <a href ="../contact"><li id = "activeContact">.CONTACT( )</li></a>
+                        <a className = "active-link" href ='../home'><li>.Home ( )</li></a>
+                        <a className = "active-link" href ='../about'><li>.About ( )</li></a>
+                        <a className = "active-link" href ='../work'><li>.Work ( )</li></a>
+                        <a className = "active-link" href ="../blog/"><li>.Blog ( )</li></a>
+                        <a className = "active-link" href ="../contact/"><li>.Contact( )</li></a>
             </ul>
         </nav>  
         </div>

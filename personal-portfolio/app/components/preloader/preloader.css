@@ -1,7 +1,10 @@
+@media(min-width:1024px){
+
+}
 .preLoader{
     height: 100vh;
     width: 100vw;
-    position: fixed;
+    position: absolute;
     background-color: #161616;
     color: #3676FF;
     display: flex;

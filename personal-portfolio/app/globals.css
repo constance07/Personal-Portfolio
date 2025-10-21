@@ -136,7 +136,7 @@ body{
           z-index: 5;
            transition: 0.5s ease-out;
      }.hamburgerIcon span {
-          height: 3.50px;
+          height: 3.3px;
           width: 40px;
           background-color: #3676FF;
       }.hamburgerIcon:hover{
@@ -167,7 +167,7 @@ body{
       justify-content: center;
     }
     .straightHeadshot{
-      width: 250px;
+      width: 350px;
       transition: 0.5s ease-in;
     }.headshotContainer{
       width: 100%;
@@ -272,7 +272,7 @@ body{
           width: 48px;
           transition: 0.5s ease-in;
       }.hamburgerIcon{
-top: 68px;
+        top: 68px;
           height: 34px;
           margin-right: 75px;
           transition: 0.5s ease-in;
@@ -280,6 +280,7 @@ top: 68px;
       }.hamburgerIcon span{
         margin-top: 0px;
       width: 45px;
+      height: 3.6;
       }#devLogoMobile{
         font-size: 48px;
         margin-left: 25px;
@@ -349,14 +350,18 @@ top: 68px;
   .heroContainer{
     margin-top: 10%;
     margin-bottom: 10%;
+    margin-right: 0px;
   }.straightHeadshot{
       width: 400px;
+      margin-right: 0px;
+      margin-left: 0px;
       height: 400px;
       margin-bottom: 50px;
     }.title{
       font-size: 2.0em;
       margin-top: 5%;
        transition: 0.5s ease-in;
+       margin-right: 0px;
     }#firstPartTitle{
       font-size: 1.1em;
     }#secondPartTitle{
@@ -366,7 +371,7 @@ top: 68px;
     }#personalDisc{
       font-size: 1.5em;
       margin-left: 50px;
-      margin-right: 50px;
+      margin-right: 0px;
     }/* FOOTER */
   .footerContainer{
       top: 150px;
@@ -388,6 +393,14 @@ top: 68px;
 /*large(to inginity, and beyoooooooond)*/
 @media(min-width: 1024px){
 /*NAVIGATION BAR*/
+/* body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
     .hamburgerContainer{
       display: none;
     }
@@ -395,32 +408,33 @@ top: 68px;
     #devLogo{
         display: inline-block;
         left: 0;
-        justify-content: flex-end;
+        justify-content: flex-start;
         width: 50px;
         height: 10px;
         z-index: 5;
         color: #3676FF;
-        padding-left: 70px;
+        display: none;
         font-size: 35px;
         align-items: center;
         transition: 0.5s ease-out;
     }.navContainer{
         display: flex;
-        top: 42px;
-        width: 100%;
+        top: 52px;
+        width: 800px;
+        justify-content: center;
         color: #FBEED7;
-        position: relative;
+        padding-bottom: 200px;
+       position: relative;
         flex-direction: row;
-        margin-top: 0px;
+        margin-top: 50px;
+        margin: auto;
         align-items: flex-start;
     }.navContainer ul{
         align-items: flex-end;
         color: #FBEED7;
         display: flex;
-        width: 95vw;
         right: 0px;
         justify-content: flex-end;
-        margin-right: 65px;
     }.navContainer li{      
         list-style: none;
         display: flex;
@@ -454,22 +468,23 @@ top: 68px;
       }
     /* HERO SECTION */
     .heroContainer{
-      width: 100vw;
-      margin-top: 15%;
+      width: 900px;
+      margin-top: 50px;
+      position: absolute;
       margin-bottom: 0%;
       display: flex;
       flex-direction: row-reverse;
       justify-content: center;
-      
+      position: relative;
+      margin: auto;
     }
     .straightHeadshot{
-      width: 400px;
-      height: 400px;
+      width: 375px;
+      height: 375px;
       transition: 0.5s ease-out;
     }.headshotContainer{
       width: 100%;
       display: flex;
-      margin-right: 70px;
       justify-content: center;
       align-items: center;
       margin-top: 0px;
@@ -486,28 +501,27 @@ top: 68px;
       margin-top: 40px;
       transition: 0.5s ease-out;
     }.titleContainer{
-      margin-left: 125px;
-      margin-right: 50px;
+
       margin-bottom: 125px;
       
     }
     #firstPartTitle{
-      font-size: 0.8em;
+      font-size: 0.7em;
       margin-bottom: 0px;
       margin-top: 40px;
     }#secondPartTitle{
-      font-size: 1.3em;
+      font-size: 1.2em;
       margin-top: 0px;
       margin-bottom: 0px;
     }#thirdPartTitleA{
-      font-size: 1.3em;
+      font-size: 1.2em;
       margin-top: 0px;
       color: #3F3F3F;
       margin-bottom: 0px;
     }#thirdPartTitleB{
       display: inline;
       margin-top: 0px;
-      font-size: 1.1em;
+      font-size: 1.0em;
       color: #3676FF;
     }#personalDisc{
       color: #FFFFFF;
@@ -566,40 +580,43 @@ top: 68px;
     }
 
 }
+/* 1350*/
 @media(min-width: 1280px){
+  
   .hamburgerContainer{
       display: none;
     }
     #devLogoMobile{display: none}
     #devLogo{
-        display: inline-block;
-        left: 0;
-        justify-content: flex-end;
-        width: 50px;
-        height: 10px;
+        display: flex;
+        left: 0px;
+        
+
+        width: 100%;
+        height: 50px;
         z-index: 5;
         color: #3676FF;
-        padding-left: 70px;
+        
         font-size: 40px;
-        align-items: center;
         transition: 0.5s ease-out;
     }.navContainer{
         display: flex;
         top: 42px;
-        width: 100%;
+        width: 1350px;
+   
         color: #FBEED7;
         position: relative;
         flex-direction: row;
-        margin-top: 0px;
+        justify-content: flex-start;
         align-items: flex-start;
     }.navContainer ul{
         align-items: flex-end;
         color: #FBEED7;
         display: flex;
-        width: 95vw;
+        width: 70vw;
         right: 0px;
         justify-content: flex-end;
-        margin-right: 57px;
+    
     }.navContainer li{      
         list-style: none;
         color: #FFFFFF;
@@ -629,7 +646,7 @@ top: 68px;
       }
     /* HERO SECTION */
     .heroContainer{
-      width: 100vw;
+      width: 1350px;
       margin-top: 100px;
       margin-bottom: 0%;
       display: flex;
@@ -644,11 +661,9 @@ top: 68px;
     }.headshotContainer{
       width: 100%;
       display: flex;
-      margin-right: 80px;
       justify-content: center;
       align-items: center;
       margin-top: 50px;
-      
     }.straightHeadshot:hover{
       transform: scale(1.04);
       transition: 0.5s ease-in;
@@ -663,34 +678,32 @@ top: 68px;
       transition: 0.5s ease-out;
     }.titleContainer{
       margin-top: 50px;
-      margin-left: 125px;
-      margin-right: 60px;
       margin-bottom: 125px;
     }
     #firstPartTitle{
-      font-size: 0.9em;
+      font-size: 1.0em;
       margin-bottom: 0px;
       margin-top: 40px;
     }#secondPartTitle{
-      font-size: 1.5em;
+      font-size: 1.6em;
       margin-top: 0px;
       margin-bottom: 0px;
     }#thirdPartTitleA{
-      font-size: 1.5em;
+      font-size: 1.6em;
       margin-top: 0px;
       color: #3F3F3F;
       margin-bottom: 0px;
     }#thirdPartTitleB{
       display: inline;
       margin-top: 0px;
-      font-size: 1.0em;
+      font-size: 1.1em;
       color: #3676FF;
     }#personalDisc{
       color: #FFFFFF;
       text-align: start;
       padding-left: 0px;
       margin: 0px;
-      font-size: 20px;
+      font-size: 22.5px;
       padding-right: 0px;
       
       margin-bottom: 0px;
@@ -703,14 +716,12 @@ top: 68px;
     .footerContainer{
       width: 100%;
       height: 140px;
-      background-color: #E6E6E6;
-      position: relative;
-      top: 200px;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      width: 100%;
+      
+      position: fixed;
+top: unset;
+      bottom: 0px;
+ 
+   
       text-align: center;
       display: flex;
       flex-direction: column;

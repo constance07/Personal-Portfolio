@@ -1,4 +1,3 @@
-'use client'
 /*Functionality Imports */
 import Image from 'next/image';
 import straightHeadshot from '@/app/images/straightHeadshot.jpg'
@@ -21,8 +20,8 @@ export default function Hero(){
             <div className='headshotContainer'>
                 <Image
                     src = {straightHeadshot}
-                    width={250}
-                    height={250}
+                    width={350}
+                    height={350}
                     alt = 'Headshot of Serenity'
                     quality = {100}
                     className='straightHeadshot'>

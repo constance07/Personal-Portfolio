@@ -14,14 +14,16 @@ export default function PreLoader(){
         useEffect(() => {
             const logoContainer= document.querySelector(".preLoader")
             const logoText = document.querySelector(".texts-container")
+            const body =document.body;
             setTimeout(() => {
                 /* Fade Out */
                 logoContainer.classList.add("fadeOut")
                 logoText.classList.add("fadeOut")
+                
                     /* Delete Element */
                     setTimeout(() => {
                         logoContainer.remove();
-                        logoText.remove();
+                        logoText.remove();;
                         document.body.classList.add("overflowShow")
                     }, 800)
             }, 2500)

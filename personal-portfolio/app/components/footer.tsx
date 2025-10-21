@@ -1,4 +1,3 @@
-'use client'
 /*Functionality Imports */
 import {useState} from 'react';
 import Image from 'next/image';
