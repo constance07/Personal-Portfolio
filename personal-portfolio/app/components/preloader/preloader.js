@@ -25,7 +25,7 @@ export default function PreLoader(){
                         logoContainer.remove();
                         logoText.remove();;
                         document.body.classList.add("overflowShow")
-                    }, 800)
+                    }, 750)
             }, 2500)
         }, [])
 

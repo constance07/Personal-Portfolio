@@ -96,17 +96,21 @@ export default function Navigation(){
 
     {/*ON DESKTOP*/}   
         {/*Navigation Bar*/} 
+        <div className='placeHolderNav'>
         <nav className ='navContainer'>
             <a href ='/'><span id = "devLogo" className={pixelify_SansBold.className}>SB</span></a>
-            <ul>
+            <ul className='navList'>
                 {/*Pages*/}
-                        <a className = "active-link" href ='../home'><li>.Home ( )</li></a>
-                        <a className = "active-link" href ='../about'><li>.About ( )</li></a>
+                        <a className = "active" href ='../home'><li>.Home ( )</li></a>
+                        <a className = "active" href ='../about'><li>.About ( )</li></a>
                         <a className = "active-link" href ='../work'><li>.Work ( )</li></a>
                         <a className = "active-link" href ="../blog/"><li>.Blog ( )</li></a>
                         <a className = "active-link" href ="../contact/"><li>.Contact( )</li></a>
-            </ul>
+            </ul> 
         </nav>  
+        <div className='navBackgroundContainer'>
+        <div className='navBackground'></div></div>
+        </div>
         </div>
     )
        
