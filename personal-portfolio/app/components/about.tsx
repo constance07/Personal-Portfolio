@@ -1,6 +1,3 @@
-/*Functionality Imports */
-import Image from 'next/image';
-import straightHeadshot from '@/app/images/straightHeadshot.jpg'
 /*Styled Imports*/
 import '../globals.css';
 import { Pixelify_Sans } from 'next/font/google';
@@ -16,7 +13,7 @@ export default function About(){
         <>
             <div className="aboutContainer">
                 <h1 id ="aboutTitle" className={be_Vietnam_Pro.className}>
-                <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;h1&gt;</div> GET TO KNOW <div id = 'meTag' className={pixelify_Sans_Bold.className}> ME </div> ! <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div></h1> 
+                <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;h1&gt;</div> GET TO KNOW <div id = 'blueTag' className={pixelify_Sans_Bold.className}> ME </div> ! <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div></h1> 
                 <div id ='aboutDisc' className={be_Vietnam_Pro_Light.className}>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 

@@ -219,8 +219,8 @@ body{
     /*ABOUT SECTION*/
     .aboutContainer{
       margin: auto;
-      width: 100vw;
-      height: 1025px;
+      width: 100%;
+      height: 950px;
       background-color: #3F3F3F;
       display: flex;
       align-items: center;
@@ -232,24 +232,56 @@ body{
     }
     #h1Tags{
       color: #3676FF;
-      font-size: 1.0em;
+      font-size: 1.2em;
       display: inline-block;
     }#aboutTitle{
       color: #FFFFFF;
       margin-top: 150px;
       font-size: 1.7em;
       display: inline-block;
-    }#meTag{
+    }#blueTag{
      color:#3676FF;
-     font-size: 1.2em;
-    
+     font-size: 1.3em;
      display: inline-block;
     }
     /*WORK CONTAINER*/
     .workContainer{
+      margin: auto;
       width: 100%;
-      height: 2000px;
+      height: 1025px;
       background-color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }#workTitle{
+      margin: 50px;
+      font-size: 1.7em;
+      text-align: center;
+    }.displayContainer{
+      width: 75%;
+      height: 275px;
+      border-radius: 25px;
+      background-color: #252424;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+    }.displayBackground{
+      width: 96%;
+      margin:0px;
+      height: 260px;
+      border-radius: 18px;
+      background: #10285B;
+      background: linear-gradient(180deg
+      ,rgba(16, 40, 91, 1) 0%,
+      rgba(41, 92, 200, 1) 55%,
+      rgba(54, 118, 255, 1) 90%);
+    }#displayTitle{
+      position:absolute;
+      color: #FFFFFF;
+      text-align: start;
+      width: fit-content; 
     }
     /* FOOTER SECTION */
     .footerContainer{
@@ -459,7 +491,6 @@ body{
         top: 52px;
         width: 97%;
         justify-content: center;
-        color: #cc860c;
         padding-bottom: 200px;
         position: fixed;
         z-index: 300;
@@ -476,6 +507,9 @@ body{
         backdrop-filter: blur(25px);
         padding-right:35px;
         height: 20px;
+        border-width: 1px;
+        border-style:solid;
+        border-color: #ffffff21;
         border-radius: 50px;;
         align-items: center;
         justify-content: flex-end;
