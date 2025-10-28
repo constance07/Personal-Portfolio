@@ -220,7 +220,7 @@ body{
     .aboutContainer{
       margin: auto;
       width: 100%;
-      height: 950px;
+      height: 1025px;
       background-color: #3F3F3F;
       display: flex;
       align-items: center;
@@ -255,34 +255,78 @@ body{
       flex-direction: column;
     }#workTitle{
       margin: 50px;
+      margin-top: 150px;
       font-size: 1.7em;
       text-align: center;
     }.displayContainer{
       width: 75%;
-      height: 275px;
-      border-radius: 25px;
-      background-color: #252424;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-      overflow: hidden;
     }.displayBackground{
       width: 96%;
       margin:0px;
-      height: 260px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      margin-left: 7px;;
+      margin-right: 7px;;
+      height: 90%;
       border-radius: 18px;
+      border-width: 5px;;
+      border-style: solid;
+      border-color: #161616;
       background: #10285B;
       background: linear-gradient(180deg
       ,rgba(16, 40, 91, 1) 0%,
       rgba(41, 92, 200, 1) 55%,
       rgba(54, 118, 255, 1) 90%);
+      transition: background 0.5s ease-out;
+    }.displayBackground:hover{
+      background: linear-gradient(180deg
+      ,rgb(10, 26, 60) 0%,
+      rgb(33, 73, 159) 55%,
+      rgb(36, 80, 175) 90%);
+      transition: background 0.5s ease-in;
+      cursor: pointer;
+    }.displayBackground:hover > #WGTT{
+      transform: translateY(-5px);
+      transition: 0.22s ease-in;
     }#displayTitle{
       position:absolute;
       color: #FFFFFF;
       text-align: start;
+      padding: 25px;
       width: fit-content; 
+    }#displayDisc{
+      color:#FFFFFF;
+      width: fit-content;
+      margin-top: 25px;
+      font-size: 0.8em;
+      padding: 25px;
+    }#WGTT{
+      margin:auto;
+      border-radius: 15px 15px 0 0;
+      margin-bottom: 0px;
+      width: 80%;
+      height: 80%;
+      background-color: #3676FF;
+      transition: 0.22s ease-out;
+    }#resumeTitle{
+      margin: 50px;
+      margin-top:25px;
+      text-align: center;
+    }#resumeLinkA{
+      display: inline-block;
+      font-size: 1.1em;
+    }#resumeLinkB{
+      display: inline-block;
+      color: #3676FF;
+      text-decoration: none;
+    }#resumeLinkB:hover{
+      text-decoration: underline;
+      text-decoration-color: #3676FF;
+      text-decoration-style: solid;
+      text-decoration-thickness: 2.0px;
     }
+    
     /* FOOTER SECTION */
     .footerContainer{
       width: 100%;
@@ -869,19 +913,6 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Animations */
 
 @keyframes fade-out{
@@ -901,4 +932,15 @@ body{
        opacity: 100%;
        transition: 5.5 ease-in;
     }
+}
+@keyframes animeGradientIn{
+  from{
+      background: linear-gradient(180deg
+      ,rgba(16, 40, 91, 1) 0%,
+      rgba(41, 92, 200, 1) 55%,
+      rgba(54, 118, 255, 1) 90%);
+  }
+  to{
+    
+  }
 }
