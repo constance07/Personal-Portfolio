@@ -23,6 +23,7 @@ export default function Work(){
                 <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div></h1> 
                 
                 <div className='displayContainer'>
+                    <a id ="wgttLink" href = "https://wevegottotalk.net/">
                     <div className='displayBackground'>
                     <div id="displayTitle" className={be_Vietnam_Pro.className}>We've Got To Talk</div>
                     <div id="displayDisc" className={be_Vietnam_Pro_Light.className}>A card game promoting self-love beyond external labels and obligation through a cycle think, act, and action prompts. </div>
@@ -33,8 +34,19 @@ export default function Work(){
                         quality={40}
                         ></Image>
                     </div>
+                    </a>
                 </div>
-                <div id="resumeTitle" className={be_Vietnam_Pro_Light.className}>Want to know about the other cool things I do?<div id = "resumeLinkA" className={pixelify_Sans.className}> Check out my resume <a href = "https://docs.google.com/document/d/1joId81v81lhTnqoQxQcvKa-fOUb8AgJDw6EbUtR1-xs/edit?usp=sharing" id = "resumeLinkB" className={pixelify_Sans.className}>here</a></div>.</div>
+                <div id="resumeTitle" className={be_Vietnam_Pro_Light.className}>Want to know about the other cool things I do?<br></br><div id = "resumeLinkA" className={pixelify_Sans.className}> Check out my resume <a href = "https://docs.google.com/document/d/1joId81v81lhTnqoQxQcvKa-fOUb8AgJDw6EbUtR1-xs/edit?usp=sharing" id = "resumeLinkB" className={pixelify_Sans.className}>here</a></div>.</div>
+                <h2 id ="skillsTitle" className={be_Vietnam_Pro.className}>
+                    <div className='skillsSection'></div>
+                    <div id = 'h2Tags' className={pixelify_Sans_Bold.className}>&lt;h2&gt;</div> SKILLS <div id = 'h2Tags' className={pixelify_Sans_Bold.className}>&lt;/h2&gt;</div>
+                </h2>
+                <div id='techStack' className={be_Vietnam_Pro_Light.className}>
+                    <div id = 'techItem'>JavaScript</div><div id = 'techItem'>Python</div><div id = 'techItem'>Java</div><div id = 'techItem'>C</div>
+                    <div id = 'techItem'>HTML</div><div id = 'techItem'>CSS</div><div id = 'techItem'>React</div><div id = 'techItem'>Next.js</div>
+                    <div id = 'techItem'>Chakra UI</div><div id = 'techItem'>Git</div><div id = 'techItem'>Vercel</div><div id = 'techItem'>Figma</div>
+                    
+                </div>
             </div>
         </>
     )

@@ -220,11 +220,13 @@ body{
     .aboutContainer{
       margin: auto;
       width: 100%;
-      height: 1025px;
+      height: fit-content;
       background-color: #3F3F3F;
       display: flex;
+      text-align: center;
       align-items: center;
       flex-direction: column;
+      padding-bottom: 18%;
     }#aboutDisc{
       margin: 50px;
       color: #FFFFFF;
@@ -232,12 +234,12 @@ body{
     }
     #h1Tags{
       color: #3676FF;
-      font-size: 1.2em;
+      font-size: 1.0em;
       display: inline-block;
     }#aboutTitle{
       color: #FFFFFF;
       margin-top: 150px;
-      font-size: 1.7em;
+      font-size: 1.6em;
       display: inline-block;
     }#blueTag{
      color:#3676FF;
@@ -248,7 +250,7 @@ body{
     .workContainer{
       margin: auto;
       width: 100%;
-      height: 1025px;
+      height: 1425px;
       background-color: #FFFFFF;
       display: flex;
       align-items: center;
@@ -256,35 +258,29 @@ body{
     }#workTitle{
       margin: 50px;
       margin-top: 150px;
-      font-size: 1.7em;
+      font-size: 1.6em;
       text-align: center;
     }.displayContainer{
       width: 75%;
+      overflow: hidden;
     }.displayBackground{
-      width: 96%;
+      width: 95%;
       margin:0px;
       display: flex;
       flex-direction: column;
       overflow: hidden;
       margin-left: 7px;;
-      margin-right: 7px;;
+      margin-right: 7px;
       height: 90%;
       border-radius: 18px;
       border-width: 5px;;
       border-style: solid;
       border-color: #161616;
-      background: #10285B;
-      background: linear-gradient(180deg
-      ,rgba(16, 40, 91, 1) 0%,
-      rgba(41, 92, 200, 1) 55%,
-      rgba(54, 118, 255, 1) 90%);
-      transition: background 0.5s ease-out;
+      background: #3676FF;
+      transition: background 0.22s ease-out;
     }.displayBackground:hover{
-      background: linear-gradient(180deg
-      ,rgb(10, 26, 60) 0%,
-      rgb(33, 73, 159) 55%,
-      rgb(36, 80, 175) 90%);
-      transition: background 0.5s ease-in;
+      background: #2558c7;
+      transition: background 0.22s ease-in;
       cursor: pointer;
     }.displayBackground:hover > #WGTT{
       transform: translateY(-5px);
@@ -305,12 +301,14 @@ body{
       margin:auto;
       border-radius: 15px 15px 0 0;
       margin-bottom: 0px;
-      width: 80%;
-      height: 80%;
+      width: 82%;
+      height: 70%;
+      z-index: 30;
       background-color: #3676FF;
       transition: 0.22s ease-out;
+    }#wgttLink{
+      text-decoration: none;
     }#resumeTitle{
-      margin: 50px;
       margin-top:25px;
       text-align: center;
     }#resumeLinkA{
@@ -320,11 +318,43 @@ body{
       display: inline-block;
       color: #3676FF;
       text-decoration: none;
+      
     }#resumeLinkB:hover{
       text-decoration: underline;
       text-decoration-color: #3676FF;
       text-decoration-style: solid;
       text-decoration-thickness: 2.0px;
+    }#h2Tags{
+      font-size: 0.8em;
+      color: #3676FF;
+      display: inline-block;
+      margin-top: 0px;
+    }#skillsTitle{
+      display: inline-block;
+      text-align: center;
+      font-size: 1.6em;
+      margin-top: 100px;
+    }#techStack{
+      width: 80%;
+      margin-top: 0%;
+      height: 400px;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin-top: 50px;
+      overflow: hidden;
+
+    }#techItem{
+      text-align: center;
+      width: 100px;
+      height: 20px;
+      background-color: #3F3F3F;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 15px;
+      color: white;
+      margin-top: 0px;
     }
     
     /* FOOTER SECTION */
