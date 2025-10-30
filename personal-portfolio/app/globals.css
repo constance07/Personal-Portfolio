@@ -250,7 +250,7 @@ body{
     .workContainer{
       margin: auto;
       width: 100%;
-      height: 1425px;
+      height: 1950px;
       background-color: #FFFFFF;
       display: flex;
       align-items: center;
@@ -264,7 +264,7 @@ body{
       width: 75%;
       overflow: hidden;
     }.displayBackground{
-      width: 95%;
+      width: 93%;
       margin:0px;
       display: flex;
       flex-direction: column;
@@ -325,7 +325,7 @@ body{
       text-decoration-style: solid;
       text-decoration-thickness: 2.0px;
     }#h2Tags{
-      font-size: 0.8em;
+      font-size: 0.9em;
       color: #3676FF;
       display: inline-block;
       margin-top: 0px;
@@ -335,9 +335,9 @@ body{
       font-size: 1.6em;
       margin-top: 100px;
     }#techStack{
-      width: 80%;
+      width: 90%;
       margin-top: 0%;
-      height: 400px;
+      height: 900px;
       flex-wrap: wrap;
       display: flex;
       justify-content: center;
@@ -348,13 +348,27 @@ body{
     }#techItem{
       text-align: center;
       width: 100px;
-      height: 20px;
+      height: 75px;
       background-color: #3F3F3F;
-      border-radius: 5px;
-      padding: 10px;
+      border-radius: 10px;
+      padding: 20px;
       margin: 15px;
       color: white;
+      font-size: 1em;
       margin-top: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;  
+
+    }.skillItem{
+      padding-bottom: 10px;
+       transition:0.22s ease-out;
+    }#techItem:hover > .skillItem{
+      transform: translateY(-5px);
+      transition:0.22s ease-in;
+    }#techItem:hover{
+      background-color: #5f5f5f;
     }
     
     /* FOOTER SECTION */

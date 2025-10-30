@@ -13,6 +13,20 @@ import { Be_Vietnam_Pro} from 'next/font/google';
 {/*Light*/}const be_Vietnam_Pro_Light = Be_Vietnam_Pro({subsets: ['latin'], weight: '300'})
 {/*VLight*/}const be_Vietnam_Pro_VLight = Be_Vietnam_Pro({subsets: ['latin'], weight: '200'})
 import WGTT from '@/app/images/WGTT.jpg';
+/* Icon Imports */
+import js from '@/app/images/skills/js.jpg';
+import python from '@/app/images/skills/python.jpg';
+import java from '@/app/images/skills/java.jpg';
+import C from  '@/app/images/skills/C.jpg';
+import html from '@/app/images/skills/html.jpg';
+import css from '@/app/images/skills/css.jpg';
+import react from '@/app/images/skills/react.jpg';
+import next from  '@/app/images/skills/next.jpg';
+import chakra from '@/app/images/skills/chakra.jpg';
+import git from '@/app/images/skills/git.jpg';
+import vercel from '@/app/images/skills/vercel.jpg';
+import figma from '@/app/images/skills/figma.jpg';
+
 export default function Work(){
     
     return(
@@ -26,7 +40,7 @@ export default function Work(){
                     <a id ="wgttLink" href = "https://wevegottotalk.net/">
                     <div className='displayBackground'>
                     <div id="displayTitle" className={be_Vietnam_Pro.className}>We've Got To Talk</div>
-                    <div id="displayDisc" className={be_Vietnam_Pro_Light.className}>A card game promoting self-love beyond external labels and obligation through a cycle think, act, and action prompts. </div>
+                    <div id="displayDisc" className={be_Vietnam_Pro_Light.className}>A card game promoting self-love beyond external labels and obligation through a cycle of 'think', 'act', and 'action' prompts. </div>
                     <Image
                         src = {WGTT}
                         alt = 'Weve Got To Talk Image'
@@ -42,10 +56,140 @@ export default function Work(){
                     <div id = 'h2Tags' className={pixelify_Sans_Bold.className}>&lt;h2&gt;</div> SKILLS <div id = 'h2Tags' className={pixelify_Sans_Bold.className}>&lt;/h2&gt;</div>
                 </h2>
                 <div id='techStack' className={be_Vietnam_Pro_Light.className}>
-                    <div id = 'techItem'>JavaScript</div><div id = 'techItem'>Python</div><div id = 'techItem'>Java</div><div id = 'techItem'>C</div>
-                    <div id = 'techItem'>HTML</div><div id = 'techItem'>CSS</div><div id = 'techItem'>React</div><div id = 'techItem'>Next.js</div>
-                    <div id = 'techItem'>Chakra UI</div><div id = 'techItem'>Git</div><div id = 'techItem'>Vercel</div><div id = 'techItem'>Figma</div>
-                    
+                    <div id = 'techItem'>
+                        <Image
+                        src = {js}
+                        width={30}
+                        height={32}
+                        alt = 'Javascript jpg'
+                        quality = {100}
+                        id = "jsItem"
+                        className='skillItem'>
+                        </Image>
+                    JavaScript</div>
+
+                    <div id = 'techItem'>
+                        <Image
+                        src = {python}
+                        width={30}
+                        height={32}
+                        alt = 'Python jpg'
+                        quality = {100}
+                        className='skillItem'>
+                        </Image>
+                    Python</div>
+                   
+                    <div id = 'techItem'>
+                        <Image
+                        src = {java}
+                        width={30}
+                        height={32}
+                        alt = 'Java jpg'
+                        quality = {100}
+                        className='skillItem'>
+                        </Image>
+                    Java</div>
+
+                    <div id = 'techItem'>
+                        <Image
+                        src = {C}
+                        width={30}
+                        height={32}
+                        alt = 'C jpg'
+                        quality = {100}
+                        className='skillItem'>
+                        </Image>
+                    C</div>
+
+                    <div id = 'techItem'>
+                        <Image
+                        src = {html}
+                        width={30}
+                        height={32}
+                        alt = 'HTML jpg'
+                        quality = {100}
+                        className='skillItem'>
+                        </Image>
+                        HTML</div>
+
+                    <div id = 'techItem'>
+                        <Image
+                        src = {css}
+                        width={30}
+                        height={32}
+                        alt = 'CSS jpg'
+                        quality = {100}
+                        className='skillItem'>
+                        </Image>
+                        CSS</div>
+
+                    <div id = 'techItem'>
+                        <Image
+                        src = {react}
+                        width={36}
+                        height={32}
+                        alt = 'React jpg'
+                        quality = {100}
+                        className='skillItem'>
+                        </Image>
+                        React</div>
+
+                    <div id = 'techItem'>
+                        <Image
+                        src = {next}
+                        width={32}
+                        height={32}
+                        alt = 'Next jpg'
+                        quality = {100}
+                        className='skillItem'>
+                        </Image>                        
+                        Next.js</div>
+
+                    <div id = 'techItem'>
+                        <Image
+                        src = {chakra}
+                        width={32}
+                        height={32}
+                        alt = 'ChakraUI jpg'
+                        quality = {100}
+                        className='skillItem'>
+                        </Image>    
+                        Chakra UI</div>
+
+
+                    <div id = 'techItem'>
+                        <Image
+                        src = {git}
+                        width={32}
+                        height={32}
+                        alt = 'Git jpg'
+                        quality = {100}
+                        className='skillItem'>
+                        </Image>                               
+                        Git</div>
+
+                    <div id = 'techItem'>
+                        <Image
+                        src = {vercel}
+                        width={32}
+                        height={32}
+                        alt = 'Vercel jpg'
+                        quality = {100}
+                        className='skillItem'>
+                        </Image>  
+                        Vercel</div>
+
+                    <div id = 'techItem'>
+                        <Image
+                        src = {figma}
+                        width={23}
+                        height={32}
+                        alt = 'Figma jpg'
+                        quality = {100}
+                        className='skillItem'>
+                        </Image>      
+                    Figma</div>
+
                 </div>
             </div>
         </>
