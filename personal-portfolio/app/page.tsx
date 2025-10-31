@@ -7,7 +7,8 @@ import Hero from "./components/hero";
 import About from "./components/about";
 import Work from "./components/work";
 import Footer from "./components/footer";
-
+import Blog
+ from "./components/blog";
 import {Pixelify_Sans} from 'next/font/google';
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
     <Hero/>
     <About/>
     <Work/>
+    <Blog/>
     <Footer/>
   </>
 
