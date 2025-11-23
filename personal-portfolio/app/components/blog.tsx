@@ -27,11 +27,11 @@ export default function Blog(){
                 <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div></h1> 
 
                 <div className='blogSubtitle'>
-                    <div id = 'h3Tags' className={pixelify_Sans_Bold.className}>&lt;/h3&gt;</div><h3 id = "blogSubtitleText" className={pixelify_Sans.className}>(*At least, that's what I like to tell myself)</h3><div id = 'h3Tags' className={pixelify_Sans_Bold.className}>&lt;/h3&gt;</div>
+                    <div id = 'h3Tags' className={pixelify_Sans_Bold.className}>&lt;/h3&gt;</div><h3 id = "blogSubtitleText" className={pixelify_Sans_Bold.className}>(*At least, that's what I like to tell myself)</h3><div id = 'h3Tags' className={pixelify_Sans_Bold.className}>&lt;/h3&gt;</div>
                 </div>
                 
-
                 <div className='blogPostContainer'>
+                    <a href = "/posts/TheMetamorphosis_FranzKafka.pdf" download = "The Metamorphosis - A Vermins Hunger For Humanity">
                         <Image
                         src = {meta}
                         width={75}
@@ -41,6 +41,8 @@ export default function Blog(){
                         id = "metaBook"
                         className='skillItem'>
                         </Image>
+                    </a>
+
 
                     <div className = "blogPostContent">
                         <div id="blogPostTitle" className={be_Vietnam_Pro.className}>The Metamorphosis: A Vermin's Hunger for Humanity<br></br></div>

@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/page.tsx", "app/components/preloader/preloader.js", "app/components/preloader/preloaderAnimation.js", "app/components/navigation.js", "app/components/work.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/page.tsx", "app/components/preloader/preloader.js", "app/components/preloader/preloaderAnimation.js", "app/components/navigation.js", "app/components/work.tsx", "app/components/contact.js"],
   "exclude": ["node_modules"]
 }
