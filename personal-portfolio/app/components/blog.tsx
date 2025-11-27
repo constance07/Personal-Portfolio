@@ -24,8 +24,7 @@ export default function Blog(){
             <div className='blogContent'>
                 
                 <h1 id ="blogTitle" className={be_Vietnam_Pro.className}>
-                <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;h1&gt;</div> FUN FACT, I  <div id = 'blueTag' className={pixelify_Sans_Bold.className}> DO </div> HAVE A LIFE OUTSIDE MY COMPUTER !
-                <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div></h1> 
+                <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;h1&gt;</div> FUN FACT, I  <div id = 'blueTag' className={pixelify_Sans_Bold.className}> DO </div> HAVE A LIFE OUTSIDE MY COMPUTER ! <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div></h1> 
 
                 <div className='blogSubtitle'>
                     <div id = 'h3TagsA' className={pixelify_Sans_Bold.className}>&lt;h3&gt;</div><h3 id = "blogSubtitleText" className={pixelify_Sans_Bold.className}>(*At least, that's what I like to tell myself)</h3><div id = 'h3TagsA' className={pixelify_Sans_Bold.className}>&lt;/h3&gt;</div>
