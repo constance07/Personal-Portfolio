@@ -33,8 +33,7 @@ export default function Work(){
         <div id='workSection'>
             <div className="workContainer">
                 <h1 id ="workTitle" className={be_Vietnam_Pro.className}>
-                <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;h1&gt;</div> I <div id = 'blueTag' className={pixelify_Sans_Bold.className}> REALLY </div> ! LIKE TO BUILD AND DESIGN STUFF. 
-                <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div></h1> 
+                <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;h1&gt;</div> I <div id = 'blueTag' className={pixelify_Sans_Bold.className}> REALLY </div> LIKE TO BUILD AND DESIGN STUFF. <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div></h1> 
                 
                 <div className='displayContainer'>
                     <a id ="wgttLink" href = "https://wevegottotalk.net/">

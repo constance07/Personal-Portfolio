@@ -89,7 +89,7 @@ export default function Contact(){
                 <div className='contactContainer'>
                 {/*Title*/}
                 <div id = "contactTitle" className= {be_Vietnam_Pro.className}>
-                    <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;h1&gt;</div> LET'S CONNECT <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div>
+                    <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;h1&gt;</div> LET'S CONNECT ! <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div>
                 </div>
                 {/*Sub-Title*/}
                 <div id = "contactSubTitle" className= {pixelify_Sans_Bold.className}>
