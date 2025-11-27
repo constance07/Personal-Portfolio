@@ -17,7 +17,7 @@ export default function About(){
                 <div id ='aboutDisc' className={be_Vietnam_Pro_Light.className}>
                     <p> I am currently pursuing a degree in Computer Science with a concentration in Artificial Intelligence, alongside a second major in Philosophy with an Ethics concentration. As technology continues to evolve, I’m committed to approaching software development with a human-centered mindset. It’s important to me that programmers are not only technically skilled, but also value society by operating with clear moral principles.
                         <br></br><br></br>With this perspective, I aim to make a meaningful social impact.
-                        <br></br><br></br>I dream big, but I’m not really trying to create anything revolutionary, haha — I simply want to help foster more love in the world: love between people and love within self. I truly believe that technology is a powerful tool such that, when harnessed correctly, can help breed this super-awesome-incredible-extraordinary power.
+                        <br></br><br></br>I dream big, but I’m not really trying to create anything revolutionary, haha. I simply want to help foster more love in the world: love between people and love within self. I truly believe that technology is a powerful tool such that, when harnessed correctly, can help breed this super-awesome-incredible-extraordinary power.
 
                     </p>
                 </div>

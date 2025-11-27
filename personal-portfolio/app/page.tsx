@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Navigation from "./components/navigation";
 import PreLoader from "./components/preloader/preloader";
+import { useEffect } from "react";
 /*Pages*/
 import Hero from "./components/hero";
 import About from "./components/about";
@@ -10,12 +11,13 @@ import Footer from "./components/footer";
 import Blog from './components/blog';
 import Contact from './components/contact';
 import {Pixelify_Sans} from 'next/font/google';
+import { use } from "react";
 
 export default function Home() {
 
-window.onload = function() {
-  window.scrollTo(0, 0);
-};
+  useEffect(() => {
+    window.scrollTo(0, 0);    
+  }, []);
   return (
   <>
     <PreLoader/>
