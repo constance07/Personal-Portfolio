@@ -18,8 +18,9 @@ import meta from '@/app/images/meta.jpg';
 export default function Blog(){
 
     return(
-    <>
+    <div id='blogSection'>
         <div id='blogContainer' className={be_Vietnam_Pro.className}>
+            
             <div className='blogContent'>
                 
                 <h1 id ="blogTitle" className={be_Vietnam_Pro.className}>
@@ -27,11 +28,12 @@ export default function Blog(){
                 <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div></h1> 
 
                 <div className='blogSubtitle'>
-                    <div id = 'h3Tags' className={pixelify_Sans_Bold.className}>&lt;/h3&gt;</div><h3 id = "blogSubtitleText" className={pixelify_Sans_Bold.className}>(*At least, that's what I like to tell myself)</h3><div id = 'h3Tags' className={pixelify_Sans_Bold.className}>&lt;/h3&gt;</div>
+                    <div id = 'h3TagsA' className={pixelify_Sans_Bold.className}>&lt;h3&gt;</div><h3 id = "blogSubtitleText" className={pixelify_Sans_Bold.className}>(*At least, that's what I like to tell myself)</h3><div id = 'h3TagsA' className={pixelify_Sans_Bold.className}>&lt;/h3&gt;</div>
                 </div>
                 
+                <a id = "blogPost1"href = "/posts/TheMetamorphosis_FranzKafka.pdf" download = "The Metamorphosis - A Vermins Hunger For Humanity">
                 <div className='blogPostContainer'>
-                    <a href = "/posts/TheMetamorphosis_FranzKafka.pdf" download = "The Metamorphosis - A Vermins Hunger For Humanity">
+                    
                         <Image
                         src = {meta}
                         width={75}
@@ -41,16 +43,19 @@ export default function Blog(){
                         id = "metaBook"
                         className='skillItem'>
                         </Image>
-                    </a>
+                    
 
 
                     <div className = "blogPostContent">
                         <div id="blogPostTitle" className={be_Vietnam_Pro.className}>The Metamorphosis: A Vermin's Hunger for Humanity<br></br></div>
                         <p id = "blogPostDisc" className={be_Vietnam_Pro_Light.className}>Kafka has a tendency to juxtapose the familiar with the dark, mysterious, and fearsome.</p>
                     </div>
+                
                 </div>
+                </a>
             </div>
+            
         </div>
     
-    </>)
+    </div>)
 }

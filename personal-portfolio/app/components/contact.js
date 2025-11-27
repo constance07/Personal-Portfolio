@@ -85,15 +85,15 @@ export default function Contact(){
         } 
     };
     return(
-        <>
+        <div id = "contactSection">
                 <div className='contactContainer'>
                 {/*Title*/}
                 <div id = "contactTitle" className= {be_Vietnam_Pro.className}>
-                    <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div> LET'S CONNECT <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div>
+                    <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;h1&gt;</div> LET'S CONNECT <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div>
                 </div>
                 {/*Sub-Title*/}
                 <div id = "contactSubTitle" className= {pixelify_Sans_Bold.className}>
-                    <div id = 'h3Tags'>&lt;/h3&gt;</div> Ask me anything, or just say hi... <div id = 'h3Tags' className = {pixelify_Sans_Bold.className}>&lt;/h3&gt;</div>
+                    <div id = 'h3TagsB'>&lt;h3&gt;</div> Ask me anything, or just say hi... <div id = 'h3TagsB' className = {pixelify_Sans_Bold.className}>&lt;/h3&gt;</div>
                 </div>
                 
                     
@@ -152,6 +152,6 @@ export default function Contact(){
                     </form>
                 </div>
             </div>
-        </>
+        </div>
     )
 }

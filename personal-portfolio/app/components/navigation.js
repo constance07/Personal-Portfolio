@@ -85,11 +85,11 @@ export default function Navigation(){
                                 }}></span>
                         </div>
                     {/*Pages*/}
-                        <a href ='../home'><li>.Home ( )</li></a>
-                        <a href ='../about'><li>.About ( )</li></a>
-                        <a href ='../work'><li>.Work ( )</li></a>
-                        <a href ="../blog/"><li>.Blog ( )</li></a>
-                        <a href ="../contact/"><li>.Contact( )</li></a>
+                        <a href ='#'><li>.Home ( )</li></a>
+                        <a href ='#aboutSection'><li>.About ( )</li></a>
+                        <a href ='#workSection'><li>.Work ( )</li></a>
+                        <a href ="#blogSection"><li>.Blog ( )</li></a>
+                        <a href ="#contactSection"><li>.Contact( )</li></a>
                     </ul>    
             </nav>
 
@@ -101,11 +101,11 @@ export default function Navigation(){
             <a href ='/'><span id = "devLogo" className={pixelify_SansBold.className}>SB</span></a>
             <ul className='navList'>
                 {/*Pages*/}
-                        <a className = "active" href ='../home'><li>.Home ( )</li></a>
-                        <a className = "active" href ='../about'><li>.About ( )</li></a>
-                        <a className = "active-link" href ='../work'><li>.Work ( )</li></a>
-                        <a className = "active-link" href ="../blog/"><li>.Blog ( )</li></a>
-                        <a className = "active-link" href ="../contact/"><li>.Contact( )</li></a>
+                        <a className = "active" href ='#'><li>.Home ( )</li></a>
+                        <a className = "active" href ='#aboutSection'><li>.About ( )</li></a>
+                        <a className = "active-link" href ='#workSection'><li>.Work ( )</li></a>
+                        <a className = "active-link" href ="#blogSection"><li>.Blog ( )</li></a>
+                        <a className = "active-link" href ="#contactSection"><li>.Contact( )</li></a>
             </ul> 
         </nav>  
         <div className='navBackgroundContainer'>

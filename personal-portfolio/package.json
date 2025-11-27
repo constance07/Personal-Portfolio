@@ -9,13 +9,14 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@react-email/render": "^2.0.0",
     "gsap": "^3.13.0",
     "next": "15.5.4",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-router-dom": "^7.9.4",
     "react-toastify": "^11.0.5",
-    "resend": "^6.3.0"
+    "resend": "^6.5.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

@@ -30,7 +30,7 @@ import figma from '@/app/images/skills/figma.jpg';
 export default function Work(){
     
     return(
-        <>
+        <div id='workSection'>
             <div className="workContainer">
                 <h1 id ="workTitle" className={be_Vietnam_Pro.className}>
                 <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;h1&gt;</div> I <div id = 'blueTag' className={pixelify_Sans_Bold.className}> REALLY </div> ! LIKE TO BUILD AND DESIGN STUFF. 
@@ -192,6 +192,6 @@ export default function Work(){
 
                 </div>
             </div>
-        </>
+        </div>
     )
 }

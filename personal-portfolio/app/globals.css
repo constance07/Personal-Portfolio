@@ -8,7 +8,7 @@ body{
   /* height: 0%; */
 }
 /* Smooth-Scroll on Jump Section */
-.html{
+html{
   scroll-behavior: smooth;
 }
   /*Scroll-Bar*/
@@ -24,7 +24,15 @@ body{
           overflow-x: hidden;
     }
 
-/*Media Queries* --> Iphone and Tablets
+/*Media Queries* --> Iphone and Tablets*/
+@media (max-width:350px) {
+ .straightHeadshot{
+  width: 20px;
+  height: 320px;
+ }.blogPostContainer{
+  width: 450px;
+ }
+}
   /*xs*/
 @media (min-width: 0px){
     /*HAMBURGER NAVIGATION BAR*/
@@ -85,7 +93,7 @@ body{
         transform: translateX(0vw);
       }.overlayFadeIn{
         width: 100%;
-        height: 100vh;
+        height: 1000vh;
         position: absolute;
         background-color: rgba(0, 0, 0, 0.188);
         z-index: 6;
@@ -163,7 +171,7 @@ body{
   }
     /* HERO SECTION */
     .heroContainer{
-      width: 100vw;
+      width: 100%;
       margin-top: 10%;
       margin-bottom: 0%;
       display: flex;
@@ -172,7 +180,8 @@ body{
       margin-bottom: 100px;
     }
     .straightHeadshot{
-      width: 350px;
+      width: 325px;
+      height: 325px;
       transition: 0.5s ease-in;
     }.headshotContainer{
       width: 100%;
@@ -187,24 +196,32 @@ body{
       width: 100%;
       color: #FFFFFF;
       display: flex;
+   
       flex-direction: column;
       text-align: center;
       margin-top: 10px;
        transition: 0.5s ease-out;
     }#firstPartTitle{
       font-size: 1.25em;
+      padding-right: 20px;
+      padding-left:20px;
       margin-bottom: 0px;
       margin-top: 40px;
     }#secondPartTitle{
       font-size: 1.8em;
       margin-top: 0px;
+      padding-right: 20px;
+      padding-left:20px;
       margin-bottom: 0px;
     }#thirdPartTitleA{
+      padding-right: 20px;
+      padding-left:20px;
       font-size: 1.8em;
       margin-top: 0px;
       color: #3F3F3F;
       margin-bottom: 0px;
     }#thirdPartTitleB{
+      padding-right: 20px;
       display: inline;
       margin-top: 0px;
       font-size: 1.1em;
@@ -230,7 +247,7 @@ body{
       text-align: center;
       align-items: center;
       flex-direction: column;
-      padding-bottom: 18%;
+      padding-bottom: 150px;
     }#aboutDisc{
       margin: 50px;
       color: #FFFFFF;
@@ -254,7 +271,7 @@ body{
     .workContainer{
       margin: auto;
       width: 100%;
-      height: 1950px;
+      height: 1600px;
       background-color: #FFFFFF;
       display: flex;
       align-items: center;
@@ -262,9 +279,9 @@ body{
     }#workTitle{
       margin: 50px;
       margin-top: 150px;
-      font-size: 1.6em;
       text-align: center;
-    }.displayContainer{
+      font-size: 1.6em;
+      }.displayContainer{
       width: 75%;
       overflow: hidden;
     }.displayBackground{
@@ -273,8 +290,8 @@ body{
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      margin-left: 7px;;
-      margin-right: 7px;
+      margin-left: 10px;
+      margin-right: 10px;
       height: 90%;
       border-radius: 18px;
       border-width: 5px;;
@@ -322,7 +339,6 @@ body{
       display: inline-block;
       color: #3676FF;
       text-decoration: none;
-      
     }#resumeLinkB:hover{
       text-decoration: underline;
       text-decoration-color: #3676FF;
@@ -341,7 +357,7 @@ body{
     }#techStack{
       width: 90%;
       margin-top: 0%;
-      height: 900px;
+      height: 500px;
       flex-wrap: wrap;
       display: flex;
       justify-content: center;
@@ -351,14 +367,15 @@ body{
 
     }#techItem{
       text-align: center;
-      width: 100px;
+      width: 50px;
       height: 75px;
       background-color: #3F3F3F;
       border-radius: 10px;
       padding: 20px;
       margin: 15px;
+      
       color: white;
-      font-size: 1em;
+      font-size: 0.9em;
       margin-top: 0px;
       display: flex;
       flex-direction: column;
@@ -378,45 +395,55 @@ body{
     }
     /*BLOG SECTION*/
     #blogContainer{
-      width: 100%;
-      height: 800px;
+      width: 100vw;
+      height: 850px;
       background-color:#3F3F3F;
       margin-top: 0px;
+      display: flex;
+      flex-direction: column;
     }.blogContent{
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
+      padding-right: 30px;
+      padding-left: 30px;
     }#blogTitle{
       margin-top: 0px;
       text-align: center;
+      text-decoration: none;
+      margin-bottom: 20px;
       color: #FFFFFF;
       padding-top: 150px;
       font-size: 1.6em;
       padding-left: 50px;
       padding-right: 50px;
-    }#h3Tags{
+    }#h3TagsB{
       color: #3676FF;
       display: inline-block;
-
+    }#blogPost1{
+      text-decoration: none; 
+      margin-top: 150px;
+      text-align: start;
     }#blogSubtitleText{
       display: inline-block;
       font-size: 1.0em;
       color: #3676FF;
+      margin-top: 0px;
     }.blogPostContainer{
-      margin-top: 130px;
-      width: 80%;
       border-width: 4px;
       border-style: solid;
       border-color: #161616;
       height: 100px;
+      width: 80vw;
       border-radius: 20px;
       background-color: #3676FF;
       display: flex;
       align-items: center;
       padding: 20px;
       padding-top: 30px;
-      justify-content: flex-start;
+      justify-content: center;
       transition: 0.22s ease-out;
     }.blogPostContainer:hover{
       background-color: #2558c7;
@@ -424,29 +451,40 @@ body{
       cursor: pointer;
     }#blogPostTitle{
       color: #FFFFFF;
+      font-size: 85%;
       padding-left: 20px;
     }#blogPostDisc{
       padding-left: 20px;
       color: #FFFFFF;
-      font-size: 0.9em;
+      font-size: 85%;
       width: fit-content;
     }
     /*CONTACT SECTION*/
+    #h3TagsA{
+      color: #3676FF;
+      display: inline;
+      font-size: 1.1EM;
+    }
     .contactContainer{
-      width: 97vw;
+      width: 100%;
       height: 1000px;
       margin-bottom: 200px;
       color: #E6E6E6;
-      text-align: end;
+      text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }#contactTitle{
       padding-top: 100px;
+      padding-left: 50px;
+      padding-right: 50px;
       font-size: 1.6em;
     }#contactSubTitle{
-      margin-top: 10px;
+      margin-top: 20px;
+      font-size: 1.05em;
+      padding-left: 50px;
+      padding-right: 50px;
       color: #3676FF;
     }.formField{
       display: flex;
@@ -454,33 +492,32 @@ body{
       border-width: 0px;
       margin-top: 100px;      
     }#formSubTitles{
-   width: 100%;
+      width: 100%;
+      color: #FFFFFF;
       text-align: start;
       font-size: 1.1em;
       display: inline-block;
       margin-bottom: 10px;
     }.formField{
       text-align: start;
-    
     }#inputA,#inputB, #inputC,#textArea{
-      width: 300px;
-      height: 20px;
-      font-size: 0.90em;
+      width: 70vw;
+      height: 30px;
+      font-size: 1.0em;
       border-radius: 20px;
-      padding: 15px;
+      padding: 12px;
       margin-top: 15px;
       margin-bottom: 15px;
       border-width: 0px;
       outline: none;
       background-color: #FFFFFF;
-    }#textArea{
-      height: 80px;
+    }#textArea{      
+      height: 100px;
       resize: none;
     }#submit{
       margin-top: 20px;
       border: 20px;
       width: 130px;
-      margin-right: 15px;
       height: 35px;
       border-radius: 10px;
       font-size: 18px;
@@ -571,24 +608,80 @@ body{
     margin-top: 20%;
     margin-bottom: 20%;
   }.straightHeadshot{
-      width: 350px;
-      height: 350px;
+      width: 400px;
+      height: 400px;
       margin-bottom: 50px;
     }.title{
       font-size: 1.6em;
       margin-top: 5%;
       transition: 0.5s ease-in;
     }#firstPartTitle{
-      font-size: 1.1em;
+      font-size: 1.0em;
     }#secondPartTitle{
-      font-size: 1.5em;
+      font-size: 1.4em;
     }#thirdPartTitleA{
-      font-size: 1.5em;
+      font-size: 1.4em;
     }#personalDisc{
-      font-size: 1.3em;
+      font-size: 1.2em;
       margin-left: 18px;
       margin-right: 18px;
-    }/* FOOTER */
+    }
+    /*ABOUT CONTAINER*/
+    #aboutTitle{
+      font-size: 1.9em;
+    }#aboutDisc{
+      font-size: 1.1em
+    }
+    /*WORK CONTAINER*/
+    #workTitle{
+      font-size: 1.9em;
+    }#displayTitle{
+     font-size: 1.25em;
+    }#displayDisc{
+      font-size: 0.95em;
+      margin-top: 30px;
+    }#resumeTitle{
+      font-size: 1.1em;
+    }#skillsTitle{
+      font-size:1.75em;
+    }#techItem{
+      font-size: 1.0em;
+      width: 60px;
+      padding: 25px;
+    }.displayBackground{
+      width: 95%;
+    }
+    /*BLOG CONTAINER*/
+    #blogTitle{
+      font-size: 1.9em;
+    }#blogSubtitleText{
+      font-size: 1.1em;
+    }#blogPostTitle{
+      font-size: 95%;
+    }#blogPostDisc{
+      font-size: 95%;
+    }
+    #h3TagsA{
+      color: #3676FF;
+      display: inline;
+      font-size: 1.em;
+    }
+    /*CONTACT SECTION*/
+    #contactTitle{
+      font-size: 1.9em;
+    }#contactSubTitle{
+      font-size: 1.1em;
+    }#formSubTitles{
+      font-size: 1.3em;
+    }#submit{
+      font-size: 22px;
+      width: 150px;
+      height: 40px;
+    }#inputA,#inputB, #inputC,#textArea{
+      font-size: 1.1em;
+      padding: 15px;
+    }
+    /* FOOTER CONTAINER*/
   .footerContainer{
       height: 155px;
     }#smallDevLogo{
@@ -608,12 +701,12 @@ body{
 @media(min-width: 768px){
   /* NAVIGATION */
       .hamburgerContainer li{
-          font-size: 2.0em;    
+          font-size: 1.9em;    
           padding: 10px;
       }#close-Button span:nth-child(1){
-          width: 55px;
+          width: 50px;
       } #close-Button span:nth-child(2){
-          width: 55px;
+          width: 50px;
       }.hamburgerIcon{
           width: 45px;
           height: 35px;
@@ -627,32 +720,74 @@ body{
         font-size: 50px;
         margin-left: 5px;
   }/* HERO */
-  .heroContainer{
+  .straightHeadshot{
+    width: 450px;
+    height: 450px;
+  }.heroContainer{
     margin-top: 10%;
     margin-bottom: 10%;
     margin-right: 0px;
-  }.straightHeadshot{
-      width: 400px;
-      margin-right: 0px;
-      margin-left: 0px;
-      height: 400px;
-      margin-bottom: 50px;
-    }.title{
-      font-size: 2.0em;
+  }.title{
+      font-size: 1.8em;
       margin-top: 5%;
-       transition: 0.5s ease-in;
-       margin-right: 0px;
-    }#firstPartTitle{
+      transition: 0.5s ease-in;
+    }#personalDisc{font-size: 1.25em;}
+    /*ABOUT CONTAINER */
+    #aboutTitle{
+      font-size: 2.1em;
+    }#aboutDisc{
+      font-size: 1.2em
+    }
+    /*WORK CONTAINER*/
+    .workContainer{
+      height: 1750px;
+    }#workTitle{
+      font-size: 2.1em;
+    }#displayTitle{
+     font-size: 1.3em;
+    }#displayDisc{
+      font-size: 1.05em;
+      margin-top: 35px;
+    }#resumeTitle{
+      font-size: 1.2em;
+    }#skillsTitle{
+      font-size:1.85em;
+    }#techItem{
+      font-size: 1.05em;
+      width: 65px;
+      padding: 25px;
+    }#WGTT{
+      width: 70%;
+      height: 80%;
+    }
+    /*BLOG CONTAINER*/
+    #blogTitle{
+      font-size: 2.1em;
+    }#blogSubtitleText{
+      font-size: 1.25em;
+    }#blogPostTitle{
+      font-size: 100%;
+    }#blogPostDisc{
+      font-size: 100%;
+    }#h3TagsA{
+      font-size: 1.3em;
+    }
+    /*CONTACT SECTION*/
+    #contactTitle{
+      font-size: 2.1em;
+    }#contactSubTitle{
+      font-size: 1.25em;
+    }#formSubTitles{
+      font-size: 1.4em;
+    }#submit{
+      font-size: 23px;
+      width: 155px;
+      height: 45px;
+    }#inputA,#inputB, #inputC,#textArea{
       font-size: 1.1em;
-    }#secondPartTitle{
-      font-size: 1.5em;
-    }#thirdPartTitleA{
-      font-size: 1.5em;
-    }#personalDisc{
-      font-size: 1.5em;
-      margin-left: 50px;
-      margin-right: 0px;
-    }/* FOOTER */
+      padding: 15px;
+    }
+  /* FOOTER */
   .footerContainer{
       height: 160px;
     }#smallDevLogo{
@@ -704,7 +839,7 @@ body{
         top: 52px;
         width: 100%;
         justify-content: center;
-        padding-bottom: 200px;
+      
         position: fixed;
         z-index: 300;
         flex-direction: row;
@@ -715,7 +850,9 @@ body{
         color: #FBEED7;
         display: flex;
         padding: 15px;
-        
+   
+        padding-left: 0px;
+        padding-right: 12px;
         background-color: #3f3f3f29;
         backdrop-filter: blur(25px);
         height: 20px;
@@ -727,8 +864,7 @@ body{
     }.navContainer li{      
         list-style: none;
         display: flex;
-
-        justify-content:space-evenly;
+        justify-content:space-around;
         align-items: center;
         color: #FFFFFF;
         padding-top: 15px;
@@ -738,36 +874,29 @@ body{
         transition: all .25s ease-out;
         width: 120px;
         height: 10px;
+        text-align: center;
         border-radius: 25px;
-       }/*.navList li:hover{
-        background-color: #3676FF;
-        border-radius: 25px;
-      } */
+        cursor: pointer;
+        margin:20px;
+             }
       .navContainer a{
         text-decoration: none;
         display: flex;
         font-size: 1.5em;
+        cursor: default;
         flex-direction: row;
-      }
-    /* .navContainer li:hover{
-        text-decoration: none; 
-        color: #3676FF;
-        transition: all .25s ease-in;
-        flex-direction: row;
-      } */
-    .navContainer li:active{
-        color: #2558c7;
-        transition: color 0.25s;
-    }
-    .hamburgerIcon{
+      }.navContainer li:hover{
+        background-color: #3676FF;
+        transition: all .25s ease-out;
+    }.hamburgerIcon{
         display: none;
-      }
+    }
     /* HERO SECTION */
     .heroContainer{
       width: 1000px;
       margin-top: 50px;
       position: absolute;
-      margin-bottom: 0%;
+      padding-bottom: 100px;
       display: flex;
       flex-direction: row-reverse;
       justify-content: center;
@@ -797,20 +926,22 @@ body{
       margin-top: 40px;
       transition: 0.5s ease-out;
     }.titleContainer{
-      margin-left:22.5px;
+      margin-left:15px;
       margin-bottom: 125px;
-    
     }
     #firstPartTitle{
-      font-size: 0.7em;
+      font-size: 1.0em;
+      padding-left: 0px;
       margin-bottom: 0px;
       margin-top: 40px;
     }#secondPartTitle{
-      font-size: 1.2em;
+      font-size: 1.4em;
+      padding-left: 0px;
       margin-top: 0px;
       margin-bottom: 0px;
     }#thirdPartTitleA{
-      font-size: 1.2em;
+      font-size: 1.4em;
+      padding-left: 0px;
       margin-top: 0px;
       color: #3F3F3F;
       margin-bottom: 0px;
@@ -831,7 +962,58 @@ body{
     }#pTags{
       color: #3676FF;
       display: inline;
-  
+    }
+    /*ABOUT SECTION*/
+    #aboutTitle{
+      font-size: 2.4em;
+    }#aboutDisc{
+      font-size: 1.2em;
+    }
+    /*WORK SECTION */
+    #workTitle{
+      font-size: 2.4em;
+      margin-bottom: 90px;
+    }#displayTitle{
+     font-size: 1.5em;
+    }#displayDisc{
+      font-size: 1.1em;
+      margin-top: 40px;
+    }#resumeTitle{
+      font-size: 1.3em;
+    }#skillsTitle{
+      font-size:2.1em;
+    }#techItem{
+      font-size: 1.1em;
+      width: 70px;
+      padding: 30px;
+    }
+    /*BLOG CONTAINER */
+    #blogTitle{
+      font-size: 2.4em;
+    }#blogSubtitleText{
+      font-size: 1.4em;
+    }#blogPostTitle{
+      font-size: 120%;
+    }#blogPostDisc{
+      font-size: 120%;
+    }
+    /*CONTACT SECTION*/
+    .contactContainer{
+      height: 1250px;
+    }
+    #contactTitle{
+      font-size: 2.4em;
+    }#contactSubTitle{
+      font-size: 1.4em;
+    }#formSubTitles{
+      font-size: 1.4em;
+    }#submit{
+      font-size: 24px;
+      width: 160px;
+      height: 50px;
+    }#inputA,#inputB, #inputC,#textArea{
+      font-size: 1.3em;
+      padding: 18px;
     }
     /* FOOTER SECTION */
     .footerContainer{
@@ -852,6 +1034,7 @@ body{
     }#smallDevLogo{
       color: #3676FF;
       font-size: 25px;
+      margin-top: 30px;
       margin-bottom: 0px;
     }.icons{
       display: flex;
@@ -876,210 +1059,80 @@ body{
     }
 
 }
-/* 1350*/
 @media(min-width: 1280px){
-     .hamburgerContainer{
-      display: none;
-    }
-    #devLogoMobile{display: none}
-    #devLogo{
-        display: inline-block;
-        left: 0;
-        justify-content: flex-start;
-        width: 50px;
-        height: 10px;
-        z-index: 5;
-        color: #3676FF;
-        display: none;
-        font-size: 35px;
-        align-items: center;
-        transition: 0.5s ease-out;
-    }.placeHolderNav{
-      width: 200px;
-      height: 250px;
-    }.navContainer{
-        display: flex;
-        top: 52px;
-        width: 97%;
-        justify-content: center;
-        color: #cc860c;
-        padding-bottom: 200px;
-        position: fixed;
-        z-index: 300;
-        flex-direction: row;
-        padding-right: 0px;
-        margin: auto;
-        align-items: flex-start;
-    }.navContainer ul{
-        align-items: flex-end;
-        color: #FBEED7;
-        display: flex;
-        padding: 20px;
-        background-color: #3f3f3f29;
-        backdrop-filter: blur(25px);
-        padding-right:35px;
-        height: 20px;
-        border-radius: 50px;;
-        align-items: center;
-        justify-content: flex-end;
-    }.navContainer li{      
-        list-style: none;
-        display: flex;
-        justify-content:space-evenly;
-        align-items: center;
-        color: #FFFFFF;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-size: 0.85em;
-        text-decoration: none;
-        text-align: center;
-        transition: all .25s ease-out;
-        width: 140px;
-        height: 5px;
-        border-radius: 25px;
-      }.navList li:hover{
-        background-color: #3676FF;
-        border-radius: 30px;
-      }.navContainer a{
-        text-decoration: none;
-        display: flex;
-        font-size: 1.5em;
-        margin-left: 10px;
-        margin-right: 10px;
-        flex-direction: row;
-      }
-    /* .navContainer li:hover{
-        text-decoration: none; 
-        color: #3676FF;
-        transition: all .25s ease-in;
-        flex-direction: row;
-      } */
-    .navContainer li:active{
-        color: #2558c7;
-        transition: color 0.25s;
-    }
-    .hamburgerIcon{
-        display: none;
-      }
-    /* HERO SECTION */
-    .heroContainer{
-      width: 1200px;
-      
-      margin-top: 50px;
-      position: absolute;
-      padding-bottom: 200px;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: center;
-      position: relative;
-      margin: auto;
-    }
-    .straightHeadshot{
-      width: 450px;
-      height: 450px;
-      transition: 0.5s ease-out;
-    }.headshotContainer{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 0px;
-    }.straightHeadshot:hover{
-      transform: scale(1.04);
-      transition: 0.5s ease-in;
-      filter: brightness(1.15)
-    }.title{
-      width: 100%;
-      color: #FFFFFF;
-      display: flex;
-      flex-direction: column;
-      text-align:start;
-      margin-top: 40px;
-      transition: 0.5s ease-out;
-    }.titleContainer{
-      margin-left:35px;
-      margin-bottom: 125px;
-      
-    }
-    #firstPartTitle{
-      font-size: 0.8em;
-      margin-bottom: 0px;
-      margin-top: 40px;
-    }#secondPartTitle{
-      font-size: 1.3em;
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }#thirdPartTitleA{
-      font-size: 1.3em;
-      margin-top: 0px;
-      color: #3F3F3F;
-      margin-bottom: 0px;
-    }#thirdPartTitleB{
-      display: inline;
-      margin-top: 0px;
+  /* HERO */
+  .heroContainer{
+    width: 1100px;
+  }
+  .title{
+    font-size: 2.0em;
+  }#personalDisc{
+    font-size: 1.25em;
+  }.straightHeadshot{
+    width: 400px;
+    height: 400px;
+  }
+  /*ABOUT SECTION*/
+  #aboutSection{
+    width: 100%;
+    background-color: #3F3F3F;
+  }.aboutContainer{
+    width: 1200px;
+  }#aboutTitle{
+    font-size: 2.5em;
+  }#aboutDisc{
+    font-size: 1.25em;
+  }
+  /*WORK SECTION*/
+  #workSection{
+    width: 100%;
+    height: 1800px;
+    background-color: #FFFFFF;
+  }.workContainer{
+    width: 1265px;
+  }#workTitle{
+    font-size: 2.5em;
+  }#displayTitle{
+    font-size: 1.7em;
+  }#displayDisc{
+    font-size: 1.15em;
+  }#skillsTitle{
+    font-size:2.22em;
+  }#resumeTitle{
+    font-size: 1.4em;
+  }
+  /*BLOG CONTAINER */
+  #blogTitle{
+    font-size: 2.5em;
+  }#blogSubtitleText{
+    font-size: 1.5em;
+  }#h3TagsA{
+    font-size: 1.5em;
+  }#blogPostTitle{
+    font-size: 125%;
+  }#blogPostDisc{
+    font-size: 125%;
+  }.blogPostContainer{
+    width: 1000px;
+  }
+    /*CONTACT SECTION*/
+    #contactTitle{
+      font-size: 2.5em;
+    }#contactSubTitle{
+      font-size: 1.5em;
+    }#formSubTitles{
+      font-size: 1.5em;
+    }#submit{
+      font-size: 23px;
+      width: 155px;
+      height: 45px;
+    }#inputA,#inputB, #inputC,#textArea{
       font-size: 1.1em;
-      color: #3676FF;
-    }#personalDisc{
-      color: #FFFFFF;
-      text-align: start;
-      padding-left: 0px;
-      margin: 0px;
-      font-size: 19px;
-      padding-right: 0px;
-      padding-top: 35px;
-      margin-bottom: 0px;
-    }#pTags{
-      color: #3676FF;
-      display: inline;
+      width: 800px;
+      padding: 17px;
+    }  
+
   
-    }
-    /* */
-    .aboutContainer{
-      width: 1200px;
-
-    }
-    /* FOOTER SECTION */
-    .footerContainer{
-      width: 100%;
-      height: 140px;
-      background-color: #E6E6E6;
-      position: relative;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      z-index: 300;
-      width: 100%;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }#smallDevLogo{
-      color: #3676FF;
-      font-size: 25px;
-      margin-bottom: 0px;
-    }.icons{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 30px;
-    }#linkedIn, #github, #goodreads{
-      width: 20px;
-      height: 20px;
-      display: flex;
-      justify-content: space-between;
-    }.icons a{
-      cursor: pointer;
-      margin: 8px;
-    }
-    #ownershipTag{
-      margin-top: 5px;
-      font-size: 0.7em;
-      transition: 0.5s ease-out;
-    }
-
 }
 
 

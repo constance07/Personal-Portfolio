@@ -10,7 +10,7 @@ import { Be_Vietnam_Pro} from 'next/font/google';
 
 export default function About(){
     return(
-        <>
+        <div id = "aboutSection">
             <div className="aboutContainer">
                 <h1 id ="aboutTitle" className={be_Vietnam_Pro.className}>
                 <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;h1&gt;</div> GET TO KNOW <div id = 'blueTag' className={pixelify_Sans_Bold.className}> ME </div> ! <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div></h1> 
@@ -28,6 +28,6 @@ export default function About(){
 Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. </p>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
