@@ -261,6 +261,8 @@ html{
       color: #FFFFFF;
       margin-top: 150px;
       font-size: 1.6em;
+      padding-left: 50px;
+      padding-right: 50px;
       display: inline-block;
     }#blueTag{
      color:#3676FF;
