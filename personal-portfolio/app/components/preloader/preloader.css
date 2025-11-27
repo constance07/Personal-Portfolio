@@ -2,9 +2,9 @@
 
 }
 .preLoader{
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
+    height: 100%;
+    width: 100%;
+    position: fixed;
     background-color: #161616;
     color: #3676FF;
     display: flex;

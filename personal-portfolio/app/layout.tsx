@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Serenity Buckner",
-  description: "Serenity Buckner's Personal Portfolio",
+  description: "Innovating with principle — Serenity Buckner’s portfolio.",
 };
 
 export default function RootLayout({

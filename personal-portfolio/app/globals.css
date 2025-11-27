@@ -88,7 +88,6 @@ html{
           justify-content: center;
       } ul.open{
         visibility:visible;
-        
         position: fixed;
         transform: translateX(0vw);
       }.overlayFadeIn{
@@ -170,6 +169,7 @@ html{
         transition: 0.5s ease-out;
   }
     /* HERO SECTION */
+
     .heroContainer{
       width: 100%;
       margin-top: 10%;
@@ -501,8 +501,8 @@ html{
     }.formField{
       text-align: start;
     }#inputA,#inputB, #inputC,#textArea{
-      width: 70vw;
-      height: 30px;
+      width: 50vw;
+      height: 15px;
       font-size: 1.0em;
       border-radius: 20px;
       padding: 12px;
@@ -839,7 +839,6 @@ html{
         top: 52px;
         width: 100%;
         justify-content: center;
-      
         position: fixed;
         z-index: 300;
         flex-direction: row;
@@ -850,7 +849,6 @@ html{
         color: #FBEED7;
         display: flex;
         padding: 15px;
-   
         padding-left: 0px;
         padding-right: 12px;
         background-color: #3f3f3f29;
@@ -948,7 +946,7 @@ html{
     }#thirdPartTitleB{
       display: inline;
       margin-top: 0px;
-      font-size: 1.0em;
+      font-size: 1.1em;
       color: #3676FF;
     }#personalDisc{
       color: #FFFFFF;
@@ -1064,6 +1062,9 @@ html{
   .heroContainer{
     width: 1100px;
   }
+  #thirdPartTitleB{
+    font-size: 1.1em;
+  }
   .title{
     font-size: 2.0em;
   }#personalDisc{
@@ -1125,10 +1126,10 @@ html{
     }#submit{
       font-size: 23px;
       width: 155px;
-      height: 45px;
+      margin-top: 70px;
+      height: 42px;
     }#inputA,#inputB, #inputC,#textArea{
       font-size: 1.1em;
-      width: 800px;
       padding: 17px;
     }  
 

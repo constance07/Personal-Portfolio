@@ -13,6 +13,9 @@ import {Pixelify_Sans} from 'next/font/google';
 
 export default function Home() {
 
+window.onload = function() {
+  window.scrollTo(0, 0);
+};
   return (
   <>
     <PreLoader/>
