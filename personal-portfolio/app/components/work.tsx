@@ -39,7 +39,7 @@ export default function Work(){
                     <a id ="wgttLink" href = "https://wevegottotalk.net/">
                     <div className='displayBackground'>
                     <div id="displayTitle" className={be_Vietnam_Pro.className}>We've Got To Talk</div>
-                    <div id="displayDisc" className={be_Vietnam_Pro_Light.className}>A card game promoting self-love beyond external labels and obligation through a cycle of 'think', 'act', and 'action' prompts. </div>
+                    <div id="displayDisc" className={be_Vietnam_Pro_Light.className}>A card game promoting self-love beyond external labels and obligation through a cycle of 'Think', Do', and 'State' prompts. </div>
                     <Image
                         src = {WGTT}
                         alt = 'Weve Got To Talk Image'
