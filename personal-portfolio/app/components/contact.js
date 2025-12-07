@@ -85,7 +85,7 @@ export default function Contact(){
         } 
     };
     return(
-        <div id = "contactSection">
+        <div className='section' id = "contactSection">
                 <div className='contactContainer'>
                 {/*Title*/}
                 <div id = "contactTitle" className= {be_Vietnam_Pro.className}>

@@ -1,27 +1,24 @@
 'use client'
 import Image from "next/image";
-import Navigation from "./components/navigation";
 import PreLoader from "./components/preloader/preloader";
 import { useEffect } from "react";
 /*Pages*/
-import Hero from "./components/hero";
+import Hero from "./components/hero.js";
 import About from "./components/about";
 import Work from "./components/work";
 import Footer from "./components/footer";
 import Blog from './components/blog';
 import Contact from './components/contact';
 import {Pixelify_Sans} from 'next/font/google';
-import { use } from "react";
 
 export default function Home() {
 
-  useEffect(() => {
-    window.scrollTo(0, 0);    
-  }, []);
   return (
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []),
   <>
     <PreLoader/>
-    <Navigation/>
     <Hero/>
     <About/>
     <Work/>

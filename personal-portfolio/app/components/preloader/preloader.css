@@ -10,12 +10,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5.0em;
+    font-size: 4.0em;
     z-index: 301;
 }.preLoader .texts-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 100px;
     width: 100px;
     transition: 0.5s ease-out;

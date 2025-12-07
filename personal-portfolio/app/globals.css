@@ -25,7 +25,7 @@ html{
     }
 
 /*Media Queries* --> Iphone and Tablets*/
-@media (max-width:350px) {
+@media ( max-width:350px) {
  .straightHeadshot{
   width: 20px;
   height: 320px;
@@ -61,31 +61,31 @@ html{
           overflow: hidden;
           visibility: hidden;
         
-      }
-      .hamburgerContainer li{
+      }.hamburgerContainer li{
           display: flex;
-          font-size: 1.5em;    
-          padding: 5px;
+          font-size: 1.4em;    
+       align-items: center;
           height: 100%;
+          width: 100%;
           color: #FFFFFF;
           transition: 0.5s;
           justify-content: center;
       }.hamburgerContainer li:hover{
-        color: #3676FF;
+        background-color: #3676FF;
         transition: 0.15s;
         cursor: pointer;
       }.hamburgerContainer li:active{
-        color: #2558c7;
-        transition: 0.15s;
+        background-color: #3676FF;
       }
       .hamburgerContainer a{
-          display: flex;
+
           background-color: #161616;
           text-decoration: none;
-          padding: 5%;
+          height: 100px;
           cursor: default;
           display: flex;
-          justify-content: center;
+          text-align: center
+       
       } ul.open{
         visibility:visible;
         position: fixed;
@@ -111,19 +111,19 @@ html{
       } 
       #close-Button span:nth-child(1){
           margin-top: 100px;
-          height: 5px;
-          width: 44px;
+          height: 3px;
+          width: 35px;
           z-index: 5;
           background-color: #3676FF;
           transform: translateY(-13px) rotate(45deg);
           cursor: pointer;
           transition: 0.5s ease-out;
       } #close-Button span:nth-child(2){
-          height: 5px;
-          width: 44px;
+          height: 3px;
+          width: 35px;
           z-index: 5;
           background-color: #3676FF;
-          transform: translateY(-18px) rotate(-45deg);
+          transform: translateY(-17px) rotate(-45deg);
            transition: 0.5s ease-out;
           cursor: pointer;
       }.hamburgerIconBackground{
@@ -140,15 +140,14 @@ html{
           justify-content: space-between;
           position: absolute;
           width: 35px;
-          height: 31px;
-          padding-top: 15px;
+          height: 25px;
           margin-right: 55px;
-          top: 65px;
+          top: 62px;
           z-index: 5;
            transition: 0.5s ease-out;
      }.hamburgerIcon span {
-          height: 3.3px;
-          width: 40px;
+          height: 2.6px;
+          width: 35px;
           background-color: #3676FF;
       }.hamburgerIcon:hover{
           cursor: pointer; 
@@ -162,8 +161,9 @@ html{
         z-index: 5;
         color: #3676FF;
         padding: 25px;
-        margin-top: 42px;
-        padding-left: 45px;
+        padding-left: 0px;
+        margin-top: 45px;
+        margin-left: 55px;
         font-size: 40px;
         align-items: center;
         transition: 0.5s ease-out;
@@ -171,17 +171,16 @@ html{
     /* HERO SECTION */
 
     .heroContainer{
-      width: 100%;
       margin-top: 10%;
       margin-bottom: 0%;
+ 
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin-bottom: 100px;
-    }
-    .straightHeadshot{
-      width: 325px;
-      height: 325px;
+      margin-bottom: 50px;
+    }.straightHeadshot{
+      width: 305px;
+      height: 305px;
       transition: 0.5s ease-in;
     }.headshotContainer{
       width: 100%;
@@ -193,35 +192,26 @@ html{
       transition: 0.5s ease-in;
       filter: brightness(1.15)
     }.title{
-      width: 100%;
       color: #FFFFFF;
       display: flex;
-   
       flex-direction: column;
       text-align: center;
       margin-top: 10px;
        transition: 0.5s ease-out;
     }#firstPartTitle{
       font-size: 1.25em;
-      padding-right: 20px;
-      padding-left:20px;
       margin-bottom: 0px;
       margin-top: 40px;
     }#secondPartTitle{
       font-size: 1.8em;
       margin-top: 0px;
-      padding-right: 20px;
-      padding-left:20px;
       margin-bottom: 0px;
     }#thirdPartTitleA{
-      padding-right: 20px;
-      padding-left:20px;
       font-size: 1.8em;
       margin-top: 0px;
       color: #3F3F3F;
       margin-bottom: 0px;
     }#thirdPartTitleB{
-      padding-right: 20px;
       display: inline;
       margin-top: 0px;
       font-size: 1.1em;
@@ -229,8 +219,8 @@ html{
     }#personalDisc{
       color: #FFFFFF;
       text-align: center;
-      padding-left: 60px;
-      padding-right: 60px;
+      margin-right: 50px;
+      margin-left: 50px;
       padding-top: 15px;
       margin-bottom: 100px;
     }#pTags{
@@ -240,26 +230,32 @@ html{
     /*ABOUT SECTION*/
     .aboutContainer{
       margin: auto;
-      width: 100%;
       height: fit-content;
       background-color: #3F3F3F;
       display: flex;
       text-align: center;
       align-items: center;
       flex-direction: column;
-      padding-bottom: 150px;
+      padding-bottom: 75px;
+    }.bodyShotContainer{
+      margin-top: 50px;
+    }.bodyShot{
+      transition: 0.5s ease-in;
+    }.bodyShot:hover{
+        transform: scale(1.04);
+        transition: 0.5s ease-in;
+        filter: brightness(1.15)     
     }#aboutDisc{
       margin: 50px;
       color: #FFFFFF;
       text-align: center;
-    }
-    #h1Tags{
+    }#h1Tags{
       color: #3676FF;
       font-size: 1.0em;
       display: inline-block;
     }#aboutTitle{
       color: #FFFFFF;
-      margin-top: 150px;
+      margin-top: 125px;
       font-size: 1.6em;
       padding-left: 50px;
       padding-right: 50px;
@@ -271,32 +267,29 @@ html{
     }
     /*WORK CONTAINER*/
     .workContainer{
-      margin: auto;
-      width: 100%;
-      height: 1850px;
       background-color: #FFFFFF;
+      height: auto;
       display: flex;
       align-items: center;
       flex-direction: column;
     }#workTitle{
       margin: 50px;
-      margin-top: 150px;
+      margin-top: 125px;
       text-align: center;
       font-size: 1.6em;
       }.displayContainer{
-      width: 75%;
+      width: 70%;
       overflow: hidden;
     }.displayBackground{
-      width: 93%;
+      height: 260px;
       margin:0px;
       display: flex;
       flex-direction: column;
       overflow: hidden;
       margin-left: 10px;
       margin-right: 10px;
-      height: 90%;
       border-radius: 18px;
-      border-width: 5px;;
+      border-width: 5px;
       border-style: solid;
       border-color: #161616;
       background: #3676FF;
@@ -357,25 +350,23 @@ html{
       font-size: 1.6em;
       margin-top: 100px;
     }#techStack{
-      width: 90%;
       margin-top: 0%;
-      height: 800px;
+      margin-right: 10px;
+      margin-left: 10px;
       flex-wrap: wrap;
       display: flex;
       justify-content: center;
       flex-direction: row;
       margin-top: 50px;
-      overflow: hidden;
-
+      margin-bottom: 150px;
     }#techItem{
       text-align: center;
-      width: 50px;
-      height: 75px;
+      width: 55px;
+      height: 55px;
       background-color: #3F3F3F;
       border-radius: 10px;
       padding: 20px;
       margin: 15px;
-      
       color: white;
       font-size: 0.9em;
       margin-top: 0px;
@@ -383,22 +374,24 @@ html{
       flex-direction: column;
       justify-content: center;
       align-items: center;  
-       transition: 0.2s ease-out;
-
+      transition: 0.2s ease-out;  
     }.skillItem{
       padding-bottom: 10px;
-       transition:0.22s ease-out;
+      transition:0.22s ease-out;
     }#techItem:hover > .skillItem{
-      transform: translateY(-5px);
+      transform: translateY(-3px);
       transition:0.22s ease-in;
     }#techItem:hover{
       background-color: #5f5f5f;
       transition: 0.2s ease-in;
+    }.discWrapper{
+      display: flex;
+      flex-direction: column;
     }
     /*BLOG SECTION*/
     #blogContainer{
-      width: 100vw;
-      height: 950px;
+      height: auto;
+      padding-bottom: 175px;
       background-color:#3F3F3F;
       margin-top: 0px;
       display: flex;
@@ -417,34 +410,37 @@ html{
       text-decoration: none;
       margin-bottom: 20px;
       color: #FFFFFF;
-      padding-top: 150px;
+      padding-top: 125px;
       font-size: 1.6em;
       padding-left: 50px;
       padding-right: 50px;
     }#h3TagsB{
       color: #3676FF;
       display: inline-block;
-    }#blogPost1{
+    }#blogPost{
       text-decoration: none; 
-      margin-top: 150px;
+      margin-top: 20px;
       text-align: start;
     }#blogSubtitleText{
       display: inline-block;
       font-size: 1.0em;
       color: #3676FF;
       margin-top: 0px;
+      margin-bottom: 50px;
     }.blogPostContainer{
       border-width: 4px;
       border-style: solid;
       border-color: #161616;
-      height: 100px;
-      width: 80vw;
+      height: 115px;
+      width: fit-content;
       border-radius: 20px;
       background-color: #3676FF;
       display: flex;
       align-items: center;
       padding: 20px;
+      overflow: hidden;
       padding-top: 30px;
+      margin-bottom: 20px;
       justify-content: center;
       transition: 0.22s ease-out;
     }.blogPostContainer:hover{
@@ -460,8 +456,55 @@ html{
       color: #FFFFFF;
       font-size: 85%;
       width: fit-content;
-    }
-    /*CONTACT SECTION*/
+    }.embla {
+    width: 350px;
+    border-color: #3676FF;
+    overflow: hidden;
+    }.emblaCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: center;
+  }.embla__container {
+    display: flex;
+  }.embla__slide {
+    flex: 0 0 97%; 
+    display: flex;
+    justify-content: center;
+  }#embla__prev,#embla__next{
+      margin-top: 25px;
+      border: 20px;
+      width: 130px;
+      height: 35px;
+      border-radius: 10px;
+      font-size: 18px;
+      margin-left: 20px;
+      margin-right: 20px;
+      color: #3676FF;
+      background-color: #FFFFFF;
+      transition: 0.25s ease-out;
+  }#embla__prev:hover,#embla__next:hover{
+      color: #FFFFFF;
+      background-color: #3676FF;
+      transition: 0.25s ease-in;
+      cursor: pointer;
+    }.embla__slide {
+    width: 90%;
+    height: 200px;
+    max-width: 700px;
+    border: 5px solid #3676FF;
+    border-radius: 25px;
+    background: #000;
+  }video {
+    border-width: 5px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #3676FF;
+    background-color: #000000;
+  }
+/*CONTACT SECTION*/
     #h3TagsA{
       color: #3676FF;
       display: inline;
@@ -469,7 +512,7 @@ html{
     }
     .contactContainer{
       width: 100%;
-      height: 1000px;
+      height: 900px;
       margin-bottom: 200px;
       color: #E6E6E6;
       text-align: center;
@@ -478,7 +521,7 @@ html{
       align-items: center;
       justify-content: center;
     }#contactTitle{
-      padding-top: 100px;
+      padding-top: 150px;
       padding-left: 50px;
       padding-right: 50px;
       font-size: 1.6em;
@@ -492,7 +535,7 @@ html{
       display: flex;
       flex-direction: column;
       border-width: 0px;
-      margin-top: 100px;      
+      margin-top: 75px;      
     }#formSubTitles{
       width: 100%;
       color: #FFFFFF;
@@ -503,7 +546,7 @@ html{
     }.formField{
       text-align: start;
     }#inputA,#inputB, #inputC,#textArea{
-      width: 50vw;
+      width: 60vw;
       height: 15px;
       font-size: 1.0em;
       border-radius: 20px;
@@ -582,51 +625,51 @@ html{
 @media(min-width: 640px){
     /* NAVIGATION */
       .hamburgerContainer li{
-          font-size: 1.7em;    
-          padding: 9px;
-          
+          font-size: 1.55em;    
+  
       }#close-Button span:nth-child(1){
           width: 48px;
+          height: 4px;
           transition: 0.5s ease-in;
       } #close-Button span:nth-child(2){
           width: 48px;
+          height: 4px;
           transition: 0.5s ease-in;
       }.hamburgerIcon{
         top: 68px;
-          height: 34px;
-          margin-right: 75px;
-          transition: 0.5s ease-in;
-
+        height: 32px;
+        margin-right: 75px;
       }.hamburgerIcon span{
         margin-top: 0px;
         width: 45px;
         height: 3.6;
       }#devLogoMobile{
         font-size: 48px;
-        margin-left: 25px;
+        margin-top: 52px;
         transition: 0.5s ease-in;
   }/* HERO */
   .heroContainer{
-    margin-top: 20%;
+    margin-top: 10%;
     margin-bottom: 20%;
   }.straightHeadshot{
-      width: 400px;
-      height: 400px;
-      margin-bottom: 50px;
+      width: 375px;
+      height: 375px;
+      margin-bottom: 25px;
+    }.bodyShot{
+      width: 325px;
+      height: 410px;
     }.title{
       font-size: 1.6em;
-      margin-top: 5%;
       transition: 0.5s ease-in;
     }#firstPartTitle{
-      font-size: 1.0em;
+      font-size: 0.9em;
     }#secondPartTitle{
-      font-size: 1.4em;
+      font-size: 1.3em;
     }#thirdPartTitleA{
-      font-size: 1.4em;
+      font-size: 1.3em;
     }#personalDisc{
-      font-size: 1.2em;
-      margin-left: 18px;
-      margin-right: 18px;
+      font-size: 1.1em;
+      margin-bottom: 0px;
     }
     /*ABOUT CONTAINER*/
     #aboutTitle{
@@ -652,12 +695,31 @@ html{
       padding: 25px;
     }.displayBackground{
       width: 95%;
-    }#techStack{
+     height: 95%;
+    }.displayContainer{
       height: 500px;
+    }#techStack{
+      height: 600px;
+      margin-bottom: 125px;
     }.workContainer{
-      height: 1675px;
+      height: 1400px;
     }
     /*BLOG CONTAINER*/
+    #blogContainer{
+      height: 1150px;
+    }
+    .blogPostContainer{
+      width: 500px;
+    }.embla{
+      width: 400px;
+      height: 300px;
+    }#embla__prev,#embla__next{
+      margin-top: 5px;
+    }.embla__slide{
+      height: 250px;
+    }#embla__prev, #embla__next{
+      width: 50px;
+    }
     #blogTitle{
       font-size: 1.9em;
     }#blogSubtitleText{
@@ -673,6 +735,9 @@ html{
       font-size: 1.em;
     }
     /*CONTACT SECTION*/
+    .contactContainer{
+      margin-bottom:200px;
+    }
     #contactTitle{
       font-size: 1.9em;
     }#contactSubTitle{
@@ -680,20 +745,20 @@ html{
     }#formSubTitles{
       font-size: 1.3em;
     }#submit{
-      font-size: 22px;
-      width: 150px;
-      height: 40px;
+      font-size: 21px;
+      width: 135px;
+      height: 38px;
     }#inputA,#inputB, #inputC,#textArea{
-      font-size: 1.1em;
-      padding: 15px;
+      font-size: 1.05em;
+      padding: 13px;
     }
     /* FOOTER CONTAINER*/
   .footerContainer{
       height: 155px;
     }#smallDevLogo{
-      font-size: 28px;
+      font-size: 27px;
     }.icons{
-      height: 35px;
+      height: 32px;
     }#linkedIn, #github, #goodreads{
       width: 22px;
       height: 22px;
@@ -707,46 +772,53 @@ html{
 @media(min-width: 768px){
   /* NAVIGATION */
       .hamburgerContainer li{
-          font-size: 1.9em;    
-          padding: 10px;
+          font-size: 1.6em;    
+
       }#close-Button span:nth-child(1){
           width: 50px;
-      } #close-Button span:nth-child(2){
+      }#close-Button span:nth-child(2){
           width: 50px;
       }.hamburgerIcon{
-          width: 45px;
-          height: 35px;
-          top: 75px;
-          margin-right: 55px;
-          transition: 0.5s ease-in;
-      }.hamburgerIcon span{
-        height: 4px;
-        width: 50px;
+        height: 36px;
+        width: 48px;
       }#devLogoMobile{
+        margin-top: 54px;
         font-size: 50px;
-        margin-left: 5px;
-  }/* HERO */
+     }/* HERO */
   .straightHeadshot{
-    width: 450px;
-    height: 450px;
+    width: 415px;
+    height: 415px;
   }.heroContainer{
     margin-top: 10%;
     margin-bottom: 10%;
     margin-right: 0px;
   }.title{
-      font-size: 1.8em;
-      margin-top: 5%;
+      font-size: 1.7em;
       transition: 0.5s ease-in;
-    }#personalDisc{font-size: 1.25em;}
+    }#personalDisc{
+      font-size: 1.175em;
+      margin-bottom: 80px;
+    }
     /*ABOUT CONTAINER */
     #aboutTitle{
       font-size: 2.1em;
     }#aboutDisc{
-      font-size: 1.2em
+      font-size: 1.175em
+    }.bodyShot{
+      width: 360;
+      height: 460;
     }
     /*WORK CONTAINER*/
+    .displayBackground{
+      width: 95%;
+    }.displayContainer{
+      height: 450px;
+      width: 650px;
+    }#techStack{
+      margin-bottom: 100px;
+    }
     .workContainer{
-      height: 1750px;
+      height: 1500px;
     }#workTitle{
       font-size: 2.1em;
     }#displayTitle{
@@ -755,7 +827,7 @@ html{
       font-size: 1.05em;
       margin-top: 35px;
     }#resumeTitle{
-      font-size: 1.2em;
+      font-size: 1.175em;
     }#skillsTitle{
       font-size:1.85em;
     }#techItem{
@@ -765,8 +837,13 @@ html{
     }#WGTT{
       width: 70%;
       height: 80%;
+    }#techStack{
+      width: 800px;
     }
     /*BLOG CONTAINER*/
+    #blogContainer{
+      padding-bottom: 200px;
+    }
     #blogTitle{
       font-size: 2.1em;
     }#blogSubtitleText{
@@ -777,36 +854,50 @@ html{
       font-size: 100%;
     }#h3TagsA{
       font-size: 1.3em;
+    }.blogPostContainer{
+      width: 60vw;
+    }.embla{
+      width: 500px;
+      height: 350px;
+    }#embla__prev,#embla__next{
+      margin-top: 5px;
+    }.embla__slide{
+      height: 320px;
     }
     /*CONTACT SECTION*/
+    .contactContainer{
+      height: 900px;
+      padding-top: 25px;
+    }
     #contactTitle{
+ 
       font-size: 2.1em;
     }#contactSubTitle{
       font-size: 1.25em;
     }#formSubTitles{
       font-size: 1.4em;
     }#submit{
-      font-size: 23px;
-      width: 155px;
-      height: 45px;
+      font-size: 22px;
+      width: 140px;
+      height: 40px;
     }#inputA,#inputB, #inputC,#textArea{
       font-size: 1.1em;
-      padding: 15px;
+      padding: 14px;
     }
   /* FOOTER */
   .footerContainer{
-      height: 160px;
+      height: 155px;
     }#smallDevLogo{
-      font-size: 30px;
+      font-size: 29px;
     }.icons{
-      height: 40px;
+      height: 35px;
     }#linkedIn, #github, #goodreads{
-      width: 25px;
-      height: 25px;
+      width: 24px;
+      height: 24px;
     }.icons a{
       margin: 10px;
     }#ownershipTag{
-      font-size: 0.8em;
+      font-size: 0.85em;
     }
 }
 /*Media Query* --> Computer
@@ -849,55 +940,68 @@ html{
         z-index: 300;
         flex-direction: row;
         margin: auto;
-        align-items: flex-start;
+        align-items: center;
     }.navContainer ul{
-        align-items: flex-start;
         color: #FBEED7;
         display: flex;
-        padding: 15px;
+        padding: 10px;
         padding-left: 0px;
-        padding-right: 12px;
+        padding-right: 0px;
         background-color: #3f3f3f29;
         backdrop-filter: blur(25px);
-        height: 20px;
+        height: 25px;
         border-width: 1px;
         border-style:solid;
         border-color: #ffffff21;
-        border-radius: 50px;;
+        border-radius: 50px;
+        padding-left: 5px;
+        padding-right: 5px;
         align-items: center;
     }.navContainer li{      
         list-style: none;
         display: flex;
-        justify-content:space-around;
+        justify-content:center;
         align-items: center;
         color: #FFFFFF;
-        padding-top: 15px;
+        padding-top: 13px;
         padding-bottom: 15px;
-        font-size: 0.8em;
+        font-size: 0.65em;
         text-decoration: none;
         transition: all .25s ease-out;
-        width: 120px;
+        width: 100px;
         height: 10px;
         text-align: center;
         border-radius: 25px;
         cursor: pointer;
-        margin:20px;
-             }
-      .navContainer a{
+
+     }.navContainer a{
         text-decoration: none;
         display: flex;
         font-size: 1.5em;
         cursor: default;
         flex-direction: row;
-      }.navContainer li:hover{
-        background-color: #3676FF;
+        border-radius: 25px;
         transition: all .25s ease-out;
+      }.navContainer li:hover{
+        color: #E6E6E6;
     }.hamburgerIcon{
         display: none;
+    }.active{
+      background-color: #3676FF;
+      transition: all .25s ease-in-out;
+    }.navList a:first-child{
+      margin-right: 10px;
+      margin-left: 0px;
+    }.navList a{
+      margin-left: 5px;
+      margin-right: 5px;
+    }.navList a:last-child{
+      margin-right:0px;
+      
     }
     /* HERO SECTION */
     .heroContainer{
-      width: 1000px;
+      width: 900px;
       margin-top: 50px;
       position: absolute;
       padding-bottom: 100px;
@@ -906,8 +1010,7 @@ html{
       justify-content: center;
       position: relative;
       margin: auto;
-    }
-    .straightHeadshot{
+    }.straightHeadshot{
       width: 375px;
       height: 375px;
       transition: 0.5s ease-out;
@@ -932,8 +1035,7 @@ html{
     }.titleContainer{
       margin-left:15px;
       margin-bottom: 125px;
-    }
-    #firstPartTitle{
+    }#firstPartTitle{
       font-size: 1.0em;
       padding-left: 0px;
       margin-bottom: 0px;
@@ -972,8 +1074,17 @@ html{
       font-size: 2.4em;
     }#aboutDisc{
       font-size: 1.2em;
+    }.discWrapper{
+      width: 900px;
+      margin-top: 40px;
+    }#aboutDisc{
+      margin-top: 0px;
     }
     /*WORK SECTION */
+    .displayContainer{
+      width:50%;
+      height: 30%;
+    }
     #workTitle{
       font-size: 2.4em;
       margin-bottom: 90px;
@@ -988,8 +1099,11 @@ html{
       font-size:2.1em;
     }#techItem{
       font-size: 1.1em;
-      width: 70px;
-      padding: 30px;
+      width: 65px;
+      padding: 25px;
+    }.discWrapper{
+      display: flex;
+      flex-direction: row;
     }
     /*BLOG CONTAINER */
     #blogTitle{
@@ -997,26 +1111,39 @@ html{
     }#blogSubtitleText{
       font-size: 1.4em;
     }#blogPostTitle{
-      font-size: 120%;
+      font-size: 110%;
     }#blogPostDisc{
-      font-size: 120%;
+      font-size: 100%;
+    }.blogPostContainer{
+      width: 800px;
+      height: 90px;
+    }.embla{
+      width: 600px;
+      height: 400px;
+    }#embla__prev,#embla__next{
+      margin-top: 5px;
+    }.embla__slide{
+      height: 375px;
     }
     /*CONTACT SECTION*/
     .contactContainer{
-      height: 1250px;
+      height: 1125px;
+      justify-content:start;
+      margin-bottom: 50px;
     }
     #contactTitle{
-      font-size: 2.4em;
+      font-size: 2.5em;
+      padding-top: 105px;
     }#contactSubTitle{
       font-size: 1.4em;
     }#formSubTitles{
       font-size: 1.4em;
     }#submit{
       font-size: 24px;
-      width: 160px;
-      height: 50px;
+      width: 150px;
+      height: 45px;
     }#inputA,#inputB, #inputC,#textArea{
-      font-size: 1.3em;
+      font-size: 1.1em;
       padding: 18px;
     }
     /* FOOTER SECTION */
@@ -1058,7 +1185,7 @@ html{
     }
     #ownershipTag{
       margin-top: 5px;
-      font-size: 0.7em;
+      font-size: 0.75em;
       transition: 0.5s ease-out;
     }
 
@@ -1066,15 +1193,14 @@ html{
 @media(min-width: 1280px){
   /* HERO */
   .heroContainer{
-    width: 1100px;
-  }
-  #thirdPartTitleB{
+    width: 1200px;
+  }#thirdPartTitleB{
     font-size: 1.1em;
-  }
-  .title{
-    font-size: 2.0em;
+  }.title{
+    font-size: 1.8em;
   }#personalDisc{
-    font-size: 1.25em;
+    font-size: 1.20em;
+      padding-right: 40px;
   }.straightHeadshot{
     width: 400px;
     height: 400px;
@@ -1085,28 +1211,49 @@ html{
     background-color: #3F3F3F;
   }.aboutContainer{
     width: 1200px;
+  }.discWrapper{
+    width: 1200px;
+    padding-bottom: 50px;
   }#aboutTitle{
     font-size: 2.5em;
   }#aboutDisc{
-    font-size: 1.25em;
+    margin-top: 60px;
+    font-size: 1.22em;
   }
   /*WORK SECTION*/
   #workSection{
     width: 100%;
-    height: 1800px;
+    display: flex;
+    justify-content: center;
+    height: 1400px;
     background-color: #FFFFFF;
   }.workContainer{
-    width: 1265px;
+    width: 1400px;
+    background-color: #00000000;
   }#workTitle{
     font-size: 2.5em;
   }#displayTitle{
-    font-size: 1.7em;
+    font-size: 1.6em;
+  }#WGTT{
+    margin-top: 15px;
   }#displayDisc{
-    font-size: 1.15em;
+    font-size: 1.10em;
   }#skillsTitle{
     font-size:2.22em;
   }#resumeTitle{
-    font-size: 1.4em;
+    margin-top:0px;
+    font-size: 1.2em;
+  }#techStack{
+    width: 1000px;
+    height: 20px;
+  }#techItem{
+    margin-top: 0px;
+    font-size: 1.0em;
+  }.displayBackground{
+    height: 400px;
+  }.displayContainer{
+    height: 450px;
+    width: 800px;
   }
   /*BLOG CONTAINER */
   #blogTitle{
@@ -1116,20 +1263,30 @@ html{
   }#h3TagsA{
     font-size: 1.5em;
   }#blogPostTitle{
-    font-size: 125%;
+    font-size: 120%;
   }#blogPostDisc{
-    font-size: 125%;
+    font-size: 100%;
   }.blogPostContainer{
-    width: 1000px;
+    width: 700px;
   }#blogContainer{
     width: 100%;
-  }
+  }.embla{
+      width: 800px;
+      height: 450px;
+    }#embla__prev,#embla__next{
+      margin-top: 5px;
+      width: 50px;
+      text-align: center;
+      font-size:1.5em;
+    }.embla__slide{
+      height: 400px;
+    }
     /*CONTACT SECTION*/
     .contactContainer{
       background-color: #161616;
     }#contactSection{
       width: 100%;
-      height: 1260px;
+      height: 1050px;
       background-color: #161616;
       padding-bottom: 175px;
     }
@@ -1140,12 +1297,12 @@ html{
     }#formSubTitles{
       font-size: 1.5em;
     }#submit{
-      font-size: 23px;
-      width: 155px;
+      font-size: 22px;
+      width: 140px;
       margin-top: 70px;
-      height: 42px;
+      height: 40px;
     }#inputA,#inputB, #inputC,#textArea{
-      font-size: 1.1em;
+      font-size: 1.0em;
       width: 700px;
       padding: 17px;
     }  
