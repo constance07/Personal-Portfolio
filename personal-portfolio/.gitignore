@@ -9,8 +9,6 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
-*.mp4
-public/posts/*.pdf
 
 # testing
 /coverage
