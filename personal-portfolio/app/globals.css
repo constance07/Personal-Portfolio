@@ -1082,11 +1082,12 @@ html{
       font-size: 1.2em;
     }.discWrapper{
       width: 900px;
-     
+      margin-left: 40px;
       margin-top: 40px;
     }#aboutDisc{
       width: 700px;
-      margin-right: 20px;
+  
+      margin-left: 100px;
       margin-top: 0px;
     }
     /*WORK SECTION */
@@ -1144,8 +1145,7 @@ html{
       height: 1125px;
       justify-content:start;
       margin-bottom: 50px;
-    }
-    #contactTitle{
+    }#contactTitle{
       font-size: 2.5em;
       padding-top: 105px;
     }#contactSubTitle{
