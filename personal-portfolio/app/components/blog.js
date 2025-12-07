@@ -69,7 +69,7 @@ export default function Blog(){
                 </div>
                 </a>
 
-                <a id = "blogPost"href = "/posts/PerfectBlue.pdf" download = "Perfect Blue - Or, The Illusion of 'Self'">
+                <a id = "blogPost"href = "https://docs.google.com/document/d/146vDDpP9A2YDVge6PFVIVN9LKkGYSIJK8rV-FkNJ98s/edit?usp=sharing">
                 <div className='blogPostContainer'>
                         <Image
                         src = {perfect}
