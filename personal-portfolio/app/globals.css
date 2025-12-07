@@ -377,7 +377,7 @@ html{
       transition: 0.2s ease-out;  
     }.skillItem{
       padding-bottom: 10px;
-      transition:0.22s ease-out;
+      transition:0.22s ease-in;
     }#techItem:hover > .skillItem{
       transform: translateY(-3px);
       transition:0.22s ease-in;
@@ -497,13 +497,11 @@ html{
     border: 5px solid #3676FF;
     border-radius: 25px;
     background: #000;
-  }video {
-    border-width: 5px;
-    border-radius: 25px;
-    border-style: solid;
-    border-color: #3676FF;
-    background-color: #000000;
-  }
+  }.emblaImage{
+      height: 100%;
+      width: 100%;
+      border-radius: 25px;
+    }
 /*CONTACT SECTION*/
     #h3TagsA{
       color: #3676FF;
@@ -711,12 +709,16 @@ html{
     .blogPostContainer{
       width: 500px;
     }.embla{
-      width: 400px;
+      width: 450px;
       height: 300px;
     }#embla__prev,#embla__next{
       margin-top: 5px;
     }.embla__slide{
       height: 250px;
+    }.emblaImage{
+      height: 100%;
+      width: 100%;
+      border-radius: 25px;
     }#embla__prev, #embla__next{
       width: 50px;
     }
@@ -857,12 +859,16 @@ html{
     }.blogPostContainer{
       width: 60vw;
     }.embla{
-      width: 500px;
+      width: 575px;
       height: 350px;
     }#embla__prev,#embla__next{
       margin-top: 5px;
     }.embla__slide{
       height: 320px;
+    }.emblaImage{
+      height: 100%;
+      width: 100%;
+      border-radius: 25px;
     }
     /*CONTACT SECTION*/
     .contactContainer{
@@ -1118,12 +1124,17 @@ html{
       width: 800px;
       height: 90px;
     }.embla{
-      width: 600px;
+      width: 675px;
       height: 400px;
     }#embla__prev,#embla__next{
       margin-top: 5px;
     }.embla__slide{
       height: 375px;
+      width: 101%;
+    }.emblaImage{
+      height: 100%;
+      width: 100%; 
+      border-radius: 25px;
     }
     /*CONTACT SECTION*/
     .contactContainer{
@@ -1235,7 +1246,7 @@ html{
   }#displayTitle{
     font-size: 1.6em;
   }#WGTT{
-    margin-top: 15px;
+    margin-top: 14px;
   }#displayDisc{
     font-size: 1.10em;
   }#skillsTitle{
@@ -1280,6 +1291,10 @@ html{
       font-size:1.5em;
     }.embla__slide{
       height: 400px;
+    }.emblaImage{
+      width: 700px;
+      height: 100%;
+    border-radius: 25px;
     }
     /*CONTACT SECTION*/
     .contactContainer{

@@ -92,42 +92,54 @@ export default function Blog(){
                 <div className="embla" >
                     <div className='embla__viewport' ref={emblaRef}>
                     <div className="embla__container">
-                    <video className="embla__slide"  controls preload="none" width={50} height={300} poster = "/images/aWoman.jpg">   
-                        <source src="/videos/aWoman.mp4" type="video/mp4" />
-                            <track
-                                src="/path/to/captions.vtt"
-                                kind="subtitles"
-                                srcLang="en"
-                                label="English">
-                            </track>
-                    </video>
-                    <video className="embla__slide"  controls preload="none" width={100} height={300} poster = "/images/forgetHer.jpg">
-                        <source src="/videos/forgetHer.mp4" type="video/mp4" />
-                            <track
-                                src="/path/to/captions.vtt"
-                                kind="subtitles"
-                                srcLang="en"
-                                label="English">
-                            </track>                  
-                    </video>
-                    <video className="embla__slide"  controls preload="none" width={100} height={300} poster = "/images/brainStew.jpg">
-                        <source src="/videos/brainStew.mp4" type="video/mp4" />
-                            <track
-                                src="/path/to/captions.vtt"
-                                kind="subtitles"
-                                srcLang="en"
-                                label="English">
-                            </track>                  
-                    </video>
-                    <video className="embla__slide"  controls preload="none" width={100} height={300} poster = "/images/theMoments.jpg">
-                        <source src="/videos/theMoments.mp4" type="video/mp4" />
-                            <track
-                                src="/path/to/captions.vtt"
-                                kind="subtitles"
-                                srcLang="en"
-                                label="English">
-                            </track>                  
-                    </video>
+                    <div className="embla__slide"  controls preload="none" width={50} height={300} poster = "/images/aWoman.jpg">   
+                    <a href='https://drive.google.com/file/d/1-rzIxKvFlL1wlwaCImbZebyo9hzHxlI2/view?usp=sharing'>
+                            <Image
+                                src = "/images/aWoman.jpg"
+                                width={200}
+                                height={300}
+                                className='emblaImage'
+                                alt = "musicCover"
+                                >
+                            </Image>  
+                    </a>
+                    </div>
+                    <div className="embla__slide">
+                    <a href='https://drive.google.com/file/d/1Air5c00Y-jZ39Tlc2Wktzq54P6ZY_aTB/view?usp=sharing'>
+                            <Image
+                                src = "/images/forgetHer.jpg"
+                                width={200}
+                                height={300}
+                                className='emblaImage'
+                                alt = "musicCover"
+                                >
+                            </Image>
+                    </a>               
+                    </div>
+                    <div className="embla__slide" >
+                    <a href='https://drive.google.com/file/d/1mjz0JadK13VyVFnF6_71UI6Po1ScCA2A/view?usp=sharing'>
+                            <Image
+                                src = "/images/brainStew.jpg"
+                                width={200}
+                                height={300}
+                                className='emblaImage'
+                                alt = "musicCover"
+                                >
+                            </Image>
+                    </a>                            
+                    </div>
+                    <div className="embla__slide">
+                    <a href='https://drive.google.com/file/d/1RFeqWO_CyoDusKpzxSaxsAW-XCFLiUWW/view?usp=drive_link'>
+                            <Image
+                                src = "/images/theMoments.jpg"
+                                width={200}
+                                height={300}
+                                className='emblaImage'
+                                alt = "musicCover"
+                                >
+                            </Image>
+                    </a>             
+                    </div>
                 </div>
                 </div>
             </div>
