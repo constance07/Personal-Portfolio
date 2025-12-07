@@ -76,16 +76,13 @@ html{
         cursor: pointer;
       }.hamburgerContainer li:active{
         background-color: #3676FF;
-      }
-      .hamburgerContainer a{
-
+      }.hamburgerContainer a{
           background-color: #161616;
           text-decoration: none;
           height: 100px;
           cursor: default;
           display: flex;
           text-align: center
-       
       } ul.open{
         visibility:visible;
         position: fixed;
@@ -169,11 +166,9 @@ html{
         transition: 0.5s ease-out;
   }
     /* HERO SECTION */
-
     .heroContainer{
       margin-top: 10%;
       margin-bottom: 0%;
- 
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -493,6 +488,7 @@ html{
     }.embla__slide {
     width: 90%;
     height: 200px;
+    overflow: hidden;
     max-width: 700px;
     border: 5px solid #3676FF;
     border-radius: 25px;
@@ -500,8 +496,12 @@ html{
   }.emblaImage{
       height: 100%;
       width: 100%;
-      border-radius: 25px;
-    }
+      transition: 0.5s ease-out;
+  }.emblaImage:hover{
+      filter: brightness(1.15);
+      transition: 0.5s ease-in;
+      transform: scale(1.04);
+  }
 /*CONTACT SECTION*/
     #h3TagsA{
       color: #3676FF;
@@ -718,7 +718,6 @@ html{
     }.emblaImage{
       height: 100%;
       width: 100%;
-      border-radius: 25px;
     }#embla__prev, #embla__next{
       width: 50px;
     }
@@ -868,7 +867,6 @@ html{
     }.emblaImage{
       height: 100%;
       width: 100%;
-      border-radius: 25px;
     }
     /*CONTACT SECTION*/
     .contactContainer{
@@ -1139,7 +1137,6 @@ html{
     }.emblaImage{
       height: 100%;
       width: 100%; 
-      border-radius: 25px;
     }
     /*CONTACT SECTION*/
     .contactContainer{
@@ -1301,7 +1298,6 @@ html{
     }.emblaImage{
       width: 700px;
       height: 100%;
-    border-radius: 25px;
     }
     /*CONTACT SECTION*/
     .contactContainer{

@@ -48,7 +48,7 @@ export default function Blog(){
                 <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;h1&gt;</div> FUN FACT: I  <div id = 'blueTag' className={pixelify_Sans_Bold.className}> DO </div> HAVE A LIFE OUTSIDE MY COMPUTER ! <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div></h1> 
 
                 <div className='blogSubtitle'>
-                    <div id = 'h3TagsA' className={pixelify_Sans_Bold.className}>&lt;h3&gt;</div><h3 id = "blogSubtitleText" className={pixelify_Sans_Bold.className}>(*At least, that's what I like to tell myself)<div id = 'h3TagsA' className={pixelify_Sans_Bold.className}>&lt;/h3&gt;</div></h3>
+                    <div id = 'h3TagsA' className={pixelify_Sans_Bold.className}>&lt;h3&gt;</div><h3 id = "blogSubtitleText" className={pixelify_Sans_Bold.className}>(*At least, that's what I like to tell myself)<div id = 'h3TagsB' className={pixelify_Sans_Bold.className}>&lt;/h3&gt;</div></h3>
                 </div>
                 
                 <a id = "blogPost"href = "/posts/TheMetamorphosis_FranzKafka.pdf" download = "The Metamorphosis - A Vermins Hunger For Humanity">
@@ -58,7 +58,6 @@ export default function Blog(){
                         width={75}
                         height={105}
                         alt = 'Franz Kafka The Metamorphosis jpg'
-                   
                         id = "metaBook"
                         className='skillItem'>
                         </Image>
