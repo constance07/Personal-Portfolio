@@ -1,4 +1,13 @@
-export const EmailTemplate = ({name, email,subject, message}) => {
+
+/*Defining Variable Type*/
+interface EmailTemplateProps {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
+
+export const EmailTemplate = ({name, email,subject, message}: EmailTemplateProps) => {
     return(
         <div>
             <p>

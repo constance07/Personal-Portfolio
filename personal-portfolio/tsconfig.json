@@ -35,17 +35,17 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/page.tsx",
-    "app/components/preloader/preloader.js",
+    "app/components/preloader/preloader.tsx",
     "app/components/preloader/preloaderAnimation.js",
     "app/components/navigation.js",
     "app/components/work.js",
-    "app/components/contact.js",
-    "app/components/hero.js",
-    "app/components/footer.js",
+    "app/components/contact.tsx",
+    "app/components/hero.tsx",
+    "app/components/footer.tsx",
     "app/components/about.tsx",
-    "app/components/blog.js",
+    "app/components/blog.tsx",
     ".next/dev/types/**/*.ts"
-  ],
+, "app/components/emailTemplate.tsx"  ],
   "exclude": [
     "node_modules"
   ]

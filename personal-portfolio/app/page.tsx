@@ -3,7 +3,7 @@ import Image from "next/image";
 import PreLoader from "./components/preloader/preloader";
 import { useEffect } from "react";
 /*Pages*/
-import Hero from "./components/hero.js";
+import Hero from "./components/hero";
 import About from "./components/about";
 import Work from "./components/work";
 import Footer from "./components/footer";

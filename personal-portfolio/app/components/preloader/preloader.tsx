@@ -12,8 +12,8 @@ const pixelify_Sans = Pixelify_Sans({
 
 export default function PreLoader(){
         useEffect(() => {
-            const logoContainer= document.querySelector(".preLoader")
-            const logoText = document.querySelector(".texts-container")
+            const logoContainer= document.querySelector(".preLoader") as HTMLElement;
+            const logoText = document.querySelector(".texts-container")  as HTMLElement;
             const body =document.body;
             setTimeout(() => {
                 /* Fade Out */

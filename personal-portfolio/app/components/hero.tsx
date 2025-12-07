@@ -34,12 +34,12 @@ export default function Hero(){
        }
        {/* Enable Overlay */}
        const enableOverlay = () => {
-            const overlay = parent.document.querySelector(".blank")
+            const overlay = parent.document.querySelector(".blank") as HTMLElement;
             overlay.classList.add("overlayFadeIn")
        }
        {/* Disable Overlay */}
        const disableOverlay = () => {
-           const overlay = parent.document.querySelector(".blank")
+           const overlay = parent.document.querySelector(".blank") as HTMLElement;
             overlay.classList.add("overlayFadeOut")
             setTimeout(() => {
                     /* Fade Out */
@@ -50,14 +50,14 @@ export default function Hero(){
        }
        {/* Active Link */}
        const enableActiveAboutLink= () => {
-            const aboutActive = parent.document.querySelector("li.activeAbout");
+            const aboutActive = parent.document.querySelector("li.activeAbout") as HTMLElement;
             aboutActive.style.color = 'blue';
        }
     
         /*Scroll Navigation*/
         if(typeof window !== 'undefined'){
-        const navLinks = document.querySelectorAll('.navList a');
-        const sections = document.querySelectorAll('.section');
+        const navLinks = document.querySelectorAll<HTMLAnchorElement>('.navList a');
+        const sections = document.querySelectorAll<HTMLElement>('.section');
         
         let currentSection = 'heroSection';
     
