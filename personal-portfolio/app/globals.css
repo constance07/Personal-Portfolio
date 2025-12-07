@@ -1018,6 +1018,7 @@ html{
       margin: auto;
     }.straightHeadshot{
       width: 375px;
+      margin-right: 10px;
       height: 375px;
       transition: 0.5s ease-out;
     }.headshotContainer{
@@ -1068,7 +1069,7 @@ html{
       padding-left: 0px;
       margin: 0px;
       font-size: 18px;
-      padding-right: 0px;
+      padding-right: 20px;
       padding-top: 35px;
       margin-bottom: 0px;
     }#pTags{
@@ -1211,10 +1212,12 @@ html{
   }#thirdPartTitleB{
     font-size: 1.1em;
   }.title{
+    padding-left: 20px;
     font-size: 1.8em;
   }#personalDisc{
     font-size: 1.20em;
-      padding-right: 40px;
+    padding-right: 40px;
+    padding-left: 20px;
   }.straightHeadshot{
     width: 400px;
     height: 400px;
