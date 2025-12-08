@@ -235,6 +235,7 @@ html{
     }.bodyShotContainer{
       margin-top: 50px;
     }.bodyShot{
+      width: 275px;
       transition: 0.5s ease-in;
     }.bodyShot:hover{
         transform: scale(1.04);

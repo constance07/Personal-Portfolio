@@ -21,7 +21,7 @@ export default function About(){
                         <div className='bodyShotContainer'>
                             <Image
                                 src = {bodyShot}
-                                width={275}
+                                width={2000}
                                 height={350}
                                 alt ='Conference photo of Serenity'
                    

@@ -68,7 +68,7 @@ export default function Hero(){
                 }
             });
     
-              navLinks.forEach(link => {
+            navLinks.forEach(link => {
             if(link.href.includes(currentSection)) {
                     link.classList.add('active');
             }else {
@@ -148,7 +148,7 @@ export default function Hero(){
             <div className='headshotContainer'>
                 <Image
                     src = {straightHeadshot}
-                    width={350}
+                    width={2000}
                     height={350}
 
                     alt = 'Headshot of Serenity'
