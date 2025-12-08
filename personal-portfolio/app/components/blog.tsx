@@ -37,7 +37,6 @@ export default function Blog(){
     }, [emblaApi])
 
 
-
     return(
     <div className = "section" id='blogSection'>
        
@@ -75,7 +74,6 @@ export default function Blog(){
                         width={75}
                         height={105}
                         alt = 'Satoshi Kon Perfect Blue jpg'
-                       
                         id = "perfectBook"
                         className='skillItem'>
                         </Image>
@@ -95,7 +93,7 @@ export default function Blog(){
                     <a href='https://drive.google.com/file/d/1-rzIxKvFlL1wlwaCImbZebyo9hzHxlI2/view?usp=sharing' target ="_blank">
                             <Image
                                 src = "/images/aWoman.jpg"
-                                width={200}
+                                width={2000}
                                 height={300}
                                 className='emblaImage'
                                 alt = "musicCover"
@@ -106,8 +104,8 @@ export default function Blog(){
                     <div className="embla__slide">
                     <a href='https://drive.google.com/file/d/1Air5c00Y-jZ39Tlc2Wktzq54P6ZY_aTB/view?usp=sharing' target ="_blank"> 
                             <Image
-                                src = "/images/forgetHer.jpg"
-                                width={200}
+                                src = "/images/forgetHer.png"
+                                width={2000}
                                 height={300}
                                 className='emblaImage'
                                 alt = "musicCover"
@@ -119,7 +117,7 @@ export default function Blog(){
                     <a href='https://drive.google.com/file/d/1mjz0JadK13VyVFnF6_71UI6Po1ScCA2A/view?usp=sharing' target ="_blank">
                             <Image
                                 src = "/images/brainStew.jpg"
-                                width={200}
+                                width={2000}
                                 height={300}
                                 className='emblaImage'
                                 alt = "musicCover"
@@ -131,7 +129,7 @@ export default function Blog(){
                     <a href='https://drive.google.com/file/d/1RFeqWO_CyoDusKpzxSaxsAW-XCFLiUWW/view?usp=drive_link' target ="_blank">
                             <Image
                                 src = "/images/theMoments.jpg"
-                                width={200}
+                                width={2000}
                                 height={300}
                                 className='emblaImage'
                                 alt = "musicCover"

@@ -1296,7 +1296,7 @@ html{
     }.embla__slide{
       height: 400px;
     }.emblaImage{
-      width: 700px;
+      width: auto;
       height: 100%;
     }
     /*CONTACT SECTION*/
