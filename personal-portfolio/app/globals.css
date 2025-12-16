@@ -1,7 +1,7 @@
 body {
-  min-height: 100vh;
-margin: 0;
-  background: linear-gradient(
+      min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(
     310deg,
     rgb(37, 37, 37) 0%,
     rgb(20, 20, 20) 40%,
@@ -11,7 +11,9 @@ margin: 0;
   background-attachment: fixed;
   background-size: cover;
 }
-
+html{
+  scroll-behavior: smooth;
+}
   /*Scroll-Bar*/
       /*Disables*/
       .overflowHidden{
