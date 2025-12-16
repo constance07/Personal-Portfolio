@@ -1,16 +1,17 @@
+body {
+  min-height: 100vh;
+margin: 0;
+  background: linear-gradient(
+    310deg,
+    rgb(37, 37, 37) 0%,
+    rgb(20, 20, 20) 40%,
+    rgb(0, 0, 0) 100%
+  );
 
-/*Base Layout*/
-body{
-  background-color: #161616;
-  overflow-y: hidden;
-  margin: 0px;
-  overflow-x: hidden;
-  /* height: 0%; */
+  background-attachment: fixed;
+  background-size: cover;
 }
-/* Smooth-Scroll on Jump Section */
-html{
-  scroll-behavior: smooth;
-}
+
   /*Scroll-Bar*/
       /*Disables*/
       .overflowHidden{
@@ -63,8 +64,8 @@ html{
         
       }.hamburgerContainer li{
           display: flex;
-          font-size: 1.4em;    
-       align-items: center;
+          font-size: 1.3em;    
+          align-items: center;
           height: 100%;
           width: 100%;
           color: #FFFFFF;
@@ -79,7 +80,7 @@ html{
       }.hamburgerContainer a{
           background-color: #161616;
           text-decoration: none;
-          height: 100px;
+          height: 90px;
           cursor: default;
           display: flex;
           text-align: center
@@ -226,7 +227,7 @@ html{
     .aboutContainer{
       margin: auto;
       height: fit-content;
-      background-color: #3F3F3F;
+      /* background-color: #3F3F3F; */
       display: flex;
       text-align: center;
       align-items: center;
@@ -263,7 +264,7 @@ html{
     }
     /*WORK CONTAINER*/
     .workContainer{
-      background-color: #FFFFFF;
+      /* background-color: #FFFFFF; */
       height: auto;
       display: flex;
       align-items: center;
@@ -271,13 +272,15 @@ html{
     }#workTitle{
       margin: 50px;
       margin-top: 125px;
+      color: white;
       text-align: center;
       font-size: 1.6em;
       }.displayContainer{
       width: 70%;
+      height: 300px;
       overflow: hidden;
     }.displayBackground{
-      height: 260px;
+      height: 250px;
       margin:0px;
       display: flex;
       flex-direction: column;
@@ -285,9 +288,10 @@ html{
       margin-left: 10px;
       margin-right: 10px;
       border-radius: 18px;
-      border-width: 5px;
+      border-width: 8px;
       border-style: solid;
-      border-color: #161616;
+      box-shadow: 5px 10px 8px rgb(15, 15, 15);
+      border-color: #050b1fa7;
       background: #3676FF;
       transition: background 0.22s ease-out;
     }.displayBackground:hover{
@@ -314,14 +318,16 @@ html{
       border-radius: 15px 15px 0 0;
       margin-bottom: 0px;
       width: 82%;
-      height: 70%;
+      height: 90%;
       z-index: 30;
       background-color: #3676FF;
       transition: 0.22s ease-out;
+      
     }#wgttLink{
       text-decoration: none;
     }#resumeTitle{
       margin-top:25px;
+      color: white;
       text-align: center;
     }#resumeLinkA{
       display: inline-block;
@@ -344,6 +350,7 @@ html{
       display: inline-block;
       text-align: center;
       font-size: 1.6em;
+      color: white;
       margin-top: 100px;
     }#techStack{
       margin-top: 0%;
@@ -359,11 +366,12 @@ html{
       text-align: center;
       width: 55px;
       height: 55px;
-      background-color: #3F3F3F;
+      /* background-color: #3F3F3F; */
+      color: white;
+       box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.435);
       border-radius: 10px;
       padding: 20px;
       margin: 15px;
-      color: white;
       font-size: 0.9em;
       margin-top: 0px;
       display: flex;
@@ -378,7 +386,7 @@ html{
       transform: translateY(-3px);
       transition:0.22s ease-in;
     }#techItem:hover{
-      background-color: #5f5f5f;
+     
       transition: 0.2s ease-in;
     }.discWrapper{
       display: flex;
@@ -388,7 +396,8 @@ html{
     #blogContainer{
       height: auto;
       padding-bottom: 175px;
-      background-color:#3F3F3F;
+      
+      /* background-color:#3F3F3F; */
       margin-top: 0px;
       display: flex;
       flex-direction: column;
@@ -415,6 +424,7 @@ html{
       display: inline-block;
     }#blogPost{
       text-decoration: none; 
+      
       margin-top: 20px;
       text-align: start;
     }#blogSubtitleText{
@@ -424,9 +434,11 @@ html{
       margin-top: 0px;
       margin-bottom: 50px;
     }.blogPostContainer{
-      border-width: 4px;
+      border-width: 5px;
       border-style: solid;
-      border-color: #161616;
+            border-color: #050b1fa7;
+      box-shadow: 5px 10px 8px rgb(15, 15, 15);
+
       height: 115px;
       width: fit-content;
       border-radius: 20px;
@@ -466,9 +478,9 @@ html{
   }.embla__container {
     display: flex;
   }.embla__slide {
-    flex: 0 0 97%; 
+    flex: 0 0 97.5%; 
     display: flex;
-    justify-content: center;
+   
   }#embla__prev,#embla__next{
       margin-top: 25px;
       border: 20px;
@@ -487,7 +499,7 @@ html{
       transition: 0.25s ease-in;
       cursor: pointer;
     }.embla__slide {
-    width: 90%;
+    width: 92%;
     height: 200px;
     overflow: hidden;
     max-width: 700px;
@@ -496,7 +508,7 @@ html{
     background: #000;
   }.emblaImage{
       height: 100%;
-      width: 100%;
+      width: 105%;
       transition: 0.5s ease-out;
   }.emblaImage:hover{
       filter: brightness(1.15);
@@ -693,10 +705,10 @@ html{
       width: 60px;
       padding: 25px;
     }.displayBackground{
-      width: 95%;
-     height: 95%;
+     height: 90%;
     }.displayContainer{
       height: 500px;
+      width: 500px;
     }#techStack{
       height: 600px;
       margin-bottom: 125px;
@@ -709,17 +721,15 @@ html{
     }
     .blogPostContainer{
       width: 500px;
-    }.embla{
-      width: 450px;
-      height: 300px;
-    }#embla__prev,#embla__next{
-      margin-top: 5px;
-    }.embla__slide{
-      height: 250px;
-    }.emblaImage{
-      height: 100%;
-      width: 100%;
-    }#embla__prev, #embla__next{
+    }.embla {
+      width: 500px;
+    }.embla__container {
+    display: flex;
+  }.embla__slide {
+    flex: 0 0 98%; 
+  }.embla__slide {
+    height: 300px;
+  }#embla__prev, #embla__next{
       width: 50px;
     }
     #blogTitle{
@@ -813,9 +823,10 @@ html{
     /*WORK CONTAINER*/
     .displayBackground{
       width: 95%;
+      height: 91%;
     }.displayContainer{
-      height: 450px;
-      width: 650px;
+      height: 500px;
+      width: 700px;
     }#techStack{
       margin-bottom: 100px;
     }
@@ -858,16 +869,16 @@ html{
       font-size: 1.3em;
     }.blogPostContainer{
       width: 60vw;
-    }.embla{
+    }.embla {
       width: 575px;
-      height: 350px;
-    }#embla__prev,#embla__next{
-      margin-top: 5px;
-    }.embla__slide{
-      height: 320px;
-    }.emblaImage{
-      height: 100%;
-      width: 100%;
+    }.embla__container {
+    display: flex;
+  }.embla__slide {
+    flex: 0 0 98.3%; 
+  }.embla__slide {
+    height: 350px;
+  }#embla__prev,#embla__next{
+      margin-top: 25px;
     }
     /*CONTACT SECTION*/
     .contactContainer{
@@ -1092,8 +1103,8 @@ html{
     }
     /*WORK SECTION */
     .displayContainer{
-      width:50%;
-      height: 30%;
+      width:60%;
+      height: 40%;
     }
     #workTitle{
       font-size: 2.4em;
@@ -1136,8 +1147,8 @@ html{
       height: 375px;
       width: 101%;
     }.emblaImage{
-      height: 100%;
-      width: 100%; 
+      height: 110%;
+      width: 102%; 
     }
     /*CONTACT SECTION*/
     .contactContainer{
@@ -1213,17 +1224,18 @@ html{
     padding-left: 20px;
     font-size: 1.8em;
   }#personalDisc{
-    font-size: 1.20em;
+    font-size: 1.1em;
     padding-right: 40px;
     padding-left: 20px;
   }.straightHeadshot{
+    margin-left: 20px;
     width: 400px;
     height: 400px;
   }
   /*ABOUT SECTION*/
   #aboutSection{
     width: 100%;
-    background-color: #3F3F3F;
+    /* background-color: #3F3F3F; */
   }.aboutContainer{
     width: 100%;
   }.discWrapper{
@@ -1232,9 +1244,9 @@ html{
   }#aboutTitle{
     font-size: 2.5em;
   }#aboutDisc{
-    margin-top: 60px;
+    margin-top: 90px;
     margin-left: 60px;
-    font-size: 1.22em;
+    font-size: 1.1em;
   }
   /*WORK SECTION*/
   #workSection{
@@ -1242,10 +1254,10 @@ html{
     display: flex;
     justify-content: center;
     height: 1400px;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
   }.workContainer{
     width: 1400px;
-    background-color: #00000000;
+    /* background-color: #00000000; */
   }#workTitle{
     font-size: 2.5em;
   }#displayTitle{
@@ -1253,18 +1265,18 @@ html{
   }#WGTT{
     margin-top: 14px;
   }#displayDisc{
-    font-size: 1.10em;
+    font-size: 1.0em;
   }#skillsTitle{
     font-size:2.22em;
   }#resumeTitle{
     margin-top:0px;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }#techStack{
     width: 1000px;
     height: 20px;
   }#techItem{
     margin-top: 0px;
-    font-size: 1.0em;
+    font-size: 0.9em;
   }.displayBackground{
     height: 400px;
   }.displayContainer{
@@ -1279,34 +1291,31 @@ html{
   }#h3TagsA{
     font-size: 1.5em;
   }#blogPostTitle{
-    font-size: 120%;
+    font-size: 115%;
   }#blogPostDisc{
-    font-size: 100%;
+    font-size: 95%;
   }.blogPostContainer{
     width: 700px;
   }#blogContainer{
     width: 100%;
   }.embla{
-      width: 800px;
-      height: 450px;
+      width: 700px;
+      height: 500px;
     }#embla__prev,#embla__next{
       margin-top: 5px;
-      width: 50px;
-      text-align: center;
-      font-size:1.5em;
     }.embla__slide{
-      height: 400px;
+      height: 425px;
+      width: 105%;
+       flex: 0 0 98.6%; 
     }.emblaImage{
-      width: auto;
       height: 100%;
+      width: 103%; 
     }
     /*CONTACT SECTION*/
-    .contactContainer{
-      background-color: #161616;
-    }#contactSection{
+    #contactSection{
       width: 100%;
       height: 1050px;
-      background-color: #161616;
+      /* background-color: #161616; */
       padding-bottom: 175px;
     }
     #contactTitle{

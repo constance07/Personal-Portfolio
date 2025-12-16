@@ -59,7 +59,7 @@ export default function Work(){
                     <div id = 'techItem'>
                         <Image
                         src = {js}
-                        width={30}
+                        width={25}
                         height={32}
                         alt = 'Javascript jpg'
                        
@@ -71,7 +71,7 @@ export default function Work(){
                     <div id = 'techItem'>
                         <Image
                         src = {python}
-                        width={30}
+                        width={25}
                         height={32}
                         alt = 'Python jpg'
                         
@@ -82,7 +82,7 @@ export default function Work(){
                     <div id = 'techItem'>
                         <Image
                         src = {java}
-                        width={30}
+                        width={25}
                         height={32}
                         alt = 'Java jpg'
                        
@@ -93,7 +93,7 @@ export default function Work(){
                     <div id = 'techItem'>
                         <Image
                         src = {C}
-                        width={30}
+                        width={25}
                         height={32}
                         alt = 'C jpg'
                  
@@ -104,7 +104,7 @@ export default function Work(){
                     <div id = 'techItem'>
                         <Image
                         src = {html}
-                        width={30}
+                        width={25}
                         height={32}
                         alt = 'HTML jpg'
                        
@@ -115,7 +115,7 @@ export default function Work(){
                     <div id = 'techItem'>
                         <Image
                         src = {css}
-                        width={30}
+                        width={25}
                         height={32}
                         alt = 'CSS jpg'
                        
@@ -126,7 +126,7 @@ export default function Work(){
                     <div id = 'techItem'>
                         <Image
                         src = {react}
-                        width={36}
+                        width={30}
                         height={32}
                         alt = 'React jpg'
                         
@@ -137,7 +137,7 @@ export default function Work(){
                     <div id = 'techItem'>
                         <Image
                         src = {next}
-                        width={32}
+                        width={28}
                         height={32}
                         alt = 'Next jpg'
                 
@@ -148,7 +148,7 @@ export default function Work(){
                     <div id = 'techItem'>
                         <Image
                         src = {chakra}
-                        width={32}
+                        width={28}
                         height={32}
                         alt = 'ChakraUI jpg'
                         
@@ -160,7 +160,7 @@ export default function Work(){
                     <div id = 'techItem'>
                         <Image
                         src = {git}
-                        width={32}
+                        width={28}
                         height={32}
                         alt = 'Git jpg'
                        
@@ -171,7 +171,7 @@ export default function Work(){
                     <div id = 'techItem'>
                         <Image
                         src = {vercel}
-                        width={32}
+                        width={28}
                         height={32}
                         alt = 'Vercel jpg'
                       
@@ -182,7 +182,7 @@ export default function Work(){
                     <div id = 'techItem'>
                         <Image
                         src = {figma}
-                        width={23}
+                        width={19}
                         height={32}
                         alt = 'Figma jpg'
                    
