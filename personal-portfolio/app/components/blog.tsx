@@ -142,8 +142,8 @@ export default function Blog(){
             </div>
 
         <div id ='controlButtons'>
-            <button id = "embla__prev" className={pixelify_Sans.className} onClick={scrollPrev}>&lt;</button>
-            <button id="embla__next" className={pixelify_Sans.className} onClick={scrollNext}>&gt;</button>
+            <button id = "embla__prev" className={be_Vietnam_Pro.className} onClick={scrollPrev}>&lt;</button>
+            <button id="embla__next" className={be_Vietnam_Pro.className} onClick={scrollNext}>&gt;</button>
         </div>
 
         </div>

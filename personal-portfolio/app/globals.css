@@ -388,7 +388,7 @@ html{
       transform: translateY(-3px);
       transition:0.22s ease-in;
     }#techItem:hover{
-     
+       box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.79); 
       transition: 0.2s ease-in;
     }.discWrapper{
       display: flex;
@@ -486,7 +486,7 @@ html{
   }#embla__prev,#embla__next{
       margin-top: 25px;
       border: 20px;
-      width: 130px;
+      width: 50px;
       height: 35px;
       border-radius: 10px;
       font-size: 18px;
@@ -1302,9 +1302,9 @@ html{
     width: 100%;
   }.embla{
       width: 700px;
-      height: 500px;
+      height: 475px;
     }#embla__prev,#embla__next{
-      margin-top: 5px;
+      margin-top: 0px;
     }.embla__slide{
       height: 425px;
       width: 105%;
