@@ -78,7 +78,7 @@ export default function Blog(){
                         className='skillItem'>
                         </Image>
                     <div className = "blogPostContent">
-                        <div id="blogPostTitle" className={be_Vietnam_Pro.className}>Perfect Blue: Or, The Illusion of 'Self'<br></br></div>
+                        <div id="blogPostTitle" className={be_Vietnam_Pro.className}>Perfect Blue: Or, The Illusion of "Self"<br></br></div>
                         <p id = "blogPostDisc" className={be_Vietnam_Pro_Light.className}>What does Mima Kirigoe's struggle to transition from a teen j-pop idol to full-time actress tell us about our own identity and personas?</p>
                     </div>
                 </div>

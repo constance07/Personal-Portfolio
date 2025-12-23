@@ -148,7 +148,7 @@ export default function Hero(){
             <div className='headshotContainer'>
                 <Image
                     src = {straightHeadshot}
-                    width={2000}
+                    width={1000}
                     height={350}
 
                     alt = 'Headshot of Serenity'
@@ -161,6 +161,7 @@ export default function Hero(){
                 <h3 id ='firstPartTitle' className= {be_Vietnam_Pro.className}>Hello, my name is</h3>
                 <h3 id ='secondPartTitle'className= {be_Vietnam_Pro.className}>Serenity Buckner.</h3>
                 <h3 id='thirdPartTitleA' className= {be_Vietnam_Pro.className}>I Innovate with <div id='thirdPartTitleB' className={pixelify_Sans.className}> Principle.</div></h3>
+
             </div>
             {/* Disc*/}
             <p id = "personalDisc" className={be_Vietnam_Pro_Light.className}> <span id = 'pTags' className={pixelify_Sans.className}>&lt;p&gt;</span> I want to combine my passion for computers, logic, and algorithms with social impact — particularly in application to autonomous systems — as I explore the bounds of ethical technology.  <span id = 'pTags' className={pixelify_Sans.className}>&lt;/p&gt;</span></p>

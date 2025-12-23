@@ -881,6 +881,7 @@ html{
     height: 350px;
   }#embla__prev,#embla__next{
       margin-top: 25px;
+      width: 40px;
     }
     /*CONTACT SECTION*/
     .contactContainer{
