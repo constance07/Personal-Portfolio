@@ -148,7 +148,7 @@ export default function Hero(){
             <div className='headshotContainer'>
                 <Image
                     src = {straightHeadshot}
-                    width={1000}
+                    width={500}
                     height={350}
 
                     alt = 'Headshot of Serenity'
