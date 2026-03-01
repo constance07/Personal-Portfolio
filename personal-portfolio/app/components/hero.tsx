@@ -5,13 +5,15 @@ import {useState} from 'react';
 import straightHeadshot from '@/app/images/straightHeadshot.jpg'
 /*Styled Imports*/
 import '../globals.css';
-import { Pixelify_Sans } from 'next/font/google';
+import { Google_Sans_Code, Pixelify_Sans } from 'next/font/google';
 const pixelify_Sans = Pixelify_Sans({
     subsets: ["latin"],
     weight: "400",
 });
 import { Be_Vietnam_Pro} from 'next/font/google';
 const pixelify_SansBold = Pixelify_Sans({subsets: ["latin"], weight: "700",});
+const googleSansCode = Google_Sans_Code({subsets: ["latin"], weight: "400"});
+const googleSansCode_Bold = Google_Sans_Code({subsets: ["latin"], weight: "700"});
 const pixelify_SansSemiBold = Pixelify_Sans({subsets: ["latin"], weight: "500",});
 {/*VBold*/}const be_Vietnam_Pro = Be_Vietnam_Pro({subsets: ['latin'], weight: '800'})
 {/*Light*/}const be_Vietnam_Pro_Light = Be_Vietnam_Pro({subsets: ['latin'], weight: '300'})
@@ -81,12 +83,12 @@ export default function Hero(){
         
         <div className='section' id = "heroSection">
 
-        <div className={be_Vietnam_Pro.className}>
+        <div className={googleSansCode.className}>
         {/*ON MOBILE*/}    
         <div className='blank'></div>
         {/*Hamburger Menu*/}
             <nav id = "navOpen" className="hamburgerContainer" >
-                <a className = "active-link" href ='/'><span id = "devLogoMobile" className={pixelify_SansBold.className}>SB</span></a>
+                <a className = "active-link" href ='/'><span id = "devLogoMobile" className={be_Vietnam_Pro.className}>SB</span></a>
                 {/*Collapsed*/}
                 <div className='hamburgerIconBackground'>
                     <div className = "hamburgerIcon" onClick={() => {
@@ -131,11 +133,11 @@ export default function Hero(){
             <a href ='/'><span id = "devLogo" className={be_Vietnam_Pro.className}>SB</span></a>
             <ul className='navList'>
                 {/*Pages*/}
-                        <a className='active' href ='#heroSection'><li>Home</li></a>
-                        <a  href ='#aboutSection'><li>About</li></a>
-                        <a  href ='#workSection'><li>Work</li></a>
-                        <a  href ="#blogSection"><li>Blog</li></a>
-                        <a  href ="#contactSection"><li>Contact</li></a>
+                        <a className='active' href ='#heroSection'><li>01. Home</li></a>
+                        <a  href ='#aboutSection'><li>02. About</li></a>
+                        <a  href ='#workSection'><li>03. Work</li></a>
+                        <a  href ="#blogSection"><li>04. Blog</li></a>
+                        <a  href ="#contactSection"><li>05. Contact</li></a>
             </ul> 
         </nav>  
         <div className='navBackgroundContainer'>
@@ -144,7 +146,7 @@ export default function Hero(){
         </div>
     
         <div className='heroContainer'>
-            {/*My Headshot*/}
+            {/* My Headshot
             <div className='headshotContainer'>
                 <Image
                     src = {straightHeadshot}
@@ -154,18 +156,19 @@ export default function Hero(){
                     alt = 'Headshot of Serenity'
                     className='straightHeadshot'>
             </Image>
-            </div>
+            </div> */}
             {/* Introduction*/}
             <div className='titleContainer'>
             <div className = 'title'>
-                <h3 id ='firstPartTitle' className= {be_Vietnam_Pro.className}>Hello, my name is</h3>
+                <h3 id ='firstPartTitle' className= {googleSansCode.className}>Hello, my name is</h3>
                 <h3 id ='secondPartTitle'className= {be_Vietnam_Pro.className}>Serenity Buckner.</h3>
-                <h3 id='thirdPartTitleA' className= {be_Vietnam_Pro.className}>I Innovate with <div id='thirdPartTitleB' className={pixelify_Sans.className}> Principle.</div></h3>
-
+                <h3 id='thirdPartTitleA' className= {be_Vietnam_Pro.className}>I innovate with principle.</h3>
+         <p id = "personalDisc" className={be_Vietnam_Pro_Light.className}> I'm a software engineer striving to combine my passion for computers, logic, and algorithms, with social impact 
+            — particularly in application to autonomous systems — as I explore the bounds of ethical technology. This upcoming summer, I'll be joining <a id = "sasLink" target='_blank' href='https://www.sas.com/en_us/industry.html'><span className='sasTitle'> SAS</span></a> and assisting with both platform and automation initiatives. </p>
+            </div>
             </div>
             {/* Disc*/}
-            <p id = "personalDisc" className={be_Vietnam_Pro_Light.className}> <span id = 'pTags' className={pixelify_Sans.className}>&lt;p&gt;</span> I want to combine my passion for computers, logic, and algorithms with social impact — particularly in application to autonomous systems — as I explore the bounds of ethical technology.  <span id = 'pTags' className={pixelify_Sans.className}>&lt;/p&gt;</span></p>
-            </div>
+ 
         </div>
         </div>
     )

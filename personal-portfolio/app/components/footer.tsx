@@ -11,15 +11,16 @@ const pixelify_Sans = Pixelify_Sans({
     subsets: ["latin"],
     weight: "400",
 });
-import { Be_Vietnam_Pro} from 'next/font/google';
+import { Be_Vietnam_Pro, Google_Sans_Code} from 'next/font/google';
 {/*VBold*/}const be_Vietnam_Pro = Be_Vietnam_Pro({subsets: ['latin'], weight: '800'})
 {/*Light*/}const be_Vietnam_Pro_Light = Be_Vietnam_Pro({subsets: ['latin'], weight: '300'})
 {/*VLight*/}const be_Vietnam_Pro_VLight = Be_Vietnam_Pro({subsets: ['latin'], weight: '200'})
-
+const googleSansCode = Google_Sans_Code({subsets: ["latin"], weight: "400"});
+const googleSansCode_Bold = Google_Sans_Code({subsets: ["latin"], weight: "700"});
 export default function Footer(){
     return( 
     <div className='footerContainer'>
-        <h3 id = "smallDevLogo" className={pixelify_Sans.className}>SB</h3>
+        <h3 id = "smallDevLogo" className={be_Vietnam_Pro.className}>SB</h3>
         <div className='icons'>
             <a href = 'https://www.linkedin.com/in/serenity-buckner-885503266/ '  target="_blank" >
             <Image

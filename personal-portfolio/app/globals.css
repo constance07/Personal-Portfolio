@@ -1,13 +1,7 @@
 body {
       min-height: 100vh;
     margin: 0;
-    background: linear-gradient(
-    310deg,
-    rgb(37, 37, 37) 0%,
-    rgb(20, 20, 20) 40%,
-    rgb(0, 0, 0) 100%
-  );
-
+background: rgba(0, 0, 0, 0.945); 
   background-attachment: fixed;
   background-size: cover;
 }
@@ -63,10 +57,9 @@ html{
           transform: translateX(200vw);
           overflow: hidden;
           visibility: hidden;
-        
       }.hamburgerContainer li{
           display: flex;
-          font-size: 1.3em;    
+          font-size: 1.2em;    
           align-items: center;
           height: 100%;
           width: 100%;
@@ -194,34 +187,71 @@ html{
       display: flex;
       flex-direction: column;
       text-align: center;
-      margin-top: 10px;
+      margin-top: 50px;
        transition: 0.5s ease-out;
     }#firstPartTitle{
-      font-size: 1.25em;
+      font-size: 1.1em;
+      color: #3676FF;
       margin-bottom: 0px;
-      margin-top: 40px;
+      margin-top: 75px;
     }#secondPartTitle{
-      font-size: 1.8em;
+      font-size: 2.1em;
+      color: #ffffffee;
       margin-top: 0px;
       margin-bottom: 0px;
     }#thirdPartTitleA{
-      font-size: 1.8em;
+      font-size: 2.1em;
       margin-top: 0px;
       color: #3F3F3F;
       margin-bottom: 0px;
     }#thirdPartTitleB{
       display: inline;
       margin-top: 0px;
-      font-size: 1.1em;
       color: #3676FF;
     }#personalDisc{
       color: #FFFFFF;
+      font-size: 1.0em;
       text-align: center;
       margin-right: 50px;
       margin-left: 50px;
       padding-top: 15px;
       margin-bottom: 100px;
-    }#pTags{
+    }span.sasTitle{
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+      color: #3676FF;
+    }span.sasTitle::before{
+      content: "";
+      height: 1px;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      text-decoration: none;
+      position: absolute;
+      background-color: #3676FF;span.sasTitle{
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+      color: #3676FF;
+    }span.sasTitle::before{
+      content: "";
+      height: 1px;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      text-decoration: none;
+      position: absolute;
+      background-color: #3676FF;
+      transition: width 0.25s ease-out;
+    }span.sasTitle:hover::before{
+      width: 100%;
+    }
+      transition: width 0.25s ease-out;
+    }span.sasTitle:hover::before{
+      width: 100%;
+    }
+      #pTags{ 
       color: #3676FF;
       display: inline;
     }
@@ -241,16 +271,35 @@ html{
       width: 275px;
       transition: 0.5s ease-in;
     }.bodyShot:hover{
-        transform: scale(1.04);
+        transform: scale(1.01);
         transition: 0.5s ease-in;
         filter: brightness(1.15)     
     }#aboutDisc{
       margin: 50px;
       color: #FFFFFF;
       text-align: center;
+    }#blueInText{
+      color: #3676FF;
+    }span#blueInText{
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+      color: #3676FF;
+    }span#blueInText::before{
+      content: "";
+      height: 1px;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      text-decoration: none;
+      position: absolute;
+      background-color: #3676FF;
+      transition: width 0.25s ease-out;
+    }span#blueInText:hover::before{
+      width: 100%;
     }#h1Tags{
       color: #3676FF;
-      font-size: 1.0em;
+      font-size: 0.7em;
       display: inline-block;
     }#aboutTitle{
       color: #FFFFFF;
@@ -261,7 +310,7 @@ html{
       display: inline-block;
     }#blueTag{
      color:#3676FF;
-     font-size: 1.3em;
+     font-size: 1.1em;
      display: inline-block;
     }
     /*WORK CONTAINER*/
@@ -277,6 +326,8 @@ html{
       color: white;
       text-align: center;
       font-size: 1.6em;
+      }#blueTag{
+        font-size: 1.0em;
       }.displayContainer{
       width: 70%;
       height: 300px;
@@ -290,7 +341,7 @@ html{
       margin-left: 10px;
       margin-right: 10px;
       border-radius: 18px;
-      border-width: 8px;
+      border-width: 6px;
       border-style: solid;
       box-shadow: 5px 10px 8px rgb(15, 15, 15);
       border-color: #050b1fa7;
@@ -329,15 +380,36 @@ html{
       text-decoration: none;
     }#resumeTitle{
       margin-top:25px;
+      margin-left: 50px;
+      margin-right: 50px;
       color: white;
+      font-size: 0.9em;
       text-align: center;
     }#resumeLinkA{
       display: inline-block;
-      font-size: 1.1em;
+      font-size: 1.0em;
     }#resumeLinkB{
       display: inline-block;
       color: #3676FF;
       text-decoration: none;
+    }span.resTitle{
+      display: inline-block;
+      position: relative;
+      font-size: 1.05em;
+      text-decoration: none;
+      color: #3676FF;
+    }span.resTitle::before{
+      content: "";
+      height: 1px;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      text-decoration: none;
+      position: absolute;
+      background-color: #3676FF;
+      transition: width 0.25s ease-out;
+    }span.resTitle:hover::before{
+      width: 100%;
     }#resumeLinkB:hover{
       text-decoration: underline;
       text-decoration-color: #3676FF;
@@ -374,7 +446,7 @@ html{
       border-radius: 10px;
       padding: 20px;
       margin: 15px;
-      font-size: 0.9em;
+      font-size: 0.8em;
       margin-top: 0px;
       display: flex;
       flex-direction: column;
@@ -426,21 +498,19 @@ html{
       display: inline-block;
     }#blogPost{
       text-decoration: none; 
-      
       margin-top: 20px;
       text-align: start;
     }#blogSubtitleText{
       display: inline-block;
-      font-size: 1.0em;
+      font-size: 0.8em;
       color: #3676FF;
       margin-top: 0px;
       margin-bottom: 50px;
     }.blogPostContainer{
       border-width: 5px;
       border-style: solid;
-            border-color: #050b1fa7;
+      border-color: #050b1fa7;
       box-shadow: 5px 10px 8px rgb(15, 15, 15);
-
       height: 115px;
       width: fit-content;
       border-radius: 20px;
@@ -482,11 +552,10 @@ html{
   }.embla__slide {
     flex: 0 0 97.5%; 
     display: flex;
-   
   }#embla__prev,#embla__next{
       margin-top: 25px;
       border: 20px;
-      width: 50px;
+      width: 35px;
       height: 35px;
       border-radius: 10px;
       font-size: 18px;
@@ -538,9 +607,13 @@ html{
       padding-left: 50px;
       padding-right: 50px;
       font-size: 1.6em;
+    }#connectTitle{
+      display: inline-block;
+      padding-left: 5px;
+      font-size: 1.1em;
     }#contactSubTitle{
       margin-top: 20px;
-      font-size: 1.05em;
+      font-size: 0.85em;
       padding-left: 50px;
       padding-right: 50px;
       color: #3676FF;
@@ -578,7 +651,7 @@ html{
       width: 130px;
       height: 35px;
       border-radius: 10px;
-      font-size: 18px;
+      font-size: 15px;
       color: #3676FF;
       background-color: #FFFFFF;
       transition: 0.25s ease-out;
@@ -607,11 +680,17 @@ html{
       display: flex;
       flex-direction: column;
       align-items: center;
-    }#smallDevLogo{
+    }#devLogoMobile{
       color: #3676FF;
-      font-size: 25px;
+      font-size: 35px;
       margin-bottom: 0px;
-    }.icons{
+    } #smallDevLogo{
+      color: #3676FF;
+      font-size: 20px;
+      margin-bottom: 0px;
+      margin-top: 30px;
+    }
+    .icons{
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -650,14 +729,14 @@ html{
           transition: 0.5s ease-in;
       }.hamburgerIcon{
         top: 68px;
-        height: 32px;
+        height: 30px;
         margin-right: 75px;
       }.hamburgerIcon span{
         margin-top: 0px;
         width: 45px;
-        height: 3.6;
+        height: 3.2;
       }#devLogoMobile{
-        font-size: 48px;
+        font-size: 40px;
         margin-top: 52px;
         transition: 0.5s ease-in;
   }/* HERO */
@@ -675,13 +754,13 @@ html{
       font-size: 1.6em;
       transition: 0.5s ease-in;
     }#firstPartTitle{
-      font-size: 0.9em;
+      font-size: 0.8em;
     }#secondPartTitle{
-      font-size: 1.3em;
+      font-size: 1.6em;
     }#thirdPartTitleA{
-      font-size: 1.3em;
+      font-size: 1.6em;
     }#personalDisc{
-      font-size: 1.1em;
+      font-size: 0.65em;
       margin-bottom: 0px;
     }
     /*ABOUT CONTAINER*/
@@ -703,7 +782,7 @@ html{
     }#skillsTitle{
       font-size:1.75em;
     }#techItem{
-      font-size: 1.0em;
+      font-size: 0.85em;
       width: 60px;
       padding: 25px;
     }.displayBackground{
@@ -720,6 +799,8 @@ html{
     /*BLOG CONTAINER*/
     #blogContainer{
       height: 1150px;
+    }.blogSubtitle{
+      font-size: 0.8em;
     }
     .blogPostContainer{
       width: 500px;
@@ -732,7 +813,7 @@ html{
   }.embla__slide {
     height: 300px;
   }#embla__prev, #embla__next{
-      width: 50px;
+      width: 40px;
     }
     #blogTitle{
       font-size: 1.9em;
@@ -755,11 +836,11 @@ html{
     #contactTitle{
       font-size: 1.9em;
     }#contactSubTitle{
-      font-size: 1.1em;
+      font-size: 0.95em;
     }#formSubTitles{
       font-size: 1.3em;
     }#submit{
-      font-size: 21px;
+      font-size: 17px;
       width: 135px;
       height: 38px;
     }#inputA,#inputB, #inputC,#textArea{
@@ -770,7 +851,7 @@ html{
   .footerContainer{
       height: 155px;
     }#smallDevLogo{
-      font-size: 27px;
+      font-size: 24px;
     }.icons{
       height: 32px;
     }#linkedIn, #github, #goodreads{
@@ -786,18 +867,19 @@ html{
 @media(min-width: 768px){
   /* NAVIGATION */
       .hamburgerContainer li{
-          font-size: 1.6em;    
+          font-size: 1.5em;    
 
       }#close-Button span:nth-child(1){
-          width: 50px;
+          width: 45px;
       }#close-Button span:nth-child(2){
-          width: 50px;
+          width: 45px;
       }.hamburgerIcon{
-        height: 36px;
-        width: 48px;
+        top: 70px;
+        height: 30px;
+        width: 35px;
       }#devLogoMobile{
         margin-top: 54px;
-        font-size: 50px;
+        font-size: 40px;
      }/* HERO */
   .straightHeadshot{
     width: 415px;
@@ -807,17 +889,17 @@ html{
     margin-bottom: 10%;
     margin-right: 0px;
   }.title{
-      font-size: 1.7em;
+      font-size: 1.8em;
       transition: 0.5s ease-in;
     }#personalDisc{
-      font-size: 1.175em;
+      font-size: 0.6em;
       margin-bottom: 80px;
     }
     /*ABOUT CONTAINER */
     #aboutTitle{
       font-size: 2.1em;
     }#aboutDisc{
-      font-size: 1.175em
+      font-size: 1.05em
     }.bodyShot{
       width: 360;
       height: 460;
@@ -837,17 +919,17 @@ html{
     }#workTitle{
       font-size: 2.1em;
     }#displayTitle{
-     font-size: 1.3em;
+     font-size: 1.2em;
     }#displayDisc{
-      font-size: 1.05em;
+      font-size: 1.0em;
       margin-top: 35px;
     }#resumeTitle{
-      font-size: 1.175em;
+      font-size: 1.1em;
     }#skillsTitle{
       font-size:1.85em;
     }#techItem{
-      font-size: 1.05em;
-      width: 65px;
+      font-size: 0.9em;
+      width: 60px;
       padding: 25px;
     }#WGTT{
       width: 70%;
@@ -862,11 +944,11 @@ html{
     #blogTitle{
       font-size: 2.1em;
     }#blogSubtitleText{
-      font-size: 1.25em;
+      font-size: 1.2em;
     }#blogPostTitle{
-      font-size: 100%;
+      font-size: 95%;
     }#blogPostDisc{
-      font-size: 100%;
+      font-size: 95%;
     }#h3TagsA{
       font-size: 1.3em;
     }.blogPostContainer{
@@ -881,7 +963,7 @@ html{
     height: 350px;
   }#embla__prev,#embla__next{
       margin-top: 25px;
-      width: 40px;
+      width: 38px;
     }
     /*CONTACT SECTION*/
     .contactContainer{
@@ -892,27 +974,27 @@ html{
  
       font-size: 2.1em;
     }#contactSubTitle{
-      font-size: 1.25em;
+      font-size: 1.02em;
     }#formSubTitles{
-      font-size: 1.4em;
+      font-size: 1.3em;
     }#submit{
-      font-size: 22px;
-      width: 140px;
-      height: 40px;
+      font-size: 17px;
+      width: 135px;
+      height: 38px;
     }#inputA,#inputB, #inputC,#textArea{
       font-size: 1.1em;
-      padding: 14px;
+      padding: 13px;
     }
   /* FOOTER */
   .footerContainer{
       height: 155px;
     }#smallDevLogo{
-      font-size: 29px;
+      font-size: 22px;
     }.icons{
-      height: 35px;
+      height: 30px;
     }#linkedIn, #github, #goodreads{
-      width: 24px;
-      height: 24px;
+      width: 22px;
+      height: 22px;
     }.icons a{
       margin: 10px;
     }#ownershipTag{
@@ -952,7 +1034,7 @@ html{
       height: 250px;
     }.navContainer{
         display: flex;
-        top: 52px;
+        top: 25px;
         width: 100%;
         justify-content: center;
         position: fixed;
@@ -968,11 +1050,11 @@ html{
         padding-right: 0px;
         background-color: #3f3f3f29;
         backdrop-filter: blur(25px);
-        height: 25px;
-        border-width: 1px;
+        height: 30px;
+        border-width: 0px;
         border-style:solid;
         border-color: #ffffff21;
-        border-radius: 50px;
+        border-radius: 5px;
         padding-left: 5px;
         padding-right: 5px;
         align-items: center;
@@ -984,22 +1066,22 @@ html{
         color: #FFFFFF;
         padding-top: 13px;
         padding-bottom: 15px;
-        font-size: 0.65em;
+        font-size: 0.7em;
         text-decoration: none;
         transition: all .25s ease-out;
         width: 100px;
         height: 10px;
         text-align: center;
-        border-radius: 25px;
+        border-radius: 5px;
         cursor: pointer;
 
      }.navContainer a{
         text-decoration: none;
         display: flex;
-        font-size: 1.5em;
+        font-size: 1.2em;
         cursor: default;
         flex-direction: row;
-        border-radius: 25px;
+        border-radius: 5px;
         transition: all .25s ease-out;
       }.navContainer li:hover{
         color: #E6E6E6;
@@ -1009,29 +1091,28 @@ html{
       background-color: #3676FF;
       transition: all .25s ease-in-out;
     }.navList a:first-child{
-      margin-right: 10px;
+      margin-right: 5px;
       margin-left: 0px;
     }.navList a{
       margin-left: 5px;
       margin-right: 5px;
     }.navList a:last-child{
-      margin-right:0px;
-      
+      margin-right:0px;  
+      padding-left: 8px;
+      padding-right: 8px;
     }
     /* HERO SECTION */
     .heroContainer{
       width: 900px;
-      margin-top: 50px;
+      margin-top: 0px;
       position: absolute;
-      padding-bottom: 100px;
+      padding-bottom: 50px;
       display: flex;
-      flex-direction: row-reverse;
       justify-content: center;
       position: relative;
       margin: auto;
     }.straightHeadshot{
       width: 375px;
-      margin-right: 10px;
       height: 375px;
       transition: 0.5s ease-out;
     }.headshotContainer{
@@ -1049,40 +1130,37 @@ html{
       color: #FFFFFF;
       display: flex;
       flex-direction: column;
-      text-align:start;
-      margin-top: 40px;
+      text-align:center;
+      margin-top: 50px;
       transition: 0.5s ease-out;
     }.titleContainer{
-      margin-left:15px;
       margin-bottom: 125px;
     }#firstPartTitle{
-      font-size: 1.0em;
+      font-size: 0.8em;
       padding-left: 0px;
-      margin-bottom: 0px;
-      margin-top: 40px;
+      margin-bottom: 15px;
+      margin-top: 0px;
     }#secondPartTitle{
-      font-size: 1.4em;
+      font-size: 2.2em;
       padding-left: 0px;
       margin-top: 0px;
       margin-bottom: 0px;
     }#thirdPartTitleA{
-      font-size: 1.4em;
+      font-size: 2.2em;
       padding-left: 0px;
       margin-top: 0px;
-      color: #3F3F3F;
+      color: #ffffff77;
       margin-bottom: 0px;
     }#thirdPartTitleB{
       display: inline;
       margin-top: 0px;
-      font-size: 1.1em;
+      font-size: 0.9em;
       color: #3676FF;
     }#personalDisc{
-      color: #FFFFFF;
-      text-align: start;
-      padding-left: 0px;
-      margin: 0px;
-      font-size: 18px;
-      padding-right: 20px;
+      color: #ffffff;
+      text-align: center;
+      margin: 0;
+      font-size: 18.75px;
       padding-top: 35px;
       margin-bottom: 0px;
     }#pTags{
@@ -1092,8 +1170,11 @@ html{
     /*ABOUT SECTION*/
     #aboutTitle{
       font-size: 2.4em;
+  
     }#aboutDisc{
-      font-size: 1.2em;
+      font-size: 1.1em;
+      color: #ffffff;
+
     }.discWrapper{
       width: 900px;
       margin-left: 40px;
@@ -1107,23 +1188,24 @@ html{
     /*WORK SECTION */
     .displayContainer{
       width:60%;
-      height: 40%;
+      height: 35%;
     }
     #workTitle{
       font-size: 2.4em;
       margin-bottom: 90px;
     }#displayTitle{
-     font-size: 1.5em;
+     font-size: 1.4em;
     }#displayDisc{
-      font-size: 1.1em;
+      font-size: 1.0em;
       margin-top: 40px;
     }#resumeTitle{
-      font-size: 1.3em;
+      font-size: 1.1em;
     }#skillsTitle{
       font-size:2.1em;
     }#techItem{
-      font-size: 1.1em;
-      width: 65px;
+      font-size: 0.9em;
+      width: 60px;
+      height: 50px;
       padding: 25px;
     }.discWrapper{
       display: flex;
@@ -1133,7 +1215,7 @@ html{
     #blogTitle{
       font-size: 2.4em;
     }#blogSubtitleText{
-      font-size: 1.4em;
+      font-size: 1.3em;
     }#blogPostTitle{
       font-size: 110%;
     }#blogPostDisc{
@@ -1162,16 +1244,16 @@ html{
       font-size: 2.5em;
       padding-top: 105px;
     }#contactSubTitle{
-      font-size: 1.4em;
+      font-size: 1.10em;
     }#formSubTitles{
-      font-size: 1.4em;
+      font-size: 1.3em;
     }#submit{
-      font-size: 24px;
-      width: 150px;
-      height: 45px;
+      font-size: 17px;
+      width: 140px;
+      height: 40px;
     }#inputA,#inputB, #inputC,#textArea{
       font-size: 1.1em;
-      padding: 18px;
+      padding: 15px;
     }
     /* FOOTER SECTION */
     .footerContainer{
@@ -1191,7 +1273,7 @@ html{
       align-items: center;
     }#smallDevLogo{
       color: #3676FF;
-      font-size: 25px;
+      font-size: 20px;
       margin-top: 30px;
       margin-bottom: 0px;
     }.icons{
@@ -1221,19 +1303,20 @@ html{
   /* HERO */
   .heroContainer{
     width: 1200px;
+    height: 500px;
   }#thirdPartTitleB{
-    font-size: 1.1em;
+    font-size: 1.0em;
   }.title{
-    padding-left: 20px;
-    font-size: 1.8em;
+    margin-top: 0px;
+    font-size: 1.9em;
   }#personalDisc{
-    font-size: 1.1em;
-    padding-right: 40px;
-    padding-left: 20px;
+    font-size: 0.65em;
+    margin-left: 150px;
+    margin-right: 150px;
   }.straightHeadshot{
-    margin-left: 20px;
-    width: 400px;
-    height: 400px;
+    width: 150px;
+    height: 185px;
+    margin-bottom: 0px;
   }
   /*ABOUT SECTION*/
   #aboutSection{
@@ -1290,7 +1373,7 @@ html{
   #blogTitle{
     font-size: 2.5em;
   }#blogSubtitleText{
-    font-size: 1.5em;
+    font-size: 1.4em;
   }#h3TagsA{
     font-size: 1.5em;
   }#blogPostTitle{
@@ -1324,13 +1407,13 @@ html{
     #contactTitle{
       font-size: 2.5em;
     }#contactSubTitle{
-      font-size: 1.5em;
+      font-size: 1.15em;
     }#formSubTitles{
-      font-size: 1.5em;
+      font-size: 1.4em;
     }#submit{
-      font-size: 22px;
+      font-size: 19px;
       width: 140px;
-      margin-top: 70px;
+      margin-top: 60px;
       height: 40px;
     }#inputA,#inputB, #inputC,#textArea{
       font-size: 1.0em;
@@ -1374,4 +1457,5 @@ html{
   to{
     
   }
+
 }

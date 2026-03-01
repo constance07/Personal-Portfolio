@@ -8,10 +8,12 @@ import '../globals.css';
 import { Pixelify_Sans } from 'next/font/google';
 const pixelify_Sans = Pixelify_Sans({ subsets: ["latin"], weight: "400",});
 const pixelify_Sans_Bold = Pixelify_Sans({ subsets: ["latin"], weight: "700",});
-import { Be_Vietnam_Pro} from 'next/font/google';
+import { Be_Vietnam_Pro, Google_Sans_Code} from 'next/font/google';
 {/*VBold*/}const be_Vietnam_Pro = Be_Vietnam_Pro({subsets: ['latin'], weight: '800'})
 {/*Light*/}const be_Vietnam_Pro_Light = Be_Vietnam_Pro({subsets: ['latin'], weight: '300'})
 {/*VLight*/}const be_Vietnam_Pro_VLight = Be_Vietnam_Pro({subsets: ['latin'], weight: '200'})
+const googleSansCode = Google_Sans_Code({subsets: ["latin"], weight: "400"});
+const googleSansCode_Bold = Google_Sans_Code({subsets: ["latin"], weight: "700"});
 import meta from '@/app/images/meta.jpg';
 import perfect from '@/app/images/perfect.jpg';
 /*Video Carousel*/
@@ -44,10 +46,10 @@ export default function Blog(){
             <div className='blogContent'>
 
                 <h1 id ="blogTitle" className={be_Vietnam_Pro.className}>
-                <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;h1&gt;</div> FUN FACT: I  <div id = 'blueTag' className={pixelify_Sans_Bold.className}> DO </div> HAVE A LIFE OUTSIDE MY COMPUTER ! <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div></h1> 
+                <div id = 'h1Tags' className={googleSansCode.className}>03.</div> FUN FACT: I  <div id = 'blueTag' className={be_Vietnam_Pro.className}> DO </div> HAVE A LIFE OUTSIDE MY COMPUTER ! <div id = 'h1Tags' className={pixelify_Sans_Bold.className}></div></h1> 
 
                 <div className='blogSubtitle'>
-                    <div id = 'h3TagsA' className={pixelify_Sans_Bold.className}>&lt;h3&gt;</div><h3 id = "blogSubtitleText" className={pixelify_Sans_Bold.className}>(*At least, that's what I like to tell myself)<div id = 'h3TagsB' className={pixelify_Sans_Bold.className}>&lt;/h3&gt;</div></h3>
+                    <div id = 'h3TagsA' className={pixelify_Sans_Bold.className}></div><h3 id = "blogSubtitleText" className={googleSansCode.className}>(*At least, that's what I like to tell myself)<div id = 'h3TagsB' className={pixelify_Sans_Bold.className}></div></h3>
                 </div>
                 
                 <a id = "blogPost"href = "/posts/TheMetamorphosis_FranzKafka.pdf" download = "The Metamorphosis - A Vermins Hunger For Humanity">

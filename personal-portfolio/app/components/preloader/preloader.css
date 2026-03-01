@@ -1,6 +1,3 @@
-@media(min-width:1024px){
-
-}
 .preLoader{
     height: 100%;
     width: 100%;
@@ -10,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4.0em;
+    font-size: 3.4em;
     z-index: 301;
 }.preLoader .texts-container{
     display: flex;

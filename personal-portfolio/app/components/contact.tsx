@@ -8,11 +8,12 @@ import '../globals.css';
 import { Pixelify_Sans } from 'next/font/google';
 const pixelify_Sans = Pixelify_Sans({ subsets: ["latin"], weight: "400",});
 const pixelify_Sans_Bold = Pixelify_Sans({ subsets: ["latin"], weight: "700",});
-import { Be_Vietnam_Pro} from 'next/font/google';
+import { Be_Vietnam_Pro, Google_Sans_Code} from 'next/font/google';
 {/*VBold*/}const be_Vietnam_Pro = Be_Vietnam_Pro({subsets: ['latin'], weight: '800'})
 {/*Light*/}const be_Vietnam_Pro_Light = Be_Vietnam_Pro({subsets: ['latin'], weight: '300'})
 {/*VLight*/}const be_Vietnam_Pro_VLight = Be_Vietnam_Pro({subsets: ['latin'], weight: '200'})
-
+const googleSansCode = Google_Sans_Code({subsets: ["latin"], weight: "400"});
+const googleSansCode_Bold = Google_Sans_Code({subsets: ["latin"], weight: "700"});
 {/*General Imports*/}
 import { ToastContainer, toast } from 'react-toastify';
 
@@ -81,6 +82,7 @@ export default function Contact(){
             toast.success("Email was sent sucessfully!");
         } catch(error:any){
         /*Email Error !*/
+            
             toast.error('Oops, looks like something went wrong ', error);
         } 
     };
@@ -89,11 +91,11 @@ export default function Contact(){
                 <div className='contactContainer'>
                 {/*Title*/}
                 <div id = "contactTitle" className= {be_Vietnam_Pro.className}>
-                    <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;h1&gt;</div> LET'S CONNECT ! <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div>
+                    <div id = 'h1Tags' className={googleSansCode.className}>04. </div><div id = 'connectTitle' className={be_Vietnam_Pro.className}> LET'S CONNECT !</div>
                 </div>
                 {/*Sub-Title*/}
-                <div id = "contactSubTitle" className= {pixelify_Sans_Bold.className}>
-                    <div id = 'h3TagsB'>&lt;h3&gt;</div> Ask me anything, or just say hi... <div id = 'h3TagsB' className = {pixelify_Sans_Bold.className}>&lt;/h3&gt;</div>
+                <div id = "contactSubTitle" className= {googleSansCode.className}>
+                    <div id = 'h3TagsB'></div> Ask me anything, or just say hi... <div id = 'h3TagsB' className = {googleSansCode.className}></div>
                 </div>
                 
                     
@@ -143,7 +145,7 @@ export default function Contact(){
                             </textarea>
 
                         </fieldset>
-                            <button id = "submit" className={pixelify_Sans_Bold.className}>
+                            <button id = "submit" className={be_Vietnam_Pro.className}>
                                Send
                             </button>
                             <div className= {be_Vietnam_Pro_VLight.className} >

@@ -1,21 +1,24 @@
 /*Styled Imports*/
 import '../globals.css';
 import { Pixelify_Sans } from 'next/font/google';
+import { Google_Sans_Code } from 'next/font/google';
 const pixelify_Sans = Pixelify_Sans({ subsets: ["latin"], weight: "400",});
 const pixelify_Sans_Bold = Pixelify_Sans({ subsets: ["latin"], weight: "700",});
 import { Be_Vietnam_Pro} from 'next/font/google';
 {/*VBold*/}const be_Vietnam_Pro = Be_Vietnam_Pro({subsets: ['latin'], weight: '800'})
+const googleSansCode = Google_Sans_Code({subsets: ["latin"], weight: "400"});
 {/*Light*/}const be_Vietnam_Pro_Light = Be_Vietnam_Pro({subsets: ['latin'], weight: '300'})
 {/*VLight*/}const be_Vietnam_Pro_VLight = Be_Vietnam_Pro({subsets: ['latin'], weight: '200'})
 import Image from 'next/image';
 import bodyShot from '@/app/images/bodyShot.jpg';
-
+import replaceBodyShot from '@/app/images/replaceBody.jpg'
+import straightHeadshot from '@/app/images/straightHeadshot.jpg'
 export default function About(){
     return(
         <div className = 'section' id = "aboutSection">
             <div className="aboutContainer">
                 <h1 id ="aboutTitle" className={be_Vietnam_Pro.className}>
-                <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;h1&gt;</div> GET TO KNOW <div id = 'blueTag' className={pixelify_Sans_Bold.className}> ME </div> ! <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div></h1> 
+                <div id = 'h1Tags' className={googleSansCode.className}>01. </div> GET TO KNOW ME !</h1> 
                    <div className = "discWrapper">
                     {/*My Headshot*/}
                         <div className='bodyShotContainer'>

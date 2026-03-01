@@ -5,13 +5,15 @@ import Image from 'next/image';
 import { useEffect } from 'react';
 /*Styled Imports*/
 import '../globals.css';
-import { Pixelify_Sans } from 'next/font/google';
+import { Pixelify_Sans,Google_Sans_Code} from 'next/font/google';
 const pixelify_Sans = Pixelify_Sans({ subsets: ["latin"], weight: "400",});
 const pixelify_Sans_Bold = Pixelify_Sans({ subsets: ["latin"], weight: "700",});
 import { Be_Vietnam_Pro} from 'next/font/google';
 {/*VBold*/}const be_Vietnam_Pro = Be_Vietnam_Pro({subsets: ['latin'], weight: '800'})
 {/*Light*/}const be_Vietnam_Pro_Light = Be_Vietnam_Pro({subsets: ['latin'], weight: '300'})
 {/*VLight*/}const be_Vietnam_Pro_VLight = Be_Vietnam_Pro({subsets: ['latin'], weight: '200'})
+const googleSansCode = Google_Sans_Code({subsets: ["latin"], weight: "400"});
+const googleSansCode_Bold = Google_Sans_Code({subsets: ["latin"], weight: "700"});
 import WGTT from '@/app/images/WGTT.jpg';
 /* Icon Imports */
 import js from '@/app/images/skills/js.jpg';
@@ -33,7 +35,7 @@ export default function Work(){
         <div className = "section" id='workSection'>
             <div className="workContainer">
                 <h1 id ="workTitle" className={be_Vietnam_Pro.className}>
-                <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;h1&gt;</div> I <div id = 'blueTag' className={pixelify_Sans_Bold.className}> REALLY </div> LIKE TO BUILD AND DESIGN STUFF. <div id = 'h1Tags' className={pixelify_Sans_Bold.className}>&lt;/h1&gt;</div></h1> 
+                <div id = 'h1Tags' className={googleSansCode.className}>02.</div> I <div id = 'blueTag' className={be_Vietnam_Pro.className}> REALLY </div> LIKE TO BUILD AND DESIGN STUFF.</h1> 
                 
                 <div className='displayContainer'>
                     <a id ="wgttLink" href = "https://wevegottotalk.net/">
@@ -50,10 +52,10 @@ export default function Work(){
                     </a>
                 </div>
                 <div id="resumeTitle" className={be_Vietnam_Pro_Light.className}>Want to know about the other cool things I do?<br></br>
-                <div id = "resumeLinkA" className={pixelify_Sans.className}> Check out my resume <a href = "https://docs.google.com/document/d/1joId81v81lhTnqoQxQcvKa-fOUb8AgJDw6EbUtR1-xs/edit?usp=sharing" id = "resumeLinkB" className={pixelify_Sans.className}>here</a></div>.</div>
+                <div id = "resumeLinkA" className={be_Vietnam_Pro_Light.className}> Check out my resume <a className = {googleSansCode.className} id = "resumeLinkB" target='_blank' href='https://www.sas.com/en_us/industry.html'><span className='resTitle'>here</span></a></div>.</div>
                 <h2 id ="skillsTitle" className={be_Vietnam_Pro.className}>
                     <div className='skillsSection'></div>
-                    <div id = 'h2Tags' className={pixelify_Sans_Bold.className}>&lt;h2&gt;</div> SKILLS <div id = 'h2Tags' className={pixelify_Sans_Bold.className}>&lt;/h2&gt;</div>
+                    <div id = 'h2Tags' className={pixelify_Sans_Bold.className}></div> SKILLS <div id = 'h2Tags' className={pixelify_Sans_Bold.className}></div>
                 </h2>
                 <div id='techStack' className={be_Vietnam_Pro_Light.className}>
                     <div id = 'techItem'>
