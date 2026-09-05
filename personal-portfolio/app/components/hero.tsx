@@ -163,8 +163,8 @@ export default function Hero(){
                 <h3 id ='firstPartTitle' className= {googleSansCode.className}>Hello, my name is</h3>
                 <h3 id ='secondPartTitle'className= {be_Vietnam_Pro.className}>Serenity Buckner.</h3>
                 <h3 id='thirdPartTitleA' className= {be_Vietnam_Pro.className}>I innovate with principle.</h3>
-         <p id = "personalDisc" className={be_Vietnam_Pro_Light.className}> I'm a software engineer striving to combine my passion for computers, logic, and algorithms, with social impact 
-            — particularly in application to autonomous systems — as I explore the bounds of ethical technology. This upcoming summer, I'll be joining <a id = "sasLink" target='_blank' href='https://www.sas.com/en_us/industry.html'><span className='sasTitle'> SAS</span></a> and assisting with both platform and automation initiatives. </p>
+         <p id = "personalDisc" className={be_Vietnam_Pro_Light.className}> I'm a Software Engineer striving to combine my passion for computers, logic, and algorithms, with social impact 
+            — particularly in application to autonomous systems — as I explore the bounds of ethical technology. This past summer, I joined <a id = "sasLink" target='_blank' href='https://www.sas.com/en_us/industry.html'><span className='sasTitle'> SAS</span></a> and assisted in both platform and automation initiatives. </p>
             </div>
             </div>
             {/* Disc*/}
