@@ -54,7 +54,7 @@ export default function Work(){
 
 
                 <div id="resumeTitle" className={be_Vietnam_Pro_Light.className}>Want to know about the other cool things I do?<br></br>
-                <div id = "resumeLinkA" className={be_Vietnam_Pro_Light.className}> Check out my resume <a className = {googleSansCode.className} id = "resumeLinkB" target='_blank' href='https://docs.google.com/document/d/1joId81v81lhTnqoQxQcvKa-fOUb8AgJDw6EbUtR1-xs/edit?usp=sharing'><span className='resTitle'>here</span></a></div>.</div>
+                <div id = "resumeLinkA" className={be_Vietnam_Pro_Light.className}> Check out my resume <a className = {googleSansCode.className} id = "resumeLinkB" target='_blank' href='https://docs.google.com/document/d/1Difu00hTVVUvaV1Rmx8Y9jUVDuwQe4MR/edit?usp=sharing&ouid=109108294188634644116&rtpof=true&sd=true'><span className='resTitle'>here</span></a></div>.</div>
                 <h2 id ="skillsTitle" className={be_Vietnam_Pro.className}>
                     <div className='skillsSection'></div>
                     <div id = 'h2Tags' className={pixelify_Sans_Bold.className}></div> SKILLS <div id = 'h2Tags' className={pixelify_Sans_Bold.className}></div>
